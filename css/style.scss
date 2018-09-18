@@ -1,24 +1,9 @@
 ---
 ---
 
-$text-color: #232323;
-$divider: 1px solid $text-color;
+@import 'headfoot';
 
 #first-row {
     padding-top: 20px;
     padding-bottom: 5px;
-}
-
-#nav-row {
-    border-top: $divider;
-    border-bottom: $divider;
-}
-
-#final-row {
-    border-top: $divider;
-}
-
-#linkedin-icon {
-    height: 32px;
-    width: auto;
 }

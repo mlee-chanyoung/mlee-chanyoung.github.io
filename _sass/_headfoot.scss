@@ -1,0 +1,35 @@
+// For header and footer.
+
+@import 'variables';
+
+#nav-row {
+    border-top: $divider;
+    border-bottom: $divider;
+}
+
+nav {
+    a {
+        text-align: center;
+    }
+}
+
+#final-row {
+    border-top: $divider;
+}
+
+#footer-icons {
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    a {
+        display: inline-block;
+    }
+    a:first-child {
+        margin-right: 10px;
+    }
+}
+
+#linkedin-icon {
+    height: 32px;
+    width: auto;
+}

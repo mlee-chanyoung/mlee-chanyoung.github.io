@@ -21,16 +21,14 @@
             {{ content }}
             <!-- Footer row -->
             <div class="row" id="final-row">
-                <nav class="navbar navbar-expand-lg navbar-light mx-auto">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="{{ site.linkedin_url }}" target="_blank">
-                            <img src="assets/img/icons/linkedin-icon.png" id="linkedin-icon" />
-                        </a>
-                        <a class="nav-item nav-link" href="{{ site.github_url }}" target="_blank">
-                            <img src="assets/img/icons/github-icon.png" />
-                        </a>
-                    </div>
-                </nav>
+                <div class="mx-auto" id="footer-icons">
+                    <a href="{{ site.linkedin_url }}" target="_blank">
+                        <img src="assets/img/icons/linkedin-icon.png" id="linkedin-icon" />
+                    </a>
+                    <a href="{{ site.github_url }}" target="_blank">
+                        <img src="assets/img/icons/github-icon.png" />
+                    </a>
+                </div>
             </div>
         </div>
     </body>
