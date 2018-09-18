@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        <div class="container">
+            <!-- Title row -->
+            <div class="row" id="first-row">
+                <h1 class="mx-auto">Michael C. Lee</h1>
+            </div>
+            <!-- Navigation row -->
+            <div class="row" id="nav-row">
+                <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link {% if page.title == 'portfolio' %}active{% endif %}" href="#">Portfolio</a>
+                        <a class="nav-item nav-link {% if page.title == 'experience' %}active{% endif %}" href="#">Experience</a>
+                        <a class="nav-item nav-link {% if page.title == 'about' %}active{% endif %}" href="#">About</a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Main content -->
+            {{ content }}
+            <!-- Footer row -->
+            <div class="row" id="final-row">
+                <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="{{ site.linkedin_url }}" target="_blank">
+                            <img src="assets/img/icons/linkedin-icon.png" id="linkedin-icon" />
+                        </a>
+                        <a class="nav-item nav-link" href="{{ site.github_url }}" target="_blank">
+                            <img src="assets/img/icons/github-icon.png" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
