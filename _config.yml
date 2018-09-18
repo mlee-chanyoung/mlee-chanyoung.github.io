@@ -26,12 +26,6 @@ github_username:  mclee3360
 linkedin_url: https://www.linkedin.com/in/michaelchanlee/
 github_url: https://github.com/mclee3360/
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
