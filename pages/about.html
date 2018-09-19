@@ -1,0 +1,35 @@
+---
+layout: base
+permalink: about
+title: about
+---
+<!-- Headshot and Contact Info-->
+<div class="row image" id="headshot-row">
+    <div class="col">
+        <div class="row"><img src="{{ site.url }}/assets/img/headshot/photo.jpg" class="mx-auto headshot"></div>
+        <div class="row caption"><div class="col">
+            <div class="row"><h4 class="mx-auto text-color">Michael Chanyoung Lee</h4></div>
+            <div class="row"><p class="mx-auto text-color">{{ site.email }}<br>{{ site.phone }}<p></div>
+        </div></div>
+    </div>
+</div>
+<!-- Why? section -->
+<div class="row text">
+    <div class="col">
+        <div class="row"><h2 class="text-color">Why Design?</h2></div>
+        <div class="row"><p class="text-color">{% include why.html %}</p></div>
+    </div>
+</div>
+<!-- Education section -->
+<div class="row text">
+    <div class="col">
+        <div class="row"><h2 class="text-color">Education</h2></div>
+        <div class="row"><div class="col">{% include education.html %}</div></div>
+    </div>
+</div>
+<div class="row text">
+    <div class="col">
+        <div class="row"><h2 class="text-color">Skills</h2></div>
+        <div class="row"><div class="col">{% include skills.html %}</div></div>
+    </div>
+</div>

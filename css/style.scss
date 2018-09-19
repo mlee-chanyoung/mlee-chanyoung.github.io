@@ -1,10 +1,36 @@
 ---
 ---
 
+@import 'globals';
 @import 'headfoot';
 @import 'about';
 
-#first-row {
-    padding-top: 20px;
-    padding-bottom: 5px;
+body {
+    background-color: $bg-color;
+}
+
+.container {
+    background-color: $bg-color;
+}
+
+.text {
+    padding-left: $mobile-text-margin;
+    padding-right: $mobile-text-margin;
+    text-align: left;
+}
+
+.text-color {
+    color: $text-color;
+}
+
+@media only screen and (min-width: 768px) {
+    .text {
+        padding-left: $text-margin;
+        padding-right: $text-margin;
+    }
+}
+
+.emphasize {
+    font-weight: bold;
+    font-size: 18px;
 }

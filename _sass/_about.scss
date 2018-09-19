@@ -1,0 +1,18 @@
+$headshot-size: 250px;
+
+.image {
+    text-align: center;
+}
+
+#headshot-row {
+    margin-bottom: 25px;
+}
+
+.headshot {
+    width: $headshot-size;
+    height: $headshot-size;
+}
+
+.caption {
+    margin-top: 5px;
+}

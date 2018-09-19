@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
     {% include head.html %}
     <body>
         <div class="container">
             <!-- Title row -->
             <div class="row" id="first-row">
-                <h1 class="mx-auto">Michael C. Lee</h1>
+                <h1 class="mx-auto text-color">Michael C. Lee</h1>
             </div>
             <!-- Navigation row -->
             <div class="row" id="nav-row">
                 <nav class="navbar navbar-expand-lg navbar-light mx-auto">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link {% if page.title == 'portfolio' %}active{% endif %}" href="#">Portfolio</a>
+                        <a class="nav-item nav-link {% if page.title == 'portfolio' %}active{% endif %}" href="{{ site.url }}">Portfolio</a>
                         <a class="nav-item nav-link {% if page.title == 'experience' %}active{% endif %}" href="#">Experience</a>
-                        <a class="nav-item nav-link {% if page.title == 'about' %}active{% endif %}" href="#">About</a>
+                        <a class="nav-item nav-link {% if page.title == 'about' %}active{% endif %}" href="{{ site.url }}/about">About</a>
                     </div>
                 </nav>
             </div>
@@ -21,14 +21,20 @@
             {{ content }}
             <!-- Footer row -->
             <div class="row" id="final-row">
-                <div class="mx-auto" id="footer-icons">
-                    <a href="{{ site.linkedin_url }}" target="_blank">
-                        <img src="{{ site.url }}/assets/img/icons/linkedin-icon.png" id="linkedin-icon" />
-                    </a>
-                    <a href="{{ site.github_url }}" target="_blank">
-                        <img src="{{ site.url }}/assets/img/icons/github-icon.png" />
-                    </a>
-                </div>
+                <table class="mx-auto">
+                    <tr>
+                        <td class="icon-cell">
+                            <a href="{{ site.linkedin_url }}" target="_blank">
+                                <img src="{{ site.url }}/assets/img/icons/linkedin-icon.png" class="icon-link" id="linkedin-icon" />
+                            </a>
+                        </td>
+                        <td class="icon-cell">
+                            <a href="{{ site.github_url }}" target="_blank">
+                                <img src="{{ site.url }}/assets/img/icons/github-icon.png" class="icon-link"/>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>

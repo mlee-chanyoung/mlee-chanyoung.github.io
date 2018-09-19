@@ -1,10 +1,34 @@
 // For header and footer.
 
-@import 'variables';
+@import 'globals';
+
+$content-spacer: 50px;
+
+$top-padding-mobile: 75px;
+$top-padding: 150px;
+
+$footer-padding: 10px;
+
+$icon-size: 32px;
+$icon-buffer: 25px;
+$icon-growth: 2px;
+$icon-offset: $icon-size / 2 * -1;
+
+#first-row {
+    padding-top: $top-padding-mobile;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #first-row {
+        padding-top: $top-padding;
+    }
+}
 
 #nav-row {
     border-top: $divider;
     border-bottom: $divider;
+    margin-bottom: $content-spacer;
 }
 
 nav {
@@ -15,21 +39,16 @@ nav {
 
 #final-row {
     border-top: $divider;
+    margin-top: $content-spacer;
+    padding-top: $footer-padding;
+    padding-bottom: $footer-padding;
 }
 
-#footer-icons {
-    padding-top: 15px;
-    padding-bottom: 30px;
-
-    a {
-        display: inline-block;
-    }
-    a:first-child {
-        margin-right: 10px;
-    }
+.icon-cell {
+    padding: 10px;
 }
 
-#linkedin-icon {
-    height: 32px;
-    width: auto;
+.icon-link {
+    width: $icon-size;
+    height: auto;
 }

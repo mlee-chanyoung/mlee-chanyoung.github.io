@@ -15,14 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: Michael C. Lee Portfolio
 email: mclee3360@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+phone: +1 (678) 490-5258
+description: A portfolio to showcase the professional and personal design projects worked on by Michael Lee.
 url: "https://mclee3360.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  mclee3360
 linkedin_url: https://www.linkedin.com/in/michaelchanlee/
 github_url: https://github.com/mclee3360/
 
