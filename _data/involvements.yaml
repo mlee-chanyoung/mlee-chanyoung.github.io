@@ -1,0 +1,30 @@
+ - title: 'Coordinator'
+   place: 'MAL Rewrite'
+   date: 'September 2015 to Present'
+   description: |
+       MAL Rewrite is a volunteer organization for the site <a href="https://myanimelist.net/" target="_blank">MyAnimeList</a>, the world's largest database for its related media. The organization's main purpose is to provide original, descriptive synopses for the entries on the site, replacing the ones that were taken from outside sources.<br>
+       <br>
+       I originally joined the organization as a writer, then I eventually moved up to the role of editor and then coordinator. As coordinator, I help lead the organization, and my role mainly focuses on behind-the-scenes tasks to help the orgnization run smoothly.
+   tasks: |
+       <li>Developing Google scripts to help automate the administrative processes that take place in Google Drive, such as organizing documents or populating spreadsheets.</li>
+       <li>Assessing applications for prospective editors and writers.</li>
+       <li>Reviewing synopses for style consistency and grammatical accuracy before final upload.</li>
+       <li>Managing the community of writers and editors in the organization.</li>
+
+ - title: 'Trumpet Player'
+   place: 'Georgia Tech Symphony Orchestra'
+   date: 'August 2015 to Present'
+   description: |
+       Having played the trumpet since junior high, I continued to play during my time in college through the symphony orchestra to take a break from the grind.
+   tasks: ''
+
+ - title: 'Research Assistant'
+   place: 'Seoul National University'
+   date: 'May 2016 to July 2016'
+   description: |
+       At Seoul National University, I worked as a research assistant under a PhD student in a solid-state physics lab run by Dr. Kee Hoon Kim. Though outside of my area of study, this work provided me an opportunity to explore a different field and the kinds of research that was being done. I also gained ample experience writing up reports, as well as going through scientific papers in order to better understand the context of our research.
+   tasks: |
+       <li>Conducting a variety of assigned experiments, such as testing spectroscopy lenses or growing crystals.</li>
+       <li>Designing and conducting an experiment, which sought to find ways to reduce the effect of local heating by the laser on the sample during spectroscopy.</li>
+       <li>Analyzing collected data and writing weekly reports detailing the results, including one final report that covered the entirety of my work over the summer.</li>
+       <li>Reading through scientific papers to understand the context of the lab's research.</li>
