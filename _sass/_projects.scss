@@ -1,0 +1,58 @@
+// For portfolio pages.
+
+@import 'globals';
+
+.thumb-section {
+    margin-bottom: 50px;
+}
+
+.thumb-column:hover {
+    text-decoration: underline;
+}
+
+.thumbnail {
+    width: 100%;
+    margin: auto;
+}
+
+.caption {
+    text-align: center;
+}
+
+.top-project-nav {
+    margin-bottom: $standard-spacing;
+}
+
+.left-project-title {
+    text-align: left;
+}
+
+.right-project-title {
+    text-align: right;
+}
+
+.image-col {
+    padding: 0px;
+}
+
+.title_img {
+    margin-bottom: $standard-spacing * 2;
+    width: 100%;
+}
+
+.title-row {
+    margin-bottom: $standard-spacing;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.bot-project-nav {
+    margin-top: $standard-spacing * 2;
+    margin-bottom: $standard-spacing * -1;
+}
+
+.project-nav-row {
+    margin-bottom: $standard-spacing;
+}

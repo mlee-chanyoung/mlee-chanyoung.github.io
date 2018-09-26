@@ -1,0 +1,15 @@
+---
+layout: base
+permalink: project4
+title: portfolio
+---
+{%
+    include project.html
+    project_name=site.data.project_names.project4.name
+    left_name=site.data.project_names.project3.name
+    left_url='/project3'
+    right_name=site.data.project_names.project5.name
+    right_url='/project5'
+    img_url=site.data.project_names.project4.img
+    content=site.data.projects.project4.description
+%}

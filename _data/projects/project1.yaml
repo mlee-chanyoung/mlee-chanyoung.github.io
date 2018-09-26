@@ -1,0 +1,11 @@
+description: |
+    <div class="row">
+        <h2 class="text-color">Why?</h2>
+    </div>
+    <div class="row">
+        <p>
+        "To maintain and improve the systems and services that the IT department relies on" is the goal of the Common Platforms team at Chick-fil-A, the team I worked with during my internship and my clients for this project. A major part of their jobs are to monitor the numerous applications and servers that fall under their domain, troubleshooting any issues that arise. However, despite the department already using a monitoring application to watch the status of all their applications, it takes more time than it should for my team to identify the services that fall under their admnistration from the long list that the monitoring app watches. Moreover, this doesn't help much with identifying the root cause of the issues; as errors from one app could actually be the source of those in another.<br>
+        <br>
+        In order to simplify this task, 
+        </p>
+    </div>
