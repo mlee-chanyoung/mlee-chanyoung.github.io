@@ -1,4 +1,4 @@
-// Contains all global variables
+// Contains all global variables and styles
 
 // Margins:
 $text-margin: 125px;
@@ -7,8 +7,12 @@ $standard-spacing: 15px;
 
 // Colors
 $text-color: #232323;
-// $text-color: white;
 $bg-color: #EFEFEF;
+$tint-color: rgba(100, 100, 100, 0.2);
 
 // Borders
 $divider: 1px solid $text-color;
+
+.paragraph {
+    margin-bottom: $standard-spacing;
+}
