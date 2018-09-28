@@ -4,15 +4,15 @@ project1:
     img: '/assets/img/projects/monita/main_screen.png'
 project2:
     name: "HealthPort"
-    thumb:
+    thumb: '/assets/img/thumbs/healthport.png'
     img:
 project3:
     name: "Shadow a Student"
-    thumb:
+    thumb: '/assets/img/thumbs/shadow.png'
     img:
 project4:
     name: "Portfolio Website"
-    thumb:
+    thumb: '/assets/img/thumbs/portfolio.png'
     img:
 project5:
     name: ""
@@ -29,4 +29,4 @@ project7:
 project8:
     name: ""
     thumb:
-    img: 
+    img:
