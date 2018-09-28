@@ -13,6 +13,7 @@
 .thumbnail {
     width: 100%;
     margin: auto;
+    vertical-align: center;
 }
 
 .caption {
@@ -55,4 +56,14 @@
 
 .project-nav-row {
     margin-bottom: $standard-spacing;
+}
+
+.image-div {
+    text-align: center;
+    margin-bottom: $standard-spacing * 2;
+}
+
+.image {
+    width: 100%;
+    height: auto;
 }
