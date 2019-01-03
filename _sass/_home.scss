@@ -1,0 +1,32 @@
+@import 'globals';
+
+$header-pad: 1.875rem;
+
+.header-row {
+    padding-top: $header-pad;
+    padding-bottom: $header-pad;
+}
+
+#headshot {
+    width: 16rem;
+    height: 16rem;
+}
+
+#title-div {
+    display: flex;
+    align-items: center;
+    padding-left: $header-pad * 1.5;
+}
+
+#home-subtitle {
+    font-size: 1.875rem;
+    font-style: italic;
+}
+
+#why-quote {
+    font-size: 1.875rem;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    color: $highlight-color;
+    text-align: center;
+}

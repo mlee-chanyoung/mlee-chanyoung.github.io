@@ -1,7 +1,71 @@
 ---
 layout: base
+title: portfolio
 ---
-<div class="row text">
-    <div class="col">
+<!-- Header -->
+<div class="row header-row">
+    <div class="col"></div>
+    <div class="col-6 content-col">
+        <div class="row">
+            <img id="headshot" src="/assets/img/headshot.png"/>
+            <div class="col" id="title-div">
+                <span class="align-middle">
+                    <h1 class="section-title">Michael C. Lee</h1>
+                    <h3 id="home-subtitle">{{ site.data.aboutme.subtitle }}</h3>
+                </span>
+            </div>
+        </div>
     </div>
+    <div class="col"></div>
+</div>
+<!-- Why Design section -->
+<div class="row content-row offset-row">
+    <div class="col"></div>
+    <div class="col-6 content-col">
+        <div class="row subsection-row">
+            <div class="col">
+                <p id="why-quote">
+                    {{ site.data.aboutme.why.quote }}
+                </p>
+            </div>
+        </div>
+        <div class="row title-row">
+            <div class="col">
+                <h1 class="section-title">{{ site.data.nav_options.why }}</h1>
+            </div>
+        </div>
+        <div class="row subsection-row">
+            <div class="col">
+                <p>
+                    {{ site.data.aboutme.why.body }}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col centered-col">
+                <a href="#" class="button">
+                    <span>
+                        {{ site.data.nav_options.about_link }}
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+<!-- Links to Projects Section -->
+<div class="row content-row">
+    <div class="col"></div>
+    <div class="col-6 content-col">
+        Hello World
+    </div>
+    <div class="col"></div>
+</div>
+<!-- Contacts section -->
+<div class="row footer-row offset-row">
+    <div class="col"></div>
+    <div class="col-6 content-col">
+        Hello World
+    </div>
+    <div class="col"></div>
 </div>

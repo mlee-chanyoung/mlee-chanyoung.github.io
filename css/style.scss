@@ -1,15 +1,91 @@
 ---
 ---
+$base-size: 16px;
+html {
+    font-size: $base-size;
+}
 
 @import 'globals';
-@import 'navbar';
 
 body {
     font-family: "Raleway";
-    font-color: $primary-color;
-    font-size: 20px;
+    color: $primary-color;
+    font-size: 1.25rem;
     background-color: $bg-color;
+    background-image: url(/assets/img/bg_tile.png);
+    background-repeat: repeat;
+}
+
+.container-fluid {
+    padding-top: 2.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+.col {
+    padding: 0px;
+}
+
+.content-row {
+    padding-top: $row-top-pad;
+    padding-bottom: $row-bot-pad;
+}
+
+.content-col {
+    padding-left: $col-side-pad;
+    padding-right: $col-side-pad;
+}
+
+.offset-row {
+    background-color: $bg-color;
+}
+
+.subsection-row {
+    padding-bottom: $subrow-bot-pad;
+}
+
+.title-row {
+    padding-bottom: $title-bot-pad;
+    text-align: center;
+}
+
+.footer-row {
+    padding-top: $row-top-pad;
+    padding-bottom: $footer-bot-pad;
+}
+
+.section-title {
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.centered-col {
+    text-align: center;
+}
+
+.button {
+    padding: 0.4rem 0.7rem;
+    color: $link-color;
+    border: 2px solid $link-color;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    color: $bg-color;
+    background-color: $link-color;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
 }
+
+@import 'navbar';
+@import 'home';

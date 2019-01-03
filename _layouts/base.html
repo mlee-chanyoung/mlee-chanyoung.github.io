@@ -15,8 +15,8 @@
                             About
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item border-item" href="#">Why Design?</a>
-                            <a class="dropdown-item" href="#">About Me</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.why }}</a>
+                            <a class="dropdown-item" href="#">{{ site.data.nav_options.about }}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -24,17 +24,17 @@
                             Work
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item border-item" href="#">{{ site.data.project_names.project1.name }}</a>
-                            <a class="dropdown-item border-item" href="#">{{ site.data.project_names.project2.name }}</a>
-                            <a class="dropdown-item border-item" href="#">{{ site.data.project_names.project3.name }}</a>
-                            <a class="dropdown-item" href="#">{{ site.data.project_names.project4.name }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.project1 }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.project2 }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.project3 }}</a>
+                            <a class="dropdown-item" href="#">{{ site.data.nav_options.project4 }}</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             <!-- Main content -->
             {{ content }}
         </div>
