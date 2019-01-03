@@ -1,0 +1,43 @@
+@import 'globals';
+
+.navbar-custom {
+    background-color: $primary-color;
+    padding: 0px;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .nav-item {
+    padding: 5px 20px 5px 20px;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: $secondary-color;
+    font-family: "Raleway";
+    font-weight: bold;
+    padding: 0px;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .active,
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: $link-color;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
+    margin: -1px 0px 0px 0px;
+    padding: 0px;
+    border-color: $primary-color;
+    border-radius: 0px;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .dropdown .dropdown-menu .border-item {
+    border-bottom: 1px solid $primary-color;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.4rem 1.5rem;
+    color: $primary-color;
+    font-family: "Raleway";
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: $secondary-hover;
+}

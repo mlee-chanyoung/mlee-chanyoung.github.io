@@ -1,32 +1,12 @@
 project1:
     name: "Monita"
     thumb: '/assets/img/thumbs/monita.png'
-    img: '/assets/img/projects/monita/main_screen.png'
 project2:
     name: "HealthPort"
     thumb: '/assets/img/thumbs/healthport.png'
-    img:
 project3:
-    name: "Shadow a Student"
+    name: "Revenge of the Kupa"
     thumb: '/assets/img/thumbs/shadow.png'
-    img:
 project4:
     name: "Portfolio Website"
     thumb: '/assets/img/thumbs/portfolio.png'
-    img:
-project5:
-    name: ""
-    thumb:
-    img:
-project6:
-    name: ""
-    thumb:
-    img:
-project7:
-    name: ""
-    thumb:
-    img:
-project8:
-    name: ""
-    thumb:
-    img:

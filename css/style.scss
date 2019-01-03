@@ -2,36 +2,14 @@
 ---
 
 @import 'globals';
-@import 'headfoot';
-@import 'projects';
-@import 'about';
+@import 'navbar';
 
 body {
+    font-family: "Raleway";
+    font-color: $primary-color;
+    font-size: 20px;
     background-color: $bg-color;
-}
-
-.container {
-    background-color: $bg-color;
-}
-
-.text {
-    padding-left: $mobile-text-margin;
-    padding-right: $mobile-text-margin;
-    text-align: left;
-}
-
-.text-color {
-    color: $text-color;
 }
 
 @media only screen and (min-width: 768px) {
-    .text {
-        padding-left: $text-margin;
-        padding-right: $text-margin;
-    }
-}
-
-.emphasize {
-    font-weight: bold;
-    font-size: 18px;
 }

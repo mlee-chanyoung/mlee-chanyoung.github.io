@@ -2,40 +2,41 @@
 <html lang="en" id="html">
     {% include head.html %}
     <body>
+        <!-- Navigation row -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item border-item" href="#">Why Design?</a>
+                            <a class="dropdown-item" href="#">About Me</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Work
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item border-item" href="#">{{ site.data.project_names.project1.name }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.project_names.project2.name }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.project_names.project3.name }}</a>
+                            <a class="dropdown-item" href="#">{{ site.data.project_names.project4.name }}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="container">
-            <!-- Title row -->
-            <div class="row" id="first-row">
-                <h1 class="mx-auto text-color">Michael C. Lee</h1>
-            </div>
-            <!-- Navigation row -->
-            <div class="row" id="nav-row">
-                <nav class="navbar navbar-expand-lg navbar-light mx-auto">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link {% if page.title == 'portfolio' %}active{% endif %}" href="{{ site.url }}">Portfolio</a>
-                        <a class="nav-item nav-link {% if page.title == 'experience' %}active{% endif %}" href="{{ site.url }}/experience">Experience</a>
-                        <a class="nav-item nav-link {% if page.title == 'about' %}active{% endif %}" href="{{ site.url }}/about">About</a>
-                    </div>
-                </nav>
-            </div>
             <!-- Main content -->
             {{ content }}
-            <!-- Footer row -->
-            <div class="row" id="final-row">
-                <table class="mx-auto">
-                    <tr>
-                        <td class="icon-cell">
-                            <a href="{{ site.linkedin_url }}" target="_blank">
-                                <img src="{{ site.url }}/assets/img/icons/linkedin-icon.png" class="icon-link" id="linkedin-icon" />
-                            </a>
-                        </td>
-                        <td class="icon-cell">
-                            <a href="{{ site.github_url }}" target="_blank">
-                                <img src="{{ site.url }}/assets/img/icons/github-icon.png" class="icon-link"/>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
         </div>
     </body>
 </html>

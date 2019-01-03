@@ -1,22 +1,39 @@
 // Contains all global variables and styles
 
 // Margins:
-$text-margin: 125px;
-$mobile-text-margin: 25px;
-$standard-spacing: 15px;
+
 
 // Colors
-$text-color: #232323;
-$bg-color: #EFEFEF;
+$primary-color: #606167;
+$secondary-color: #FFFFFF;
+$secondary-hover: #E5E5E5;
+$bg-color: #FFFFFF;
+$link-color: #EF6A6A;
+$highlight-color: #8DAFC3;
+
 $tint-color: rgba(100, 100, 100, 0.2);
 
-// Borders
-$divider: 1px solid $text-color;
-
-.header {
-    margin-bottom: $standard-spacing;
+// Fonts
+@font-face {
+    font-family: "Raleway";
+    src: url(/assets/fonts/raleway.ttf);
 }
-
-.paragraph {
-    margin-bottom: $standard-spacing;
+@font-face {
+    font-family: "Raleway";
+    src: url(/assets/fonts/raleway_bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(/assets/fonts/raleway_italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(/assets/fonts/robotoslab.ttf);
+}
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(/assets/fonts/robotoslab_bold.ttf);
+    font-weight: bold;
 }
