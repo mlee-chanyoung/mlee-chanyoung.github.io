@@ -45,18 +45,13 @@ body {
     background-color: $bg-color;
 }
 
-.subsection-row {
-    padding-bottom: $subrow-bot-pad;
-}
-
 .title-row {
     padding-bottom: $title-bot-pad;
     text-align: center;
 }
 
-.footer-row {
-    padding-top: $row-top-pad;
-    padding-bottom: $footer-bot-pad;
+.subsection-row {
+    padding-bottom: $subrow-bot-pad;
 }
 
 .section-title {
@@ -65,8 +60,30 @@ body {
     font-size: 3rem;
 }
 
+.subsection-title {
+    font-family: "Roboto Slab";
+    font-size: 2.25rem;
+}
+
+.thumbnail {
+    width: auto;
+    height: 100%;
+}
+
+.thumb-left-col {
+    padding-left: $thumb-padding-horz;
+}
+
+.thumb-right-col {
+    padding-right: $thumb-padding-horz;
+}
+
 .centered-col {
     text-align: center;
+}
+
+.right-col {
+    text-align: right;
 }
 
 .button {
@@ -84,8 +101,19 @@ body {
     text-decoration: none;
 }
 
+.link {
+    color: $link-color;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: $link-color;
+    text-shadow: 1px 1px $primary-color;
+}
+
 @media only screen and (min-width: 768px) {
 }
 
 @import 'navbar';
 @import 'home';
+@import 'footer';

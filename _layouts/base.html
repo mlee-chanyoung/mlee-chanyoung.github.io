@@ -9,14 +9,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ site.url }}">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             About
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.why }}</a>
-                            <a class="dropdown-item" href="#">{{ site.data.nav_options.about }}</a>
+                            <a class="dropdown-item border-item" href="{{ site.url }}/#why">{{ site.data.aboutme.why.title }}</a>
+                            <a class="dropdown-item" href="#">{{ site.data.aboutme.about_title }}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -24,13 +24,13 @@
                             Work
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.project1 }}</a>
-                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.project2 }}</a>
-                            <a class="dropdown-item border-item" href="#">{{ site.data.nav_options.project3 }}</a>
-                            <a class="dropdown-item" href="#">{{ site.data.nav_options.project4 }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.projects.project1.title }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.projects.project2.title  }}</a>
+                            <a class="dropdown-item border-item" href="#">{{ site.data.projects.project3.title  }}</a>
+                            <a class="dropdown-item" href="#">{{ site.data.projects.project4.title  }}</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ site.url }}/#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>

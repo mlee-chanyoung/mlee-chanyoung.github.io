@@ -18,8 +18,8 @@ email: mclee3360@gmail.com
 phone: +1 (678) 490-5258
 description: A portfolio to showcase the professional and personal design projects worked on by Michael Lee.
 url: "https://mclee3360.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_url: https://www.linkedin.com/in/michaelchanlee/
-github_url: https://github.com/mclee3360/
+linkedin: michaelchanlee
+github: mclee3360
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
