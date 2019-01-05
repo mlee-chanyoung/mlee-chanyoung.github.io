@@ -1,69 +1,145 @@
-{% assign project_name = include.project_name %}
-{% assign left_name = include.left_name %}
-{% assign left_len = left_name | size %}
-{% assign left_url = site.url | append: include.left_url %}
-{% assign right_name = include.right_name %}
-{% assign right_len = right_name | size %}
-{% assign right_url = site.url | append: include.right_url %}
-{% assign img_url = site.url | append: include.img_url %}
-{% assign content = include.content %}
-<!-- Top navigator -->
-<div class="row top-project-nav">
-    <div class="col">
-        {% if left_len > 0 %}
-        <a href="{{ left_url }}">
-            <h6 class="text-color left-project-title">< {{ left_name }}</h6>
-        </a>
-        {% endif %}
-    </div>
-    <div class="col">
-        {% if right_len > 0 %}
-        <a href="{{ right_url }}">
-            <h6 class="text-color right-project-title">{{ right_name }} ></h6>
-        </a>
-        {% endif %}
+{% assign project = include.project %}
+<!-- Header -->
+<div id="top"></div>
+<div class="row header-row" style="background-image:url({{project.banner}})">
+    <div class="header-tint">
+        <div class="col header-col">
+            <h1 class="header-title">{{project.title}}</h1>
+            <h3 class="header-subtitle">{{project.subtitle}}</h3>
+        </div>
     </div>
 </div>
-<div class="row">
-    <div class="col image-col">
-        <img src="{{ img_url }}" class="title_img">
-    </div>
-</div>
-<div class="row title-row">
-    <div class="col project-title">
-        <h1 class="text-color">{{ project_name }}</h1>
-    </div>
-</div>
-<!-- Main content -->
-<div class="row text">
-    <div class="col">
-        {{ content }}
-    </div>
-</div>
-<!-- Bottom Project navigator -->
-<div class="row bot-project-nav">
-    <div class="col">
-        <div class="row project-nav-row">
-            {% if left_len > 0 %}
+<!-- Overview section -->
+<div class="row content-row">
+    <div class="col content-col">
+        <div class="row title-row">
             <div class="col">
-                <a href="{{ left_url }}">
-                    <h6 class="text-color left-project-title">< {{ left_name }}</h6>
-                </a>
+                <h1 class="section-title">{{ site.data.projects.general.overview_title }}</h1>
             </div>
-            {% endif %}
+        </div>
+        <div class="row project-overview-row">
+            <div class="col thumb-right-col">
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.problem_title }}</h2>
+                        <div class="left-col">
+                            <p class="project-text">{{ project.problem.overview }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row button-row">
+                    <div class="col">
+                        <a href="#problem" class="button">
+                            <span>
+                                {{ site.data.projects.general.link_title }}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.solution_title }}</h2>
+                        <div class="left-col">
+                            <p class="project-text">{{ project.solution.overview }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row button-row">
+                    <div class="col">
+                        <a href="#solution" class="button">
+                            <span>
+                                {{ site.data.projects.general.link_title }}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.roles_title }}</h2>
+                        <div class="left-col">
+                            <p class="project-text">{{ project.roles }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.tools_title }}</h2>
+                        <div class="left-col">
+                            <p class="project-text">{{ project.tools }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail-div" id="overview-thumbnail">
+                <img class="thumbnail" src="{{ project.thumbnail }}">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Problem section -->
+<div class="row offset-row content-row" id="problem">
+    <div class="col content-col">
+        <div class="row title-row">
             <div class="col">
-                {% if right_len > 0 %}
-                <a href="{{ right_url }}">
-                    <h6 class="text-color right-project-title">{{ right_name }} ></h6>
-                </a>
-                {% endif %}
+                <h1 class="section-title">{{ site.data.projects.general.problem_title }}</h1>
+            </div>
+        </div>
+        {%
+            include project_subsection.html
+            sections=project.problem.sections
+        %}
+    </div>
+</div>
+<!-- Solution section -->
+<div class="row content-row" id="solution">
+    <div class="col content-col">
+        <div class="row title-row">
+            <div class="col">
+                <h1 class="section-title">{{ site.data.projects.general.solution_title }}</h1>
+            </div>
+        </div>
+        {% for section in project.solution.sections %}
+        <div class="row subsection-title-row">
+            <div class="col">
+                <h2 class="subsection-title">{{ section.title }}</h2>
+            </div>
+        </div>
+        {%
+            include project_subsection.html
+            sections=section.subsections
+        %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Final Thoughts section -->
+<div class="row offset-row content-row">
+    <div class="col content-col">
+        <div class="row title-row">
+            <div class="col">
+                <h1 class="section-title">{{ site.data.projects.general.final_title }}</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col project-title">
-                <a href="{{ site.url }}">
-                    <h6 class="text-color">Return to Home</h6>
-                </a>
+            <div class="col left-col">
+                <p>
+                    {{ project.final_thoughts }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contacts section -->
+<div class="row footer-row" id="contact">
+    <div class="col content-col">
+        {% include contact.html %}
+        <div class="row">
+            <div class="col centered-col">
+                <a class="link" href="#top">{{ site.data.footer.top_link }}</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col centered-col">
+                <a class="link" href="{{ site.url }}">{{ site.data.footer.home_link }}</a>
             </div>
         </div>
     </div>

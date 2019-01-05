@@ -1,0 +1,66 @@
+{% assign to_write = include.sections %}
+
+{% for section in to_write %}
+    <div class="row subsection-row">
+        <div class="col left-col">
+            <p>
+                {{ section.text }}
+            </p>
+        </div>
+    </div>
+    {% if section.images %}
+        {% assign num_images = section.images | size %}
+        {% assign leftover = num_images | modulo: 2 %}
+        {% assign num_rows = num_images | divided_by: 2 | plus: leftover %}
+        {% assign img_index = 0 %}
+        {% for row in (1..num_rows) %}
+        <div class="row subsection-row">
+            {% assign images_left = num_images | minus: img_index %}
+            {% assign index_mod = img_index | modulo: 2 %}
+            {% if images_left == 1 and index_mod == 0 %}
+            <!-- Single image row, last image remaining -->
+            <div class="col">
+                <div class="row project-image-row">
+                    <div class="col centered-col">
+                        <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col centered-col">
+                        <p class="image-caption">{{section.images[img_index].caption}}</p>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <!-- Two image row, every other image -->
+            <div class="col-lg-6 image-pair-col">
+                <div class="row project-image-row">
+                    <div class="col centered-col">
+                        <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col centered-col">
+                        <p class="image-caption">{{section.images[img_index].caption}}</p>
+                    </div>
+                </div>
+            </div>
+            {% assign img_index = img_index | plus: 1 %}
+            <div class="col-lg-6">
+                <div class="row project-image-row">
+                    <div class="col centered-col">
+                        <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col centered-col">
+                        <p class="image-caption">{{section.images[img_index].caption}}</p>
+                    </div>
+                </div>
+            </div>
+            {% assign img_index = img_index | plus: 1 %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endfor %}

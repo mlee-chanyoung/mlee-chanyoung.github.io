@@ -1,0 +1,26 @@
+@import 'globals';
+
+.project-text {
+    margin-bottom: 0px;
+}
+
+.project-image-row {
+    margin-bottom: $caption-bot-pad;
+}
+
+.project-image-pair {
+    width: 100%;
+    height: auto;
+}
+// Small devices (Portrait phones or less)
+@media (max-width: 767.98px) {
+    #overview-thumbnail {
+        margin: auto;
+    }
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .image-pair-col {
+        padding-bottom: $title-bot-pad;
+    }
+}

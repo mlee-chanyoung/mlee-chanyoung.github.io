@@ -86,12 +86,20 @@ body {
     padding-right: $thumb-padding-horz;
 }
 
+.left-col {
+    text-align: left;
+}
+
 .centered-col {
     text-align: center;
 }
 
 .right-col {
     text-align: right;
+}
+
+.button-row {
+    margin-bottom: $subrow-bot-pad;
 }
 
 .button {
@@ -150,6 +158,12 @@ body {
     font-family: "Roboto Slab";
 }
 
+.image-caption {
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     .content-col {
@@ -187,4 +201,5 @@ body {
 @import 'navbar';
 @import 'home';
 @import 'about';
+@import 'project';
 @import 'footer';
