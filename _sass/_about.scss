@@ -1,17 +1,21 @@
 @import 'globals';
 
-$headshot-size: 250px;
-
-#headshot-row {
-    text-align: center;
-    margin-bottom: $standard-spacing * 2;
+#header-bg {
+    background-image: url(/assets/img/headers/about_header.png);
+    background-position: center;
+    background-repeat: none;
+    background-size:cover;
 }
 
-.headshot {
-    width: $headshot-size;
-    height: $headshot-size;
+.about-thumbnail-div {
+    height: 9.375rem;
+    width: auto;
 }
 
-.caption {
-    margin-top: 5px;
+// Small devices (Portrait phones or less)
+@media (max-width: 767.98px) {
+    .about-thumbnail-div {
+        width: 100%;
+        text-align: center;
+    }
 }

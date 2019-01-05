@@ -76,7 +76,6 @@ body {
 .thumbnail {
     width: auto;
     height: 100%;
-    margin: auto;
 }
 
 .thumb-left-col {
@@ -120,6 +119,37 @@ body {
     text-shadow: 1px 1px $primary-color;
 }
 
+.header-row {
+    height: $header-height;
+}
+
+.header-tint {
+    width: 100%;
+    background-color: $header-tint-color;
+    display: flex;
+    align-items: center;
+}
+
+.header-col {
+    text-align: center;
+    padding-left: $row-margin-side-tablet;
+    padding-right: $row-margin-side-tablet;
+}
+
+.header-title {
+    color: $bg-color;
+    font-size: 4.5rem;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    margin-bottom: $title-bot-pad;
+}
+
+.header-subtitle {
+    color: $bg-color;
+    font-size: 2.25rem;
+    font-family: "Roboto Slab";
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     .content-col {
@@ -132,6 +162,9 @@ body {
 @media (max-width: 767.98px) {
     body {
         text-align: center;
+    }
+    li {
+        text-align: left;
     }
     .content-col {
         margin-left: $row-margin-side-mobile;
@@ -153,4 +186,5 @@ body {
 
 @import 'navbar';
 @import 'home';
+@import 'about';
 @import 'footer';

@@ -13,3 +13,48 @@ why:
         Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy. Name were we at hope. Remainder household direction zealously the unwilling bed sex. Lose and gay ham sake met that. Stood her place one ten spoke yet. Head case knew ever set why over. Marianne returned of peculiar replying in moderate. Roused get enable garret estate old county. Entreaties you devonshire law dissimilar terminated.<br>
         <br>
         Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in. Hold rich on an he oh fine. Chapter ability shyness article welcome be do on service.
+education:
+    title: "Education"
+    thumbnail: "/assets/img/about/education_thumbnail.png"
+    school: "Georgia Institute of Technology"
+    time: "August 2015 - May 2019"
+    major: "Bachelor of Science in Computer Science, concentrations in People and Media"
+skills:
+    title: "Skills and Tools"
+    skills:
+        - title: Experience with Tools
+          thumbnail: "/assets/img/about/tool_thumbnail.png"
+          items:
+              - Adobe Photoshop
+              - Balsamiq Mockups
+              - InVision
+              - Unity
+              - Amazon Web Services
+        - title: Programming Experience
+          thumbnail: "/assets/img/about/programming_thumbnail.png"
+          items:
+              - Python
+              - Java
+              - HTML / Jinja2 / Jekyll
+              - CSS / SCSS
+              - Javascript / jQuery
+              - C#
+        - title: Spoken Languages
+          thumbnail: "/assets/img/about/language_thumbnail.png"
+          items:
+              - "English: Native"
+              - "Korean: Intermediate"
+              - "Japanese: Intermediate"
+        - title: Professional Writing Experience
+          thumbnail: "/assets/img/about/writing_thumbnail.png"
+          items:
+              - Editing others' writing
+              - Writing test cases
+              - Writing bug reports
+              - Writing synopses
+hobbies:
+    title: "Other Information"
+    subtitle: "In My Spare Time"
+    thumbnail: "/assets/img/about/hobby_thumbnail.png"
+    body: |
+        Write about hobbies and other fun facts in here. Keep it to a paragraph. Rest of this is filler text. Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered. Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet. General windows effects not are drawing man garrets. Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose.

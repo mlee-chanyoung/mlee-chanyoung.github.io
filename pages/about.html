@@ -4,3 +4,104 @@ permalink: about
 title: about
 ---
 <!-- Header -->
+<div id="top"></div>
+<div class="row header-row" id="header-bg">
+    <div class="header-tint">
+        <div class="col header-col">
+            <h1 class="header-title">Michael C. Lee</h1>
+            <h3 class="header-subtitle">{{ site.data.aboutme.subtitle }}</h3>
+        </div>
+    </div>
+</div>
+<!-- Education section -->
+<div class="row content-row offset-row" id="why">
+    <div class="col content-col">
+        <div class="row title-row">
+            <div class="col">
+                <h1 class="section-title">{{ site.data.aboutme.education.title }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-thumbnail-div">
+                <img class="thumbnail" src="{{ site.data.aboutme.education.thumbnail }}">
+            </div>
+            <div class="col thumb-left-col">
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.aboutme.education.school }}</h2>
+                        <h4 class="overview-project-subtitle">{{ site.data.aboutme.education.time }}</h4>
+                        <p>{{ site.data.aboutme.education.major }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Skills and Tools section -->
+<div class="row content-row" id="why">
+    <div class="col content-col">
+        <div class="row title-row">
+            <div class="col">
+                <h1 class="section-title">{{ site.data.aboutme.skills.title }}</h1>
+            </div>
+        </div>
+        {% for skill in site.data.aboutme.skills.skills %}
+        <div class="row">
+            <div class="about-thumbnail-div">
+                <img class="thumbnail" src="{{ skill.thumbnail }}">
+            </div>
+            <div class="col thumb-left-col">
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ skill.title }}</h2>
+                        <ul>
+                            {% for item in skill.items %}
+                            <li>{{ item }}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- Hobbies section -->
+<div class="row content-row offset-row" id="why">
+    <div class="col content-col">
+        <div class="row title-row">
+            <div class="col">
+                <h1 class="section-title">{{ site.data.aboutme.hobbies.title }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-thumbnail-div">
+                <img class="thumbnail" src="{{ site.data.aboutme.hobbies.thumbnail }}">
+            </div>
+            <div class="col thumb-left-col">
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.aboutme.hobbies.subtitle }}</h2>
+                        <p>{{ site.data.aboutme.hobbies.body }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contacts section -->
+<div class="row footer-row" id="contact">
+    <div class="col content-col">
+        {% include contact.html %}
+        <div class="row">
+            <div class="col centered-col">
+                <a class="link" href="#top">{{ site.data.footer.top_link }}</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col centered-col">
+                <a class="link" href="{{ site.url }}">{{ site.data.footer.home_link }}</a>
+            </div>
+        </div>
+    </div>
+</div>
