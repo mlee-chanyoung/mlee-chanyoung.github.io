@@ -37,6 +37,8 @@ body {
 }
 
 .content-col {
+    margin-left: $row-margin-side;
+    margin-right: $row-margin-side;
     padding-left: $col-side-pad;
     padding-right: $col-side-pad;
 }
@@ -65,9 +67,16 @@ body {
     font-size: 2.25rem;
 }
 
+.thumbnail-div {
+    width: 17rem;
+    height: 12rem;
+    text-align: center;
+}
+
 .thumbnail {
     width: auto;
     height: 100%;
+    margin: auto;
 }
 
 .thumb-left-col {
@@ -111,8 +120,36 @@ body {
     text-shadow: 1px 1px $primary-color;
 }
 
-@media only screen and (min-width: 768px) {
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .content-col {
+        margin-left: $row-margin-side-tablet;
+        margin-right: $row-margin-side-tablet;
+    }
 }
+
+// Small devices (Portrait phones or less)
+@media (max-width: 767.98px) {
+    body {
+        text-align: center;
+    }
+    .content-col {
+        margin-left: $row-margin-side-mobile;
+        margin-right: $row-margin-side-mobile;
+    }
+    .thumbnail {
+        margin: auto;
+    }
+    .thumb-left-col {
+        padding-left: 0px;
+        padding-top: $thumb-padding-horz;
+    }
+    .thumb-right-col {
+        padding-right: 0px;
+        padding-top: $thumb-padding-horz;
+    }
+}
+
 
 @import 'navbar';
 @import 'home';

@@ -3,10 +3,10 @@ layout: base
 title: portfolio
 ---
 <!-- Header -->
-<div class="row header-row" id="top">
-    <div class="col"></div>
-    <div class="col-6 content-col">
-        <div class="row">
+<div id="top"></div>
+<div class="row header-row">
+    <div class="col content-col">
+        <div class="row headshot-row">
             <img id="headshot" src="{{ site.data.aboutme.headshot }}"/>
             <div class="col" id="title-div">
                 <span class="align-middle">
@@ -16,12 +16,10 @@ title: portfolio
             </div>
         </div>
     </div>
-    <div class="col"></div>
 </div>
 <!-- Why UI/UX section -->
 <div class="row content-row offset-row" id="why">
-    <div class="col"></div>
-    <div class="col-6 content-col">
+    <div class="col content-col">
         <div class="row subsection-row">
             <div class="col">
                 <p id="why-quote">
@@ -51,19 +49,19 @@ title: portfolio
             </div>
         </div>
     </div>
-    <div class="col"></div>
 </div>
 <!-- Links to Projects Section -->
 <div class="row content-row">
-    <div class="col"></div>
-    <div class="col-6 content-col">
+    <div class="col content-col">
         <div class="row subsection-row title-row">
             <div class="col">
                 <h1 class="section-title">{{ site.data.projects.overview.title }}</h1>
             </div>
         </div>
         <div class="row subsection-row justify-content-center">
-            <img class="thumbnail" src="{{ site.data.projects.project1.thumbnail }}">
+            <div class="thumbnail-div">
+                <img class="thumbnail" src="{{ site.data.projects.project1.thumbnail }}">
+            </div>
             <div class="col thumb-left-col">
                 <div class="row overview-project-content-row">
                     <div class="col">
@@ -84,7 +82,9 @@ title: portfolio
             </div>
         </div>
         <div class="row subsection-row justify-content-center">
-            <img class="thumbnail" src="{{ site.data.projects.project2.thumbnail }}">
+            <div class="thumbnail-div">
+                <img class="thumbnail" src="{{ site.data.projects.project2.thumbnail }}">
+            </div>
             <div class="col thumb-left-col">
                 <div class="row overview-project-content-row">
                     <div class="col">
@@ -105,7 +105,9 @@ title: portfolio
             </div>
         </div>
         <div class="row subsection-row justify-content-center">
-            <img class="thumbnail" src="{{ site.data.projects.project3.thumbnail }}">
+            <div class="thumbnail-div">
+                <img class="thumbnail" src="{{ site.data.projects.project3.thumbnail }}">
+            </div>
             <div class="col thumb-left-col">
                 <div class="row overview-project-content-row">
                     <div class="col">
@@ -126,7 +128,9 @@ title: portfolio
             </div>
         </div>
         <div class="row subsection-row justify-content-center">
-            <img class="thumbnail" src="{{ site.data.projects.project4.thumbnail }}">
+            <div class="thumbnail-div">
+                <img class="thumbnail" src="{{ site.data.projects.project4.thumbnail }}">
+            </div>
             <div class="col thumb-left-col">
                 <div class="row overview-project-content-row">
                     <div class="col">
@@ -147,12 +151,10 @@ title: portfolio
             </div>
         </div>
     </div>
-    <div class="col"></div>
 </div>
 <!-- Contacts section -->
 <div class="row footer-row offset-row" id="contact">
-    <div class="col"></div>
-    <div class="col-6 content-col">
+    <div class="col content-col">
         {% include contact.html %}
         <div class="row">
             <div class="col centered-col">
@@ -160,5 +162,4 @@ title: portfolio
             </div>
         </div>
     </div>
-    <div class="col"></div>
 </div>
