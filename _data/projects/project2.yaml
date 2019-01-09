@@ -1,5 +1,5 @@
 title: "Ref-U-Store"
-subtitle: "Some kind of subtitle"
+subtitle: "Empowering refugees to manage personal documents"
 thumbnail: "/assets/img/projects/refustore/thumbnail.png"
 roles: "Developer and designer"
 overview: |
@@ -64,7 +64,7 @@ solution:
                       caption: Some caption for the image
               - text: |
                   More text describing the final design.
-tools: "List all the major tools used in the project in a comma list."
+tools: "Android Studio (Java), Fluid UI"
 final_thoughts: |
     In this section, discuss any final thoughts on the project. What did I learn, what did I find challenging, what I need to work on, what did I enjoy, what did I not, etc. Keep it to 2-3 paragraphs. The rest of this section is filler text.<br>
     <br>
