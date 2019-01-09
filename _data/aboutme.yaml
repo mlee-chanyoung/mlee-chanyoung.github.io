@@ -1,18 +1,18 @@
 url: "/about"
 headshot: /assets/img/headshot.png
-subtitle: Some Subtitle or Job Position
+subtitle: Aspiring UI/UX Designer or Researcher
 about_title: "About Me"
 about_link: "More About Me"
 why:
     title: "Why UI/UX?"
     quote: |
-        "A single sentence that summarizes my goal statement, used to headline the 'Why Design' section of my portfolio."
+        "Provide people an experience the complete opposite of this one: an experience that would raise them up, rather than break them down."
     body: |
-        In this section, explain what led me to be interested in design, as well as a bit of my background. The rest of this is just filler text. Over fact all son tell this any his. No insisted confined of weddings to returned to debating rendered. Keeps order fully so do party means young. Table nay him jokes quick. In felicity up to graceful mistaken horrible consider. Abode never think to at. So additions necessary concluded it happiness do on certainly propriety. On in green taken do offer witty of.<br>
+        As part of a work-study program in high school, I (unexpectedly) found myself sitting at a desk answering the phone in a call center for a certain delivery company. Unfortunately, it turned out to be a much greater ordeal than I ever expected. Every time I picked up the phone, I was met with exploding rage, which was occassionally traded in for overflowing despair instead. However, the worst part wasn't the callers' attitudes—no, it was the fact that I was helpless to make a difference in their experience.<br>
         <br>
-        Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy. Name were we at hope. Remainder household direction zealously the unwilling bed sex. Lose and gay ham sake met that. Stood her place one ten spoke yet. Head case knew ever set why over. Marianne returned of peculiar replying in moderate. Roused get enable garret estate old county. Entreaties you devonshire law dissimilar terminated.<br>
+        I didn't blame the customers for their distraught emotions, empathizing with their hardships. But in the end, that was all I could do; all I had to offer to my troubled customers during their time of distress was many apologies and the occasional gift card. With each heartbreaking phone call I answered, I started to form a clearer image of what I wanted to do with my future: provide people an experience the complete opposite of this one: an experience that would raise them up, rather than break them down.<br>
         <br>
-        Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in. Hold rich on an he oh fine. Chapter ability shyness article welcome be do on service.
+        With a goal in sight, I decided to utilize my proficiency in math to begin studying computer science in college, initially aiming to be involved with front-end development, where my work could directly interact with users. However, as I gained more experience, I realized my true passion lied in the user interface and user experience (UI/UX) instead. Rather than the actual implentation, I found I love generating ideas for how to create an intuitive design and trying to understand the user's perspective. Further, this field combines together the technical knowledge I cultivated through my computer science degree, my analytical method of thinking, as well as my more creative pursuits in areas like art, music, and writing. With these experiences in hand, I hope to enter the UI/UX field to provide users what I couldn't over the phone: an uplifting, enjoyable experience.
 education:
     title: "Education"
     thumbnail: "/assets/img/about/education_thumbnail.png"
@@ -28,6 +28,7 @@ skills:
               - Adobe Photoshop
               - Balsamiq Mockups
               - InVision
+              - Fluid UI
               - Unity
               - Amazon Web Services
         - title: Programming Experience
@@ -39,6 +40,7 @@ skills:
               - CSS / SCSS
               - Javascript / jQuery
               - C#
+              - C
         - title: Spoken Languages
           thumbnail: "/assets/img/about/language_thumbnail.png"
           items:
@@ -57,4 +59,6 @@ hobbies:
     subtitle: "In My Spare Time"
     thumbnail: "/assets/img/about/hobby_thumbnail.png"
     body: |
-        Write about hobbies and other fun facts in here. Keep it to a paragraph. Rest of this is filler text. Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered. Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet. General windows effects not are drawing man garrets. Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose.
+        Ever since I was a child, music has always been a large part of my life. I started learning the piano at a young age and eventually picked up the violin as well. Though I eventually switched from violin to trumpet, I continue to play both the piano and trumpet to this day.<br>
+        <br>
+        Besides music, I also enjoy trying to improve my skills in art and writing. For example, my interest in writing led me to become involved with MAL Rewrite, a volunteer organization on <a href="https://myanimelist.net">MyAnimeList</a> that is dedicated to writing original, high quality synopses for all the entries on the site, which I now help lead as a coordinator.

@@ -16,6 +16,14 @@ body {
     background-repeat: repeat;
 }
 
+a {
+    color: $link-color;
+}
+
+a:hover {
+    color: $link-color;
+}
+
 .container-fluid {
     padding-top: 2.5rem;
     padding-left: 0px;
