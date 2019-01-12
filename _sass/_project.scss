@@ -1,6 +1,7 @@
 @import 'globals';
 
-$single-image-pad: 10rem;
+$single-image-pad: 25%;
+$transition-time: 0.25s;
 
 .project-header {
     background-position: top;
@@ -25,6 +26,18 @@ $single-image-pad: 10rem;
     width: 100%;
     height: auto;
 }
+
+.project-image-pair:hover {
+    -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
+    filter: brightness(50%);
+    -webkit-transition: $transition-time -webkit-filter linear;
+    -moz-transition: $transition-time -moz-filter linear;
+    -moz-transition: $transition-time filter linear;
+    -ms-transition: $transition-time -ms-filter linear;
+    -o-transition: $transition-time -o-filter linear;
+    transition: $transition-time filter linear, $transition-time -webkit-filter linear;
+}
+
 // Small devices (Portrait phones or less)
 @media (max-width: 767.98px) {
     #overview-thumbnail {
@@ -40,5 +53,8 @@ $single-image-pad: 10rem;
     .single-image-col {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    .project-image-pair {
     }
 }

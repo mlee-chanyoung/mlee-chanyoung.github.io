@@ -21,8 +21,10 @@
             <!-- Single image row, last image remaining -->
             <div class="col single-image-col">
                 <div class="row project-image-row">
-                    <div class="col centered-col">
-                        <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>
+                    <div class="col centered-col tint-hover">
+                        <a href="{{section.images[img_index].url}}" data-lightbox="{{section.images[img_index].setname}}" data-title="{{section.images[img_index].caption}}" data-alt="{{section.images[img_index].caption}}">
+                            <img class="project-image-pair" src="{{section.images[img_index].url}}" alt="" />
+                        </a>
                     </div>
                 </div>
                 <div class="row">
@@ -35,8 +37,10 @@
             <!-- Two image row, every other image -->
             <div class="col-lg-6 image-pair-col">
                 <div class="row project-image-row">
-                    <div class="col centered-col">
-                        <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>
+                    <div class="col centered-col tint-hover">
+                        <a href="{{section.images[img_index].url}}" data-lightbox="{{section.images[img_index].setname}}" data-title="{{section.images[img_index].caption}}" data-alt="{{section.images[img_index].caption}}">
+                            <img class="project-image-pair" src="{{section.images[img_index].url}}" alt="" />
+                        </a>
                     </div>
                 </div>
                 <div class="row">
@@ -48,8 +52,10 @@
             {% assign img_index = img_index | plus: 1 %}
             <div class="col-lg-6">
                 <div class="row project-image-row">
-                    <div class="col centered-col">
-                        <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>
+                    <div class="col centered-col tint-hover">
+                        <a href="{{section.images[img_index].url}}" data-lightbox="{{section.images[img_index].setname}}" data-title="{{section.images[img_index].caption}}" data-alt="{{section.images[img_index].caption}}">
+                            <img class="project-image-pair" src="{{section.images[img_index].url}}" alt="" />
+                        </a>
                     </div>
                 </div>
                 <div class="row">

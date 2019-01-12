@@ -27,23 +27,31 @@ solution:
                 images:
                     - url: "/assets/img/projects/monita/sketch1.png"
                       caption: An initial sketch for the application's design.
+                      setname: init1
                     - url: "/assets/img/projects/monita/sketch2.png"
                       caption: An initial sketch for the application's design.
+                      setname: init1
                     - url: "/assets/img/projects/monita/sketch3.png"
                       caption: An initial sketch for the application's design.
+                      setname: init1
                     - url: "/assets/img/projects/monita/sketch4.png"
                       caption: An initial sketch for the application's design.
+                      setname: init1
                     - url: "/assets/img/projects/monita/sketch5.png"
                       caption: Sketch of the design the final product was based on.
+                      setname: init1
               - text: |
                   In this design, the focus is on being able to easily get a high-level overview of the entire system from a quick glance, including the statuses and dependencies. However, more in-depth information—like specific alerts that are active for an application—can be found through a modal window that appears by clicking on the icon in the flow chart or on the application's name in the listview on the side, a concept which was carried over from previous design ideas, as it allows for quick access to specific information about a  particular application. Further, most applications have some sort of hierarchical "family tree"; for instance, a certain application may have several servers that belong to it. This family tree needs to be able to be navigated as well so that the status of each indvidual piece could be viewed, further narrowing the source of any errors. The nested dropdowns in the sidebar provide navigation functionality, but I also made several attempts at designing how to do this directly in the modal window as well, which can be seen below. Ultimately, I opted to take a completely different approach to the family tree navigation than from what I had initially sketched after some discussions with my team later on in the process.
                 images:
                   - url: "/assets/img/projects/monita/sketch6.png"
                     caption: Concepts for navigating an application's family tree in the modal window.
+                    setname: init2
                   - url: "/assets/img/projects/monita/sketch7.png"
                     caption: Concepts for navigating an application's family tree in the modal window.
+                    setname: init2
                   - url: "/assets/img/projects/monita/sketch8.png"
                     caption: Concepts for navigating an application's family tree in the modal window.
+                    setname: init2
         - title: "Mockups"
           subsections:
               - text: |
@@ -51,18 +59,22 @@ solution:
                 images:
                     - url: "/assets/img/projects/monita/wireframe1.png"
                       caption: Mockup of the main screen of the application.
+                      setname: wire1
               - text: |
                   Two major changes were made in the mockups from the sketches. The first was the method for navigating the family tree in the modal window. In my sketches, most of my ideas were geared toward trying to have all of the application's family members visible immediately in the modal window, just so that it'd be easy to compare and pinpoint a source of an error, but I felt that it took up too much space and crowded the screen, so I opted for a different method. Instead, I felt that some kind of sub-menu would be appropriate for this task, as it would keep this information hidden until needed. For the mockup, a slideout menu from the side was used.
                 images:
                     - url: "/assets/img/projects/monita/wireframe2.png"
                       caption: Mockup of the modal window in the application.
+                      setname: wire2
                     - url: "/assets/img/projects/monita/wireframe3.png"
                       caption: Mockup of navigating the family tree in the modal window.
+                      setname: wire2
               - text: |
                   The second major change was the addition of an "alert archive", which showed all former error alerts for an application once they were no longer active. The need for such a feature was not brought up until after I began the mockup process, so I added it in here. Various filtering and sorting options can be applied to this data so that a specific error alert could be found if needed.
                 images:
                     - url: "/assets/img/projects/monita/wireframe4.png"
                       caption: Mockup of the alert archive for an application.
+                      setname: wire3
               - text: |
                   Once the mockups were finished, I presented my designs and the thought process behind them to the team. The design was overall well-received, and after receiving feedback for potential changes—such as adding a way to view these applications and servers in different development environments—I proceeded to begin developing the application I had designed.
         - title: "Development"
@@ -76,20 +88,25 @@ solution:
                 images:
                     - url: "/assets/img/projects/monita/main_screen.png"
                       caption: Screenshot of the main screen of Monita.
+                      setname: dev1
               - text: |
                   For the modal window, not too much changed from the original design. The table used to display the active error alerts ended up with a little more information and sorting functionality than originally designed, due in part from feedback and in part from the information able to be queried. Otherwise, the other major change was the sliding menu for navigating the application's family tree. Due to limitations from the library used for the modal window, a sliding menu was not possible, so I opted for a dropdown menu coming from the title instead. This also includes a link to the site where the error alert information is being queried from so that the user can get more in-depth information than is available from my application. However, because some groupings were artificially created to better match how the applications are organized in actuality, this link did not always exist.
                 images:
                     - url: "/assets/img/projects/monita/main_screen2.png"
                       caption: Screenshot of a node's modal window.
+                      setname: dev2
                     - url: "/assets/img/projects/monita/main_screen3.png"
                       caption: Screenshot of the family tree navigation dropdown.
+                      setname: dev2
               - text: |
                   As for the alert archive, the only major change made was the removal of filtering options. The main reason that this feature was originally requested was to be able to filter by a specific time frame. Unfortunately, it is not possible to query for error alerts during a specific time frame with the HTTP calls, so it would have had to be filtered out manually. However, this impacted the performance immensely, so it was ultimately decided that it was not worth including. Besides that, a loading animation was added to the table also, as the sheer amount of alerts in the database could sometimes cause the table to load a bit slowly.
                 images:
                     - url: "/assets/img/projects/monita/main_screen4.png"
                       caption: Screenshot of the alert archive loading animation.
+                      setname: dev3
                     - url: "/assets/img/projects/monita/main_screen5.png"
                       caption: Screenshot of the alert archive for a node.
+                      setname: dev3
               - text: |
                   I decided to name the dashboard "Monita", mostly just as a play on words to sound similar to "moniter", a word that encompassed its main goal. After development on Monita concluded, I presented the application in front of my team, and then later in front of the IT department to showcase what I had been working on over the summer. Afterwards, I handed off the project to my team to use, as well as expand upon. The internals of the application were designed so that additional nodes and development environments could be added with relative ease, allowing the team to expand the scope of the application as needed.
 tools: "Flask (Python), Jinja2 (HTML), Bootstrap 4 (CSS), Amazon Web Services (AWS) Elastic Beanstalk, Subversion (SVN)"
