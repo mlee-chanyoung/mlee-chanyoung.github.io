@@ -19,7 +19,7 @@
             {% assign index_mod = img_index | modulo: 2 %}
             {% if images_left == 1 and index_mod == 0 %}
             <!-- Single image row, last image remaining -->
-            <div class="col">
+            <div class="col single-image-col">
                 <div class="row project-image-row">
                     <div class="col centered-col">
                         <img class="project-image-pair" src="{{section.images[img_index].url}}"></img>

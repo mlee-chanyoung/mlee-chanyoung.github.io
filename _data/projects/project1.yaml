@@ -7,67 +7,97 @@ overview: |
 banner: "/assets/img/projects/monita/header.png"
 problem:
     overview: |
-        Summarize the problem that the application is trying to solve here in 2-4 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Tasked with maintaining many of the IT department's servers and applications, my team wanted a tool that would help them with their responsibilities. Due to the large number of servers and applications, it can be time-consuming to check each, even more so to track down the source of any errors.
     sections:
         - text: |
-            Detail the problem that the application is solving here. Should be a few paragraphs hopefully. Include background details, background research, etc, to flesh out the details. The rest of the text is filler to show the shape of the section. However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. Ourselves for determine attending how led gentleman sincerity. Valley afford uneasy joy she thrown though bed set. In me forming general prudent on country carried. Behaved an or suppose justice. Seemed whence how son rather easily and change missed. Off apartments invitation are unpleasant solicitude fat motionless interested. Hardly suffer wisdom wishes valley as an. As friendship advantages resolution it alteration stimulated he or increasing. <br>
+            The Common Platforms team at the Chick-Fil-A Support Center focuses on maintaining and improving the systems and services that the other teams in the IT department rely on. A large part of their responsibilities includes keeping an eye on all of the servers and applications that they are in charge of and troubleshooting any errors that come up. As expected, this is a critical role that impacts the rest of the department, but it can be a time consuming task as well, taking away valuable time from other projects that the team would like to focus on.<br>
             <br>
-            Too cultivated use solicitude frequently. Dashwood likewise up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to connection an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law. Among state cease how and sight since shall. Material did pleasure breeding our humanity she contempt had. So ye really mutual no cousin piqued summer result.
-          images:
-              - url: "/assets/img/projects/monita/main_screen.png"
-                caption: Some caption for the image
-              - url: "/assets/img/projects/monita/sketch1.png"
-                caption: Some caption for the image
-              - url: "/assets/img/projects/monita/sketch3.png"
-                caption: Some caption for the image
-        - text: |
-            Ferrars all spirits his imagine effects amongst neither. It bachelor cheerful of mistaken. Tore has sons put upon wife use bred seen. Its dissimilar invitation ten has discretion unreserved. Had you him humoured jointure ask expenses learning. Blush on in jokes sense do do. Brother hundred he assured reached on up no. On am nearer missed lovers. To it mother extent temper figure better. Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. <br>
+            During my time as an intern at the Chick-Fil-A Support Center, I worked with the Common Platforms team to begin creating a solution for this issue. When I was first given this project, the goal was a little unclear; I was told they wanted some sort of dashboard, but I wasn't really sure what for, and for what purpose. In order to pinpoint what exactly they wanted, I sat down with the team and spoke at length about what they had envisioned. I followed up with each member of the team individually to dig a little deeper, and I was eventually able to get a concrete idea of what exactly the problems were that they wanted to solve.<br>
             <br>
-            Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so. Barton did feebly change man she afford square add. Want eyes by neat so just must. Past draw tall up face show rent oh mr. Required is debating extended wondered as do.
+            Saving time and increasing convenience were the team's main objectives with this project. Though all of the information about their systems is readily available for them to access, it takes more time than they would like to look up each application or server and make sure everything is okay. Further, if an error actually is occurring, many times the source actually lies in a different dependency that the application or server relies on, but it can be difficult to see patterns like that from an individual error. Additionally, though the team member responsible for a specific application receives alerts in their emails when an error occurs, these are not as useful if they come up over the weekend or during a vacation. In these scenarios, it can be difficult to see the bigger picture just from the alert, such as the error's duration or the other systems that are down at the same time, making it more difficult to determine what is actually happening. Having identified these major issues, I moved on to devise a solution that would aid the team in tackling these problems.
     images:
 solution:
     overview: |
-        Summarize the approach taken to solve the problem using the application in 2-4 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        A web application that consolidates the status information of the many servers and applications my team monitors in a way that is easy to understand at a glance. Further, it connects these devices in a graph to visualize the dependencies and make it simple to trace any errors back to the source.
     sections:
-        - title: "Idea Generation"
+        - title: "Initial Ideas"
           subsections:
               - text: |
-                  Some text describing the idea generation process.
+                  While gathering the project requirements, I started trying to come up with different ideas for what the application would look like. I sketched out a few different ideas, which can be seen below, including designs like a bulletin board that contained pin-ups for each monitored application, or a separate page for each application that centralized all the necessary information. Ultimately, the idea I though most appropriate was a flow chart with icons for each application that depicted its status, putting emphasis on being able to understand what was happening at a glance.
                 images:
-                    - url: "/assets/img/projects/monita/sketch2.png"
-                      caption: Some caption for the image
                     - url: "/assets/img/projects/monita/sketch1.png"
-                      caption: Some caption for the image
-        - title: "Prototyping"
+                      caption: An initial sketch for the application's design.
+                    - url: "/assets/img/projects/monita/sketch2.png"
+                      caption: An initial sketch for the application's design.
+                    - url: "/assets/img/projects/monita/sketch3.png"
+                      caption: An initial sketch for the application's design.
+                    - url: "/assets/img/projects/monita/sketch4.png"
+                      caption: An initial sketch for the application's design.
+                    - url: "/assets/img/projects/monita/sketch5.png"
+                      caption: Sketch of the design the final product was based on.
+              - text: |
+                  In this design, the focus is on being able to easily get a high-level overview of the entire system from a quick glance, including the statuses and dependencies. However, more in-depth information—like specific alerts that are active for an application—can be found through a modal window that appears by clicking on the icon in the flow chart or on the application's name in the listview on the side, a concept which was carried over from previous design ideas, as it allows for quick access to specific information about a  particular application. Further, most applications have some sort of hierarchical "family tree"; for instance, a certain application may have several servers that belong to it. This family tree needs to be able to be navigated as well so that the status of each indvidual piece could be viewed, further narrowing the source of any errors. The nested dropdowns in the sidebar provide navigation functionality, but I also made several attempts at designing how to do this directly in the modal window as well, which can be seen below. Ultimately, I opted to take a completely different approach to the family tree navigation than from what I had initially sketched after some discussions with my team later on in the process.
+                images:
+                  - url: "/assets/img/projects/monita/sketch6.png"
+                    caption: Concepts for navigating an application's family tree in the modal window.
+                  - url: "/assets/img/projects/monita/sketch7.png"
+                    caption: Concepts for navigating an application's family tree in the modal window.
+                  - url: "/assets/img/projects/monita/sketch8.png"
+                    caption: Concepts for navigating an application's family tree in the modal window.
+        - title: "Mockups"
           subsections:
               - text: |
-                  Some text describing the prototyping/mockup process.
+                  After settling on a design for the application, I proceeded to create some mockups for what the application would look like in action. For this process, I essentially opted to just create a more cleaned up version of the sketches with the addition of color. I felt that this approach would be appropriate due to the overall simplistic nature of the interface, while the addition of color would help bring the images more in line with what the final product would look like. Overall, the application's color scheme sticks heavily on the greyscale, with the exception of the error alert icons. This was done to bring the focus on the icons and draw the user's attention, as one of the main selling points of the application is to be able to see the status of all the different devices at a glance. These icons were designed to be in the likeness of the error alert icons in the software that the IT department uses to get error alert's for all their different systems, making them recognizable to the intended audience.
                 images:
                     - url: "/assets/img/projects/monita/wireframe1.png"
-                      caption: Some caption for the image
-        - title: "Testing"
+                      caption: Mockup of the main screen of the application.
+              - text: |
+                  Two major changes were made in the mockups from the sketches. The first was the method for navigating the family tree in the modal window. In my sketches, most of my ideas were geared toward trying to have all of the application's family members visible immediately in the modal window, just so that it'd be easy to compare and pinpoint a source of an error, but I felt that it took up too much space and crowded the screen, so I opted for a different method. Instead, I felt that some kind of sub-menu would be appropriate for this task, as it would keep this information hidden until needed. For the mockup, a slideout menu from the side was used.
+                images:
+                    - url: "/assets/img/projects/monita/wireframe2.png"
+                      caption: Mockup of the modal window in the application.
+                    - url: "/assets/img/projects/monita/wireframe3.png"
+                      caption: Mockup of navigating the family tree in the modal window.
+              - text: |
+                  The second major change was the addition of an "alert archive", which showed all former error alerts for an application once they were no longer active. The need for such a feature was not brought up until after I began the mockup process, so I added it in here. Various filtering and sorting options can be applied to this data so that a specific error alert could be found if needed.
+                images:
+                    - url: "/assets/img/projects/monita/wireframe4.png"
+                      caption: Mockup of the alert archive for an application.
+              - text: |
+                  Once the mockups were finished, I presented my designs and the thought process behind them to the team. The design was overall well-received, and after receiving feedback for potential changes—such as adding a way to view these applications and servers in different development environments—I proceeded to begin developing the application I had designed.
+        - title: "Development"
           subsections:
               - text: |
-                  Some text describing the testing process.
-        - title: "Conclusion"
-          subsections:
-              - text: |
-                  Some text describing the final design.
+                  As the dashboard began to take shape during development, several changes were made in the design, either due to recognizing ways to make improvements, or because of limitations imposed by the libraries I used. For instance, the library I used to construct the application graph couldn't be made to look like the flowchart I had envisioned in the mockups, so it changed to simply be a node graph.<br>
+                  <br>
+                  On the other hand, the icons used to represent the nodes in the graph changed significantly from the icons I had planned to from the mockups. Previously, I had thought to categorize each node as a certain type of device (i.e. application, server group, etc.) with the status icon in the corner, but I realized that that had several issues. One is that the groupings were somewhat arbitrary, in that there wasn't always a concrete definition. The other is that pushing the error alert icon to the corner took away focus from what was really important, as it is higher priority for the user to quickly recognize that an error is occurring, rather than identifying what application an inividual node represented. For this reason, the nodes in the graph were changed to only be the error alert icons; further, to make it even easier to identify where critical errors are occuring, the size of the node on the graph increases as the severity of the error increases.<br>
+                  <br>
+                  Finally, on the main screen, a new navigation bar was added at the top of the graph. This provided options to switch between different development environments for the graph, as requested by the team when I presented my mockups.
                 images:
                     - url: "/assets/img/projects/monita/main_screen.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen2.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen3.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen4.png"
-                      caption: Some caption for the image
+                      caption: Screenshot of the main screen of Monita.
               - text: |
-                  More text describing the final design.
+                  For the modal window, not too much changed from the original design. The table used to display the active error alerts ended up with a little more information and sorting functionality than originally designed, due in part from feedback and in part from the information able to be queried. Otherwise, the other major change was the sliding menu for navigating the application's family tree. Due to limitations from the library used for the modal window, a sliding menu was not possible, so I opted for a dropdown menu coming from the title instead. This also includes a link to the site where the error alert information is being queried from so that the user can get more in-depth information than is available from my application. However, because some groupings were artificially created to better match how the applications are organized in actuality, this link did not always exist.
+                images:
+                    - url: "/assets/img/projects/monita/main_screen2.png"
+                      caption: Screenshot of a node's modal window.
+                    - url: "/assets/img/projects/monita/main_screen3.png"
+                      caption: Screenshot of the family tree navigation dropdown.
+              - text: |
+                  As for the alert archive, the only major change made was the removal of filtering options. The main reason that this feature was originally requested was to be able to filter by a specific time frame. Unfortunately, it is not possible to query for error alerts during a specific time frame with the HTTP calls, so it would have had to be filtered out manually. However, this impacted the performance immensely, so it was ultimately decided that it was not worth including. Besides that, a loading animation was added to the table also, as the sheer amount of alerts in the database could sometimes cause the table to load a bit slowly.
+                images:
+                    - url: "/assets/img/projects/monita/main_screen4.png"
+                      caption: Screenshot of the alert archive loading animation.
+                    - url: "/assets/img/projects/monita/main_screen5.png"
+                      caption: Screenshot of the alert archive for a node.
+              - text: |
+                  I decided to name the dashboard "Monita", mostly just as a play on words to sound similar to "moniter", a word that encompassed its main goal. After development on Monita concluded, I presented the application in front of my team, and then later in front of the IT department to showcase what I had been working on over the summer. Afterwards, I handed off the project to my team to use, as well as expand upon. The internals of the application were designed so that additional nodes and development environments could be added with relative ease, allowing the team to expand the scope of the application as needed.
 tools: "Flask (Python), Jinja2 (HTML), Bootstrap 4 (CSS), Amazon Web Services (AWS) Elastic Beanstalk, Subversion (SVN)"
 final_thoughts: |
-    In this section, discuss any final thoughts on the project. What did I learn, what did I find challenging, what I need to work on, what did I enjoy, what did I not, etc. Keep it to 2-3 paragraphs. The rest of this section is filler text.<br>
+    Being the first major professional project I've ever taken done from start to finish, as well as having designed and developed everything on my own, there was a lot I learned from this project. The first of these was just the importance of understanding the requirements and problem space before trying to design a solution. Though this is a key concept that is taught at the beginning of every introductory design course, it is an easy concept to forget. When I first started off trying to envision what I wanted this dashboard to look like, I sat at my desk scratching my head for quite a while, unable to picture the direction I should take. However, after several meetings with my team, I began to understand what exactly they wanted, which made it much easier to begin brainstorming ideas for a design.<br>
     <br>
-    Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected expression for. His mistress ladyship required off horrible disposed rejoiced. Unpleasing pianoforte unreserved as oh he unpleasant no inquietude insipidity. Advantages can discretion possession add favourable cultivated admiration far. Why rather assure how esteem end hunted nearer and before. By an truth after heard going early given he. Charmed to it excited females whether at examine. Him abilities suffering may are yet dependent.<br>
+    In the process of brainstorming, I also recognized the importance of researching other designs people have created for problems similar to my own. More than likely, I'm not the first person to try and tackle whatever issue it is I'm working on, so it can help to look at what others have done to gain inspiration. Further, it's important to look at these other designs critically, seeing what works and what doesn't, so that I can incorporate the best parts into my own design and avoid mistakes that had already been made by others.<br>
     <br>
-    Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.
+    Finally, I also realized the importance of taking into account the techincal limitations of the software I'm working with when coming up with the design, as well as my own skill level. If I had researched in advance the libraries that I might be use when developing the application, it might have helped prevent having to redo them midway through development because a certain feature isn't supported. Development is easiest when you already know <i>what</i> you're trying to do, and you're only trying to figure out how to implement it; when you're having to adjust course in the design on the fly because it wasn't even possible, it takes up precious development time and may result in less informed design decisions than the ones carefully plotted in advance.<br>
+    <br>
+    Beyond these lessons though, this project reaffirmed my desire to enter the UI/UX space. The parts of the project I enjoyed the most were gathering requirements, brainstorming ideas, and creating the mockups to present to my team, all while constantly getting feedback and adjusting my designs to meet their needs. While implementing the project itself certainly was satisfying in its own way, figuring out what to make and why to make it—rather than how—was the more interesting part of the puzzle.
