@@ -2,6 +2,7 @@
 
 $single-image-pad: 25%;
 $transition-time: 0.25s;
+$max-height: 25rem;
 
 .project-header {
     background-position: top;
@@ -23,8 +24,8 @@ $transition-time: 0.25s;
 }
 
 .project-image-pair {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: $max-height;
 }
 
 .project-image-pair:hover {
