@@ -55,6 +55,23 @@
                 </div>
                 <div class="row overview-project-content-row">
                     <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.final_overview_title }}</h2>
+                        <div class="left-col">
+                            <p class="project-text">{{ project.final_thoughts.overview }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row button-row">
+                    <div class="col">
+                        <a href="#takeaways" class="button">
+                            <span>
+                                {{ site.data.projects.general.link_title }}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row overview-project-content-row">
+                    <div class="col">
                         <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.roles_title }}</h2>
                         <div class="left-col">
                             <p class="project-text">{{ project.roles }}</p>
@@ -69,6 +86,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="row overview-project-content-row">
+                    <div class="col">
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.project_link_title }}</h2>
+                        <div class="left-col">
+                {% assign len = project.link | size %}
+                {% if len == 0 %}
+                            <p class="project-text">N/A</p>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row button-row">
+                    <div class="col">
+                        <a href="{{ project.link }}" class="button" target="_blank">
+                            <span>
+                                {{ site.data.projects.general.project_link_link_title }}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
             </div>
             <div class="thumbnail-div" id="overview-thumbnail">
                 <img class="thumbnail" src="{{ project.thumbnail }}">
@@ -112,7 +153,7 @@
     </div>
 </div>
 <!-- Final Thoughts section -->
-<div class="row offset-row content-row">
+<div class="row offset-row content-row" id="takeaways">
     <div class="col content-col">
         <div class="row title-row">
             <div class="col">
@@ -122,7 +163,7 @@
         <div class="row">
             <div class="col left-col">
                 <p>
-                    {{ project.final_thoughts }}
+                    {{ project.final_thoughts.text }}
                 </p>
             </div>
         </div>

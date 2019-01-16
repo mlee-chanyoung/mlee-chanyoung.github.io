@@ -2,6 +2,7 @@ title: "Ref-U-Store"
 subtitle: "Empowering refugees to manage personal documents"
 thumbnail: "/assets/img/projects/refustore/thumbnail.png"
 roles: "Developer and designer"
+link: "https://github.com/BranSeal/HealthPort"
 overview: |
     A mobile application aimed primarily at refugees, empowering them to better manage their personal documents and make their resettlement process a little easier.
 banner: "/assets/img/projects/refustore/header.png"
@@ -114,9 +115,12 @@ solution:
                       caption: Screenshot of profile information screen
                       setname: screens
 tools: "Android Studio (Java), Fluid UI"
-final_thoughts: |
-    In the end, this project wasn't exactly a design-focused project. Though I tried to get involved with design in the UI and UX where possible, most of my attention was needed on the programming side of things instead. Ultimately, this was more about being able to experience the entire software development process in a professional team setting from start to finish, rather than gaining experience as a designer.<br>
-    <br>
-    However, that is not to say that I didn't learn anything from this experience. One major takeaway I got from this project was how important a good mockup can be. Even if its not a high-fidelity prototype, a good mockup establishes the design before development even begins, letting the developers focus on getting the functionality right and only recreating the design, rather than trying to make it up as they going along. When the major design decisions are made on the fly, it results in an fragmented design, as well as taking away precious development time that could be better used for working in additional features or more thorough testing. I'd always known that wireframes and prototypes were useful, but this was the first time I had seen the consequences of not having an effective mockup in action.<br>
-    <br>
-    Something else that I knew going in but saw play out for the first time was the usefulness of user testing with designs. Getting an outside perspective on the designs that my team and I had been working on resulted in valuable input and feedback on things that we didn't notice ourselves. On the flip side however, I think that this project showed me that user testing isn't nearly as useful when there isn't an opportunity to iterate upon the design with the feedback in mind. As seen in my project, a lot of this feedback ends up forgotten or ignored when trying to just apply it like a band-aid during development, rather than carefully considering how it fits in with the design. User testing and iteration go hand-in-hand, and neither is as powerful without the other.
+final_thoughts:
+    overview: |
+        A good mockup keeps the design consistent and saves time. Also, user testing is great, but works best alongside iteration.
+    text: |
+        In the end, this project wasn't exactly a design-focused project. Though I tried to get involved with design in the UI and UX where possible, most of my attention was needed on the programming side of things instead. Ultimately, this was more about being able to experience the entire software development process in a professional team setting from start to finish, rather than gaining experience as a designer.<br>
+        <br>
+        However, that is not to say that I didn't learn anything from this experience. One major takeaway I got from this project was how important a good mockup can be. Even if its not a high-fidelity prototype, a good mockup establishes the design before development even begins, letting the developers focus on getting the functionality right and only recreating the design, rather than trying to make it up as they going along. When the major design decisions are made on the fly, it results in an fragmented design, as well as taking away precious development time that could be better used for working in additional features or more thorough testing. I'd always known that wireframes and prototypes were useful, but this was the first time I had seen the consequences of not having an effective mockup in action.<br>
+        <br>
+        Something else that I knew going in but saw play out for the first time was the usefulness of user testing with designs. Getting an outside perspective on the designs that my team and I had been working on resulted in valuable input and feedback on things that we didn't notice ourselves. On the flip side however, I think that this project showed me that user testing isn't nearly as useful when there isn't an opportunity to iterate upon the design with the feedback in mind. As seen in my project, a lot of this feedback ends up forgotten or ignored when trying to just apply it like a band-aid during development, rather than carefully considering how it fits in with the design. User testing and iteration go hand-in-hand, and neither is as powerful without the other.
