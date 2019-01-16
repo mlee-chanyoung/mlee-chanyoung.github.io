@@ -86,18 +86,11 @@
                         </div>
                     </div>
                 </div>
+                {% assign len = project.link | size %}
+                {% if len > 0 %}
                 <div class="row overview-project-content-row">
                     <div class="col">
                         <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.project_link_title }}</h2>
-                        <div class="left-col">
-                {% assign len = project.link | size %}
-                {% if len == 0 %}
-                            <p class="project-text">N/A</p>
-                        </div>
-                    </div>
-                </div>
-                {% else %}
-                        </div>
                     </div>
                 </div>
                 <div class="row button-row">
