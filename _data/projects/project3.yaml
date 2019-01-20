@@ -8,70 +8,155 @@ overview: |
 banner: "/assets/img/projects/kupa/header.png"
 problem:
     overview: |
-        Summarize the problem that the application is trying to solve here in 2-4 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Create a "Game Feel" game in Unity, where the player takes on the perspective of an enemy in the Mario universe.
     sections:
         - text: |
-            Detail the problem that the application is solving here. Should be a few paragraphs hopefully. Include background details, background research, etc, to flesh out the details. The rest of the text is filler to show the shape of the section. However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. Ourselves for determine attending how led gentleman sincerity. Valley afford uneasy joy she thrown though bed set. In me forming general prudent on country carried. Behaved an or suppose justice. Seemed whence how son rather easily and change missed. Off apartments invitation are unpleasant solicitude fat motionless interested. Hardly suffer wisdom wishes valley as an. As friendship advantages resolution it alteration stimulated he or increasing. <br>
+            For my video game design course, we were tasked with developing a small video game in teams using Unity. The requirements of the game were pretty loose, with the freedom to develop whatever type of game we wanted (with a few genre exceptions), as long as it could be categorized as a "Game Feel" game.<br>
             <br>
-            Too cultivated use solicitude frequently. Dashwood likewise up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to connection an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law. Among state cease how and sight since shall. Material did pleasure breeding our humanity she contempt had. So ye really mutual no cousin piqued summer result.
-          images:
-              - url: "/assets/img/projects/monita/main_screen.png"
-                caption: Some caption for the image
-              - url: "/assets/img/projects/monita/sketch1.png"
-                caption: Some caption for the image
-              - url: "/assets/img/projects/monita/sketch3.png"
-                caption: Some caption for the image
-        - text: |
-            Ferrars all spirits his imagine effects amongst neither. It bachelor cheerful of mistaken. Tore has sons put upon wife use bred seen. Its dissimilar invitation ten has discretion unreserved. Had you him humoured jointure ask expenses learning. Blush on in jokes sense do do. Brother hundred he assured reached on up no. On am nearer missed lovers. To it mother extent temper figure better. Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. <br>
+            So what is a "Game Feel" game? Rather than some kind of evaluation of quality or a requirement to be a good game, it is simply a classification. According to Steve Swink, the one who popularized the term, "Game Feel" games have three major components: real-time control, a simulated space, and a degree of polish. In other words, these games are built on real-time control of virtual objects in a simulated space, with interactions emphasized by polish.<br>
             <br>
-            Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so. Barton did feebly change man she afford square add. Want eyes by neat so just must. Past draw tall up face show rent oh mr. Required is debating extended wondered as do.
+            But before we even began thinking of gameplay elements to fulfill this requirement of "Game Feel", our team focused on deciding a theme—the central idea to anchor our game around. However, brainstorming these ideas didn't take too long, as one team member really wanted to make a game about playing from the perspective as a cannon fodder enemy. In particular, they wanted to have it relate to the Mario series, meaning the player would control something like a Goomba or a Koopa. The rest of our team thought it sounded fun, and we weren't going to run into any copyright issues since it was just a course project, so we decided to develop our game around this idea.
     images:
 solution:
     overview: |
-        Summarize the approach taken to solve the problem using the application in 2-4 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Develop a 3D platforming game where the main player takes control of a "Kupa", with the main gameplay hook being the usage of its shell.
     sections:
         - title: "Idea Generation"
           subsections:
               - text: |
-                  Some text describing the idea generation process.
+                  Having decided on a theme, we met as a team several times to brainstorm and conceptualize how the game would play. A few different ideas were thrown around, such as a puzzle game where you tried to escape from a room before Mario appeared, a stealth game where you tried to flee from Mario, and so forth. Over the course of a few meetings, we eventually decided on a platforming game where you played as a Koopa, a turtle-like enemy from the Mario games, and navigate to the end of a level to reach the objective.<br>
+                  <br>
+                  The narrative driving the game is that a lone Koopa, whose comrades have all been slain by Mario, decides to take revenge by destroying the source of Mario's extra lives: a cloning machine. Koopa and Mario was also changed to Kupa and Mahrio respectively, to give it that good old knock-off vibe. From a gameplay standpoint, the main hook is that Kupa can enter into its shell and launch itself forward to interact with the environment, such as by destroying walls or momentarily stunning the Mahrio clones guarding the clone machine.<br>
+                  <br>
+                  With our game's vision in mind, the team divided up roles and tasks for development. I volunteered to work on the menus, narrative elements, in-game UI, and most of the art assets. I began sketching out what I wanted some of the icons and menus to looks like. In general, I wanted to try to style it similarly to the Mario games, since it was supposed to be a derivative work of that franchise. In particular, the menus took some inspiration from the pause menus in 2017's <i>Mario Odyssey</i>, while the fonts and titles were styled after 1996's <i>Super Mario 64</i>.
                 images:
-                    - url: "/assets/img/projects/monita/sketch2.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/sketch1.png"
-                      caption: Some caption for the image
-        - title: "Prototyping"
+                    - url: "/assets/img/projects/kupa/sketch1.jpg"
+                      caption: Concept sketches for title screen.
+                      setname: sketch1
+                    - url: "/assets/img/projects/kupa/sketch2.jpg"
+                      caption: Concept sketches for some menus, UI objects.
+                      setname: sketch1
+                    - url: "/assets/img/projects/kupa/sketch3.jpg"
+                      caption: Concept sketches for the victory screen, selector icon.
+                      setname: sketch1
+              - text: |
+                  Further on into development, I began sketching out what I wanted the introductory cutscene that would introduce the game's narrative to look like. I decided to portray it essentially as a slideshow, where each "slide" consisted of a picture on top and text on the bottom, fading in and out for transitions. This gave it an old-school game vibe, but it was also useful because we were running low on development time to complete the game, so we wouldn't have time to dedicate to creating fully animated cutscenes, either pre-rendered or in-engine.<br>
+                  <br>
+                  When deciding on what images to draw for the cutscene, there were a few key ideas I wanted to convey to the player. The first was sympathizing with what is normally an enemy character. Second was placing Mahrio in a more villainous light, setting him up as the antagonist. Finally, it needed to get across the objective of the game as well. With those ideas in mind, I drew up some concepts of what I wanted the cutscene images to look like.
+                images:
+                    - url: "/assets/img/projects/kupa/sketch4.jpg"
+                      caption: Concept sketches for cutscene images.
+                      setname: sketch2
+              - text: |
+                  The first image is meant to help the player sympathize with the Kupa's goals, as the Kupas lay across the ground, slain and defeated. Mahrio is already pushed into a negative light from the apparent Kupa massacre, but the second image empahsizes this even more, showing Mahrio with a sinister-looking expression on his face. Finally, the last image of the cutscene depicts a crowd Mahrio clones, showing the player what Kupa is trying to stop. However, the last image was changed slightly after consulting with my team. Instead, the picture now focuses on a drawing of the cloning machine within the game, helping the player visualize the objective that they should be looking out for and destroying. The machine is also placed against a backdrop of multiple Marhio faces, empahsizing the cloning aspect that can't really be seen from just the machine itself.
+        - title: "Alpha Development"
           subsections:
               - text: |
-                  Some text describing the prototyping/mockup process.
+                  For alpha development, my main focus was on constructing the basic framework for all the menus so that they would be functional, as well as the actions associated with them (i.e. game scene transitions, pausing, etc.). For the menus, I added placeholder backgrounds so that I could put off creating art assets until a little later, and default fonts were used as well. One of the main features I worked on was getting the buttons in the menu to work as I had envisioned, where it normally is just plain text, but when it is selected, the button's box shape changes color and an icon appears next to the text. This icon was chosen to be a Kupa shell, since the game revolves around the Kupa and its shell-launching ability.<br>
+                  <br>
+                  As stated earlier, the rest of my work involved around developing the connective tissue between different parts of the game. I was also planning on creating the charge meter that would show how far the Kupa would launch itself when in shell form, but the main developer for the Kupa chose to do that himself. Below are some screenshots of the alpha version of our game.
                 images:
-                    - url: "/assets/img/projects/monita/wireframe1.png"
-                      caption: Some caption for the image
-        - title: "Testing"
+                    - url: "/assets/img/projects/kupa/alpha1.png"
+                      caption: Alpha version of the title screen.
+                      setname: alpha
+                    - url: "/assets/img/projects/kupa/alpha5.png"
+                      caption: Alpha version of the game.
+                      setname: alpha
+                    - url: "/assets/img/projects/kupa/alpha3.png"
+                      caption: Alpha version of the Kupa charging its shell launch.
+                      setname: alpha
+                    - url: "/assets/img/projects/kupa/alpha2.png"
+                      caption: Alpha version of the pause screen.
+                      setname: alpha
+                    - url: "/assets/img/projects/kupa/alpha4.png"
+                      caption: Alpha version of the defeat screen.
+                      setname: alpha
+                    - url: "/assets/img/projects/kupa/alpha6.png"
+                      caption: Alpha version of the victory screen.
+                      setname: alpha
+        - title: "Playtesting"
           subsections:
               - text: |
-                  Some text describing the testing process.
-        - title: "Conclusion"
+                  Once we got to a good stopping place for the alpha version, we conducted several playtesting sessions in order to evaluate the current state of the game and identify key problems that needed to be fixed. We conducted think-aloud sessions for each playtester, where they would try and complete the game in fifteen minutes. Afterwards, we conducted a short interview with them to get more detailed thoughts on certain topics.<br>
+                  <br>
+                  The testing process was very enlightening and gave us some major insights into areas that we needed to improve. A lot of the major complaints were centered around how it felt to control the Kupa, stating that it felt unresponsive or slow. There were also several complaints about the camera, stating that it felt "wonky", and that sometimes the Mahrio clones would catch them off guard due to the camera angles. Other comments included not understanding what happened when they attacked Mahrio with the shell attack and feeling overwhelmed by a barrage of sound effects. However, despite their complaints about the controls, the playtesters did find using the shell ability to be the most fun part of the game, whether to destroy objects or throw themselves at the Mahrio clones.<br>
+                  <br>
+                  To more quickly understand the testing results, I created a quick visualization to summarize the playtesters' responses, which was shared with the team, as well as with the course instructors.
+                images:
+                    - url: "/assets/img/projects/kupa/testing_viz.png"
+                      caption: Visualization summarizing playtesting responses.
+                      setname: playtest
+              - text: |
+                  Using the responses we received from playtesting, my team planned out what exactly we needed to work on before the project's deadline. Aspects like the Kupa controls and camera were major focuses to make the game more easily playable. There were also major usability aspects that needed to be worked on, such as reducing the sound effect overload and helping the player to better understand their interactions with the Mahrios.<br>
+                  <br>
+                  For me specifically, my main focus for the second half of development was to help the player understand the context and controls of the game. This came in the form of features I had already been planning on working on, such as a controls screen, but it was from the playtesting results that other features came about, such as the introductory cutscene. We also changed up certain elements of the game, such as switching from losing in one hit to having a life-based system, which required the creation of in-game UI HUD (heads-up display) elements to accompany them.
+        - title: "Final Development"
           subsections:
               - text: |
-                  Some text describing the final design.
+                  During the second phase of development, a lot of my time was spent creating art assets, such as menu backgrounds and the cutscene images. I also worked to polish up the content I had already developed, such as implementing custom titles and more relevant fonts. Unfortunately, I did not have time to create a new background for the title screen, so that still uses the temporary background from the alpha version. Besides that however, I was able to finish up what I had wanted to make. Below are screenshots from the final version of the game in areas that I had the most influence in.
                 images:
-                    - url: "/assets/img/projects/monita/main_screen.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen2.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen3.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen4.png"
-                      caption: Some caption for the image
+                    - url: "/assets/img/projects/kupa/screen1.png"
+                      caption: Final version of the title screen.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen2.png"
+                      caption: Final version of the instructions screen.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen3.png"
+                      caption: Final version of the intro cutscene, part 1.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen4.png"
+                      caption: Final version of the intro cutscene, part 2.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen4-5.png"
+                      caption: Final version of the intro cutscene, part 3.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen9.png"
+                      caption: Final version of the pause menu.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen13.png"
+                      caption: Final version of the defeat screen.
+                      setname: final1
+                    - url: "/assets/img/projects/kupa/screen17.png"
+                      caption: Final version of the victory screen.
+                      setname: final1
               - text: |
-                  More text describing the final design.
+                  Other aspects of the UI did end up changing during the final part of development as well, done by other team members. For instance, a stamina meter was suddenly added to the game, which limited the number of actions that the Kupa could do consecutively. This included a visible meter indicator on the HUD display, but it was added without consulting with the rest of the team, so it didn't really fit in with the rest of the interface. In-game dialogue was also thrown in for features that Kupa's main developer added in unbeknownst to the rest of the team. Because they were not planned, they didn't show up in the instructions screen as I was unaware of those features' existences.<br>
+                  <br>
+                  There were some more thoughtful UI/UX decisions as well however. For instance, the member who focused on development for interactions between Mahrio and the Kupa added exclamation mark indicators above both the Kupa and the Mahrio clones when the Mahrio clone spotted the Kupa, which helps the player to better understand when they are being chased. One member also focused on creating a short tutorial level to explain the controls in a safe environment, which included special timed dialogue to teach the player how to play step-by-step.<br>
+                  <br>
+                  Though there were some problems in team communication, I felt that the game's interface mostly came together well. Below are some screenshots from the final version of the game that were not covered earlier.
+                images:
+                    - url: "/assets/img/projects/kupa/screen5.png"
+                      caption: Game's tutorial in the final version.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen6.png"
+                      caption: Start of the game in the final version.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen8.png"
+                      caption: Kupa charging its shell in the final version, low charge.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen7.png"
+                      caption: Kupa charging its shell in the final version, high charge.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen10.png"
+                      caption: Mahrio chasing after Kupa in the final version.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen12.png"
+                      caption: Kupa breaking an object with its shell in the final version.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen14.png"
+                      caption: Checkpoint in the final version.
+                      setname: final2
+                    - url: "/assets/img/projects/kupa/screen16.png"
+                      caption: Kupa preparing to destroy the cloning machine in the final version.
+                      setname: final2
 tools: "Unity (C#), Adobe Photoshop"
 final_thoughts:
     overview: |
-        Summarize the lessons learned from the project in 1-3 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Good communication and project organization are critical for the different parts of the project—including UI/UX—to come together and deliver a quality product.
     text: |
-        In this section, discuss any final thoughts on the project. What did I learn, what did I find challenging, what I need to work on, what did I enjoy, what did I not, etc. Keep it to 2-3 paragraphs. The rest of this section is filler text.<br>
+        Rather than lessons specifically about UI/UX work, my takeaways from this project were more about project management and how UI/UX fits in with the rest everything else. Some of the main problems holding back the game's development were a lack of communication and organization within the team, particularly in the game's early stages. Probably around halfway through the game's alpha development, we had a checkup with our course instructor to see where the game was at. Unfortunately, the game was not in a good shape. Everyone had been working on their individual parts, but no one really knew what anyone else was doing, so when time came to show off our game's progress, we were desperately trying to throw together our own pieces into a cohesive game. As expected, it didn't work out too well and was an exteremly stressful situation.<br>
         <br>
-        Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected expression for. His mistress ladyship required off horrible disposed rejoiced. Unpleasing pianoforte unreserved as oh he unpleasant no inquietude insipidity. Advantages can discretion possession add favourable cultivated admiration far. Why rather assure how esteem end hunted nearer and before. By an truth after heard going early given he. Charmed to it excited females whether at examine. Him abilities suffering may are yet dependent.<br>
+        Because of this experience however, I decided to step up and take on the role of project manager for the team. This involved organizing meetings, delegating roles, performing periodic status updates, and so on. By tackling the lack of organization within my team, development for the rest of the project was able to proceed much smoother, since everyone knew what they needed to do, and work wasn't pushed off until right before the deadline.<br>
         <br>
-        Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.
+        Unfortunately, while this resolved most of the organization issues, communication was still lacking at times. For instance, one of our main developers ended up adding in several "features" to the game that the rest of the team had no idea about. Since we didn't know about these, we weren't able to account for that in our work; for me specifically, that meant I wouldn't be able to add them into the instructions screen. This often meant that these features felt like an afterthought, completely disjointed from the rest of the game, including in aspects like the user interface. There wasn't much the rest of the team could do about this, since we only found out about these changes at the last minute, but it helped reiterate to me just how important communication is in a team project. Even when I'm focused on the UI/UX side of things, what other people do has a direct impact on my work and vice versa, making it critical that everyone knows what the rest of the team is doing.
