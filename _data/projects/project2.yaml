@@ -29,7 +29,7 @@ solution:
                   A large part of the initial design process was doing research to understand our userbase so that we could tailor the application to their needs. To this end, we consulted with various different sources to learn more about our intended users and the problem domain. We began by consulting with our clients, who had some knowledge of the medical field, as well as articles and research papers that were relevant to our topic. After collecting this information, we created a 2.5D sketch to establish a persona for our intended users, and we used this to narrow down the remaining questions we had. With these new questions in hand, we met with volunteers at a refugee resettlement agency while attending a training session for new volunteers, and we interviewed a healthcare professional at our university.
                 images:
                     - url: "/assets/img/projects/refustore/25d_sketch.jpg"
-                      caption: 2.5D sketch of our intended users
+                      caption: 2.5D sketch of our intended users.
                       setname: research
               - text: |
                   The research we conducted had a significant impact on both the features of the application as well as its design. For instance, we found that a significant number of refugees are either families or single mothers with children, so we wanted to design the application for an account to manage several family members, which we implemented as profiles within an account. Further, the English proficiency for refugees ranges wildly, from very proficient to illiterate. With this in mind, we wanted to implement icons as a complement to text whenever possible as well as using simple words to lessen the reliance on English, but ultimately not too much focus was placed on this, as the userbase was so varied.<br>
@@ -43,10 +43,10 @@ solution:
                   Having determined through our research what features the application would focus on, my team began thinking about the general flow of the application. Over the course of a meeting, we discussed the general layout of the main screens in the application and created a rough wireframe on a whiteboard to visualize how the different screens in the application were connected. In general, our main philosophy for the layouts was to keep things simple but dense, making it as easy to understand for novices, but still giving experienced users a lot of control when they wanted.
                 images:
                     - url: "/assets/img/projects/refustore/wireframe1.jpg"
-                      caption: Rough whiteboard wireframe, part 1
+                      caption: Rough whiteboard wireframe, part 1.
                       setname: wireframe
                     - url: "/assets/img/projects/refustore/wireframe2.jpg"
-                      caption: Rough whiteboard wireframe, part 2
+                      caption: Rough whiteboard wireframe, part 2.
                       setname: wireframe
               - text: |
                   After creating the general flow, we began constructing a high-fidelity prototype for the purposes of user testing. Constructed in Fluid UI, the prototype generally matched the flow that we developed in the wireframes. Here, the main focus was on the layout and usability, with hopes of making the interface as intuitive as possible for new users. However, the team placed less emphasis on other areas of usability, such as readability and color scheme, which when combined with a general lack of care for the prototype's design and some limitations placed by the software we used, resulted in a design that was still very rough, eventually forcing us to make a lot of design decisions for the interface on the fly during development.<br>
@@ -54,22 +54,22 @@ solution:
                   The prototype can be seen in its entirety <a target="_blank" href="https://www.fluidui.com/editor/live/preview/cF9tNm9WRUxWVkllZGF0Mm1VeTk3Z3p3MDJ4bDgzdzRNVQ==">here</a>, while a few of the main screens can be seen below.
                 images:
                     - url: "/assets/img/projects/refustore/prototype1.png"
-                      caption: Prototype login screen
+                      caption: Prototype login screen.
                       setname: prototype
                     - url: "/assets/img/projects/refustore/prototype1-1.png"
-                      caption: Prototype profile select screen
+                      caption: Prototype profile select screen.
                       setname: prototype
                     - url: "/assets/img/projects/refustore/prototype2.png"
-                      caption: Prototype dashboard screen
+                      caption: Prototype dashboard screen.
                       setname: prototype
                     - url: "/assets/img/projects/refustore/prototype6.png"
-                      caption: Prototype document view screen
+                      caption: Prototype document view screen.
                       setname: prototype
                     - url: "/assets/img/projects/refustore/prototype4.png"
-                      caption: Prototype file preview/edit screen
+                      caption: Prototype file preview/edit screen.
                       setname: prototype
                     - url: "/assets/img/projects/refustore/prototype5.png"
-                      caption: Prototype fax inbox screen
+                      caption: Prototype fax inbox screen.
                       setname: prototype
         - title: "Testing"
           subsections:
@@ -91,28 +91,28 @@ solution:
                   The application was originally named Healthport (as in, health passport) because of its focus on medical documents, but when our clients wanted to expand the scope from just medical documents to personal documents in general, the name was changed to Ref-U-Store, which generalized its functionality and clearly depicted the intended userbase. Despite this change in scope however, there wasn't any impact on the actual functionality or design, besides the name. After development ended, we presented our project to the public at a school-hosted expo, providing live demonstrations to help passerbys understand what our application does. We then handed the code and application over to our clients to carry on the application's development. Below are screenshots of some of the major screens in our final version of the application.
                 images:
                     - url: "/assets/img/projects/refustore/screen1.png"
-                      caption: Screenshot of home screen
+                      caption: Screenshot of home screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen3.png"
-                      caption: Screenshot of login screen
+                      caption: Screenshot of login screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen4.png"
-                      caption: Screenshot of profile select screen
+                      caption: Screenshot of profile select screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen6.png"
-                      caption: Screenshot of document dashboard screen
+                      caption: Screenshot of document dashboard screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen7.png"
-                      caption: Screenshot of document preview/edit screen
+                      caption: Screenshot of document preview/edit screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen9.png"
-                      caption: Screenshot of document creation confirmation screen
+                      caption: Screenshot of document creation confirmation screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen10.png"
-                      caption: Screenshot of document view screen
+                      caption: Screenshot of document view screen.
                       setname: screens
                     - url: "/assets/img/projects/refustore/screen12.png"
-                      caption: Screenshot of profile information screen
+                      caption: Screenshot of profile information screen.
                       setname: screens
 tools: "Android Studio (Java), Fluid UI"
 final_thoughts:
