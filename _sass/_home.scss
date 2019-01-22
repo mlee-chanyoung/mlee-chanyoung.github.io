@@ -1,6 +1,7 @@
 @import 'globals';
 
 $header-pad: 1.875rem;
+$project-row-margin-bot: 2.5rem;
 $project-title-margin-bot: 0.25rem;
 $project-content-margin-bot: 1rem;
 
@@ -31,6 +32,10 @@ $project-content-margin-bot: 1rem;
     font-weight: bold;
     color: $highlight-color;
     text-align: center;
+}
+
+.home-project-overview-row {
+    margin-bottom: $project-row-margin-bot;
 }
 
 .overview-project-content-row {
