@@ -8,70 +8,172 @@ overview: |
 banner: "/assets/img/projects/portfolio/header.png"
 problem:
     overview: |
-        Summarize the problem that the application is trying to solve here in 2-4 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Create a portfolio to showcase projects I have worked on to potential employers and other interested parties.
     sections:
         - text: |
-            Detail the problem that the application is solving here. Should be a few paragraphs hopefully. Include background details, background research, etc, to flesh out the details. The rest of the text is filler to show the shape of the section. However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. Ourselves for determine attending how led gentleman sincerity. Valley afford uneasy joy she thrown though bed set. In me forming general prudent on country carried. Behaved an or suppose justice. Seemed whence how son rather easily and change missed. Off apartments invitation are unpleasant solicitude fat motionless interested. Hardly suffer wisdom wishes valley as an. As friendship advantages resolution it alteration stimulated he or increasing. <br>
+            Back when I was still planning on being a developer, I had no intentions of creating a personal website. Generally, a resume and a link to my Github would have been enough to show my experience in programming and the types of projects I had been involved in. However, after I changed course and began pursuing work in the UI/UX field instead, I realized that simply handing recuriters my Github would not be sufficient.<br>
             <br>
-            Too cultivated use solicitude frequently. Dashwood likewise up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to connection an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law. Among state cease how and sight since shall. Material did pleasure breeding our humanity she contempt had. So ye really mutual no cousin piqued summer result.
-          images:
-              - url: "/assets/img/projects/monita/main_screen.png"
-                caption: Some caption for the image
-              - url: "/assets/img/projects/monita/sketch1.png"
-                caption: Some caption for the image
-              - url: "/assets/img/projects/monita/sketch3.png"
-                caption: Some caption for the image
-        - text: |
-            Ferrars all spirits his imagine effects amongst neither. It bachelor cheerful of mistaken. Tore has sons put upon wife use bred seen. Its dissimilar invitation ten has discretion unreserved. Had you him humoured jointure ask expenses learning. Blush on in jokes sense do do. Brother hundred he assured reached on up no. On am nearer missed lovers. To it mother extent temper figure better. Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. <br>
-            <br>
-            Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so. Barton did feebly change man she afford square add. Want eyes by neat so just must. Past draw tall up face show rent oh mr. Required is debating extended wondered as do.
+            For UI/UX, I found that I would need to showcase the projects I've worked on in a more visible, tangible way. Moreover, a large part of UI/UX is all about the process, rather than the final product, so potential employers would want to see how I think and how I approached the problems I faced. In order to easily demonstrate these things to others, I knew that I would need some kind of portfolio that would showcase a selection of my projects and dive deep into the how's and why's of what I did.
     images:
 solution:
     overview: |
-        Summarize the approach taken to solve the problem using the application in 2-4 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Develop a website that would detail my thoughts during the design process of the displayed projects, created from scratch to showcase my technical skills.
     sections:
-        - title: "Idea Generation"
+        - title: "Research and Brainstorming"
           subsections:
               - text: |
-                  Some text describing the idea generation process.
+                  Before I even started brainstorming ideas for what I wanted my website to look like, first I needed to understand what kind of content it needed. I browsed through several articles and example portfolios in order to better understand the domain. In particular, the portfolios of <a href="http://christinarichardson.ca/" target="_blank">Christina Richardson</a> and <a href="http://john-ellison.com/" target="_blank">John Ellison</a> provided a lot of inspiration to both the contents of my website, as well as the layout and styling.<br>
+                  <br>
+                  From my research, I decided that the best approach for me would be to highlight four of my projects and take a deep dive into each of them, explaining the problem space as well as the design process throughout. The website would also include some personal information about myself so that the people who view the website could better understand my mindset and background. This would include standard resume information like my education history and my skills, but also more personal stories, such as why I entered the UI/UX space and my hobbies.<br>
+                  <br>
+                  Once I determined the contents of my website, I began sketching out ideas for how everything should be laid out. The site was divided into 6 major pages: the home page, about page, and four project pages. On the home page, overview information helps the viewer get a short glimpse at what else is on the site, both for my projects as well as about myself. Meanwhile, the about page and all the project pages go into more detail about their respective topics, divided into subsections to help organize everything that is written.
                 images:
-                    - url: "/assets/img/projects/monita/sketch2.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/sketch1.png"
-                      caption: Some caption for the image
-        - title: "Prototyping"
-          subsections:
+                    - url: "/assets/img/projects/portfolio/sketch1.jpg"
+                      caption: Concept sketches for the home page's general layout.
+                      setname: sketch1
+                    - url: "/assets/img/projects/portfolio/sketch2.jpg"
+                      caption: Concept sketches for the home page's overview section.
+                      setname: sketch1
+                    - url: "/assets/img/projects/portfolio/sketch3.jpg"
+                      caption: Concept sketches for the home page's about section.
+                      setname: sketch1
               - text: |
-                  Some text describing the prototyping/mockup process.
+                  One of the things that I focused on was making navigation simple, while avoiding cluttering the interface. Especially because there would be a lot of text in a site like this, being able to quickly navigate to wherever desired would be essential. One approach for this issue was the ever present menu bar at the top of the screen. This allows users to navigate to any of the six pages at any time, as well as to some major subsections like the "Contacts" section. On the other hand, overview sections often contain links to different pages or sections that elaborate on what is being overviewed, such as how the project overviews on the home screen contain links to their respective project pages. Between these two methods, most of the major subsections should be able to be reached quickly, especially when the user is already viewing related content.
                 images:
-                    - url: "/assets/img/projects/monita/wireframe1.png"
-                      caption: Some caption for the image
-        - title: "Testing"
-          subsections:
+                    - url: "/assets/img/projects/portfolio/sketch4.jpg"
+                      caption: Concept sketches for the about page.
+                      setname: sketch2
               - text: |
-                  Some text describing the testing process.
-        - title: "Conclusion"
-          subsections:
-              - text: |
-                  Some text describing the final design.
+                  Finally, one other aspect I tried to focus on was making the layout mobile-friendly so that I wouldn't have to worry too much about mobile responsiveness during development. Websites are viewed on a mobile device more now than ever, which makes it particularly important that websites look good on a smaller, more vertical screen as well. This involved design choices like constraining all content on the screen to a narrower column, as well as laying out objects so that they could collapse easily into a single column when viewed on a vertical screen.
                 images:
-                    - url: "/assets/img/projects/monita/main_screen.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen2.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen3.png"
-                      caption: Some caption for the image
-                    - url: "/assets/img/projects/monita/main_screen4.png"
-                      caption: Some caption for the image
+                    - url: "/assets/img/projects/portfolio/sketch6.jpg"
+                      caption: Concept sketches for the project page layout, part 1.
+                      setname: sketch3
+                    - url: "/assets/img/projects/portfolio/sketch7.jpg"
+                      caption: Concept sketches for the project page layout, part 2
+                      setname: sketch3
+                    - url: "/assets/img/projects/portfolio/sketch8.jpg"
+                      caption: Concept sketches for the project page layout, part 3.
+                      setname: sketch3
+        - title: "Wireframing"
+          subsections:
               - text: |
-                  More text describing the final design.
+                  After identifying what I wanted as the content and layout of my website through research and sketches, I began working on creating a wireframe. My goal for this wireframe was to make it look as close to the envisioned final product as possible. By doing so, I could avoid having to constantly make adjustments to the interface's design during development, and it would instead let me focus on the actual coding and writing. I created both a clean and an annotated version of each wireframe, the former to see exactly what the site page would look like, while the latter would have all my notes about the fine details written down to make it easily reproducible. I also used placeholders for almost all of the images on the website since I hadn't collected the ones I wanted to use at that time.<br>
+                  <br>
+                  Below are the wireframes for the home page.
+                images:
+                    - url: "/assets/img/projects/portfolio/wireframe/Home_Screen_01.png"
+                      caption: Home page wireframe, part 1.
+                      setname: wireframe1
+                    - url: "/assets/img/projects/portfolio/wireframe/Home_Screen_02.png"
+                      caption: Home page wireframe, part 2.
+                      setname: wireframe1
+                    - url: "/assets/img/projects/portfolio/wireframe/Home_Screen_02_hover.png"
+                      caption: Home page wireframe when hovering over objects.
+                      setname: wireframe1
+                    - url: "/assets/img/projects/portfolio/wireframe/Home_Screen_03.png"
+                      caption: Home page wireframe, part 3.
+                      setname: wireframe1
+                    - url: "/assets/img/projects/portfolio/wireframe/Home_Screen_04.png"
+                      caption: Home page wireframe, part 4.
+                      setname: wireframe1
+              - text: |
+                  Below are the wireframes for the about page.
+                images:
+                    - url: "/assets/img/projects/portfolio/wireframe/About_Screen_01.png"
+                      caption: About page wireframe, part 1.
+                      setname: wireframe2
+                    - url: "/assets/img/projects/portfolio/wireframe/About_Screen_02.png"
+                      caption: About page wireframe, part 2.
+                      setname: wireframe2
+                    - url: "/assets/img/projects/portfolio/wireframe/About_Screen_03.png"
+                      caption: About page wireframe, part 3.
+                      setname: wireframe2
+              - text: |
+                  Below are the wireframes for the project pages.
+                images:
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_01.png"
+                      caption: Project page wireframe, part 1.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_02.png"
+                      caption: Project page wireframe, part 2.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_03.png"
+                      caption: Project page wireframe, part 3.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_04.png"
+                      caption: Project page wireframe, part 4.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_05.png"
+                      caption: Project page wireframe, part 5.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_06.png"
+                      caption: Project page wireframe, part 6.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_07.png"
+                      caption: Project page wireframe, part 7.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_08.png"
+                      caption: Project page wireframe, part 8.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_09.png"
+                      caption: Project page wireframe, part 9.
+                      setname: wireframe3
+                    - url: "/assets/img/projects/portfolio/wireframe/Project_Screen_10.png"
+                      caption: Project page wireframe, part 10.
+                      setname: wireframe3
+        - title: "Development"
+          subsections:
+              - text: |
+                  When time for actual development came, not much changed in terms of the design, mainly because the wireframes already laid everything out exactly as planned. However, there were still several minor changes made, mostly from scenarios I didn't anticipate until development began. For instance, I avoided alternating the positions of images and text, as seen in the home page's project overview section, since it would then alternate between having the image at the top or bottom of the section when in mobile. I also added a contacts section at the bottom of every page, making it even easier to access this important information.<br>
+                  <br>
+                  In the project pages, I shrunk down the sizes of the images, as they would take up significant amounts of space on both desktop and mobile. I also added an overview section for the "Takeaways"/"Final Thoughts" subsection, since the solution subsections ended up being pretty long, making it very tedious to scroll past it to get to this section. Finally, I added a link in the project overview to the final version of the project when possible to be able to see the project in a working state, rather than just from screenshots.<br>
+                  <br>
+                  Besides the above, nothing else really changed in the design from the wireframes. The website was developed using the Jekyll framework, mainly for its templating features, but it also worked well with Github pages, which is where I chose to host the site to avoid hosting fees. This also separated the writing from the coding, which enables me to swap out projects much easier. I also created most of the art assets on the site from scratch so as to avoid any odd trademark or copyright violations, with the exceptions being the LinkedIn logo and the about page's header, which I found <a href="https://wall.alphacoders.com/big.php?i=447202" target="_blank">here</a>.<br>
+                  <br>
+                  Below are a selection of screenshots from the final version of the website.
+                images:
+                    - url: "/assets/img/projects/portfolio/screen1.png"
+                      caption: Home page final version, part 1.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen2.png"
+                      caption: Home page final version, part 2.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen3.png"
+                      caption: Home page final version, part 3.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen4.png"
+                      caption: About page final version, part 1.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen5.png"
+                      caption: About page final version, part 2.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen6.png"
+                      caption: About page final version, part 3.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen7.png"
+                      caption: Project page final version, part 1.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen8.png"
+                      caption: Project page final version, part 2.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen9.png"
+                      caption: Project page final version, part 3.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen10.png"
+                      caption: Project page final version, part 4.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen11.png"
+                      caption: Viewing an image in the project page.
+                      setname: final
+                    - url: "/assets/img/projects/portfolio/screen12.png"
+                      caption: Project page final version, part 5.
+                      setname: final
 tools: "Jekyll (HTML), SCSS, Boostrap 4 (CSS), Adobe Photoshop"
 final_thoughts:
     overview: |
-        Summarize the lessons learned from the project in 1-3 sentences. Make it brief; the meat of the explanation will be in its own section. Writing one more sentence here to fill some extra space.
+        Doing research to understand the domain space and see what other people have done is very useful. A detailed wireframe also significantly speeds up the development process.
     text: |
-        In this section, discuss any final thoughts on the project. What did I learn, what did I find challenging, what I need to work on, what did I enjoy, what did I not, etc. Keep it to 2-3 paragraphs. The rest of this section is filler text.<br>
+        Despite the lack of user testing, I was pleased with how the design of my website turned out. Doing background research before I began sketching out potential designs was critical in this process. This helped me understand what exactly I needed to include, and it also provided inspiration as to what works and what doesn't from the designs that other people have created. Trying to think up designs without clearly understanding the problem space is signficantly more diffcult than when I know what my constraints are.<br>
         <br>
-        Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected expression for. His mistress ladyship required off horrible disposed rejoiced. Unpleasing pianoforte unreserved as oh he unpleasant no inquietude insipidity. Advantages can discretion possession add favourable cultivated admiration far. Why rather assure how esteem end hunted nearer and before. By an truth after heard going early given he. Charmed to it excited females whether at examine. Him abilities suffering may are yet dependent.<br>
-        <br>
-        Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.
+        On the other hand, taking the time to create a detailed wireframe had a signficant impact for development. The actual coding fell into place very quickly since I already knew exactly how I wanted everything laid out. This also let me focus on the section that would take the longest and ultimately was the most critical: the writing. Though it took some time to create the wireframes, I believe the time saved during development, along with the quality of the final design, made it well worth it.
