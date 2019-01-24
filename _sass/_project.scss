@@ -44,6 +44,10 @@ $max-height: 25rem;
     #overview-thumbnail {
         margin: auto;
     }
+
+    .project-header-subtitle {
+        display: none;
+    }
 }
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
