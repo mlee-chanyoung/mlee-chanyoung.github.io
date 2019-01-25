@@ -1,18 +1,18 @@
 url: "/about"
-headshot: /assets/img/headshot.png
+headshot: /assets/img/headshot_casual.png
 subtitle: Aspiring UI/UX Designer or Researcher
 about_title: "About Me"
 about_link: "More About Me"
 why:
     title: "Why UI/UX?"
     quote: |
-        "Provide people an experience the complete opposite of this one: an experience that would raise them up, rather than break them down."
+        "What I want is to give people an experience the complete opposite of this one, one where my presence and influence brings them both excitement and ease of mind."
     body: |
-        As part of a work-study program in high school, I (unexpectedly) found myself sitting at a desk answering the phone in a call center for a certain delivery company. Unfortunately, it turned out to be a much greater ordeal than I ever expected. Every time I picked up the phone, I was met with exploding rage, which was occassionally traded in for overflowing despair instead. However, the worst part wasn't the callers' attitudes—no, it was the fact that I was helpless to make a difference in their experience.<br>
+        As part of a work-study program in high school, I (unexpectedly) found myself sitting at a desk answering the phone in a call center for a certain delivery company. Unfortunately, it was a much greater struggle than I could have expected. Every time I picked up the phone, I was met with explosive anger, occassionally traded out with a desperate cry for help. However, the worst part wasn't the callers' attitudes—no, it was the fact that their time with me was always miserable, but I couldn't do anything to help them.<br>
         <br>
-        I didn't blame the customers for their distraught emotions, empathizing with their hardships. But in the end, that was all I could do; all I had to offer to my troubled customers during their time of distress was many apologies and the occasional gift card. With each heartbreaking phone call I answered, I started to form a clearer image of what I wanted to do with my future: provide people an experience the complete opposite of this one: an experience that would raise them up, rather than break them down.<br>
+        I empathized with the customers' hardships, so I didn't blame them for their distraught emotions. But in the end, empathy was all I could give; all I had to offer to my customers during their time of distress were many apologies and the occasional gift card. However, with each heartbreaking phone call I answered, I started to form a clearer image of what I wanted to do with my future. What I want is to give people an experience the complete opposite of this one, one where my presence and influence brings them both excitement and ease of mind. Whatever I did, I wanted to make sure that I accomplished this goal.<br>
         <br>
-        With a goal in sight, I decided to utilize my proficiency in math to begin studying computer science in college, initially aiming to be involved with front-end development, where my work could directly interact with users. However, as I gained more experience, I realized my true passion lied in the user interface and user experience (UI/UX) instead. Rather than the actual implentation, I found I love generating ideas for how to create an intuitive design and trying to understand the user's perspective. Further, this field combines together the technical knowledge I cultivated through my computer science degree, my analytical method of thinking, as well as my more creative pursuits in areas like art, music, and writing. With these experiences in hand, I hope to enter the UI/UX field to provide users what I couldn't over the phone: an uplifting, enjoyable experience.
+        With this motivation guiding my path, my proficiency in math led me to begin studying computer science in college, initially aiming to be a front-end developer, where my work could directly interact with users. However, as I gained more experience, I realized my true passion lied in the user interface and user experience (UI/UX) field instead. Rather than the actual implentation, I found I love generating ideas for how to create an intuitive design and trying to understand the user's perspective. Further, in this discipline I can make use of the technical knowledge from my computer science degree and my analytical mindset, as well as my more creative talents in areas like art, music, and writing. Equipped with these experiences, I hope to enter the UI/UX field to provide users what I couldn't over the phone: an uplifting, enjoyable experience.
 education:
     title: "Education"
     thumbnail: "/assets/img/about/education_thumbnail.png"
@@ -46,7 +46,7 @@ skills:
           items:
               - "English: Native"
               - "Korean: Intermediate"
-              - "Japanese: Intermediate"
+              - "Japanese: Intermediate (JLPT N3)"
         - title: Professional Writing Experience
           thumbnail: "/assets/img/about/writing_thumbnail.png"
           items:

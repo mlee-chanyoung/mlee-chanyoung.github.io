@@ -1,7 +1,7 @@
 title: "Portfolio Website"
 subtitle: "Show the world what I've done"
 thumbnail: "/assets/img/projects/portfolio/thumbnail.png"
-roles: "Lead designer and developer"
+roles: "Sole designer and developer"
 link: "https://github.com/mclee3360/mclee3360.github.io"
 overview: |
     A website created to showcase to the public various projects that I have worked on, as well as the skills and experiences I have gained through them.
@@ -38,7 +38,7 @@ solution:
                       caption: Concept sketches for the home page's about section.
                       setname: sketch1
               - text: |
-                  One of the things that I focused on was making navigation simple, while avoiding cluttering the interface. Especially because there would be a lot of text in a site like this, being able to quickly navigate to wherever desired would be essential. One approach for this issue was the ever present menu bar at the top of the screen. This allows users to navigate to any of the six pages at any time, as well as to some major subsections like the "Contacts" section. On the other hand, overview sections often contain links to different pages or sections that elaborate on what is being overviewed, such as how the project overviews on the home screen contain links to their respective project pages. Between these two methods, most of the major subsections should be able to be reached quickly, especially when the user is already viewing related content.
+                  One of the things that I focused on was making navigation simple, while trying to avoid cluttering the interface. Especially because of the large amount of text in a site like this, being able to quickly navigate to wherever desired would be essential. One approach for this issue was the ever present menu bar at the top of the screen. This allows users to navigate to any of the six pages at any time, as well as to some major subsections like the "Contacts" section. On the other hand, overview sections often contain links to different pages or sections that elaborate on what is being overviewed, such as how the project overviews on the home screen contain links to their respective project pages. Between these two methods, most of the major subsections should be able to be reached quickly, especially when the user is already viewing related content.
                 images:
                     - url: "/assets/img/projects/portfolio/sketch4.jpg"
                       caption: Concept sketches for the about page.
@@ -50,7 +50,7 @@ solution:
                       caption: Concept sketches for the project page layout, part 1.
                       setname: sketch3
                     - url: "/assets/img/projects/portfolio/sketch7.jpg"
-                      caption: Concept sketches for the project page layout, part 2
+                      caption: Concept sketches for the project page layout, part 2.
                       setname: sketch3
                     - url: "/assets/img/projects/portfolio/sketch8.jpg"
                       caption: Concept sketches for the project page layout, part 3.
@@ -172,8 +172,8 @@ solution:
 tools: "Jekyll (HTML), SCSS, Boostrap 4 (CSS), Adobe Photoshop"
 final_thoughts:
     overview: |
-        Doing research to understand the domain space and see what other people have done is very useful. A detailed wireframe also significantly speeds up the development process.
+        Doing research to understand the domain space and to view what others have done is very useful. A detailed wireframe also significantly speeds up the development process.
     text: |
         Despite the lack of user testing, I was pleased with how the design of my website turned out. Doing background research before I began sketching out potential designs was critical in this process. This helped me understand what exactly I needed to include, and it also provided inspiration as to what works and what doesn't from the designs that other people have created. Trying to think up designs without clearly understanding the problem space is signficantly more diffcult than when I know what my constraints are.<br>
         <br>
-        On the other hand, taking the time to create a detailed wireframe had a signficant impact for development. The actual coding fell into place very quickly since I already knew exactly how I wanted everything laid out. This also let me focus on the section that would take the longest and ultimately was the most critical: the writing. Though it took some time to create the wireframes, I believe the time saved during development, along with the quality of the final design, made it well worth it.
+        On the other hand, taking the time to create a detailed wireframe had a signficant impact on development. The actual coding fell into place very quickly since I already knew exactly how I wanted everything laid out. This also let me focus on the section that would take the longest and ultimately was the most critical: the writing. Though it took some time to create the wireframes, I believe the time saved during development, along with the quality of the final design, made it well worth it.

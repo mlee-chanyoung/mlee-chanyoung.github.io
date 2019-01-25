@@ -125,16 +125,6 @@ a:hover {
     text-decoration: none;
 }
 
-.link {
-    color: $link-color;
-    text-decoration: underline;
-}
-
-.link:hover {
-    color: $link-color;
-    text-shadow: 1px 1px $primary-color;
-}
-
 .header-row {
     height: $header-height;
 }
