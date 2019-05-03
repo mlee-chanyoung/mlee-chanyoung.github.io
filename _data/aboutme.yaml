@@ -1,10 +1,10 @@
 url: "/about"
 headshot: /assets/img/headshot_casual.png
-subtitle: Aspiring UI/UX Designer or Researcher
+subtitle: Front-End Developer
 about_title: "About Me"
 about_link: "More About Me"
 why:
-    title: "Why UI/UX?"
+    title: "Why Front-End?"
     quote: |
         "What I want is to give people an experience the complete opposite of this one, one where my presence and influence brings them both excitement and ease of mind."
     body: |
@@ -18,29 +18,47 @@ education:
     thumbnail: "/assets/img/about/education_thumbnail.png"
     school: "Georgia Institute of Technology"
     time: "August 2015 - May 2019"
-    major: "Bachelor of Science in Computer Science, concentrations in People and Media"
+    major: |
+        Bachelor of Science in Computer Science, concentrations in People and Media
+        <ul>
+            <li>GPA: 4.0</li>
+            <li>Highest Honors</li>
+        </ul>
 skills:
     title: "Skills and Tools"
     skills:
-        - title: Experience with Tools
-          thumbnail: "/assets/img/about/tool_thumbnail.png"
-          items:
-              - Adobe Photoshop
-              - Balsamiq Mockups
-              - InVision
-              - Fluid UI
-              - Unity
-              - Amazon Web Services
         - title: Programming Experience
           thumbnail: "/assets/img/about/programming_thumbnail.png"
           items:
               - Python
               - Java
-              - HTML / Jinja2 / Jekyll
-              - CSS / SCSS
-              - Javascript / jQuery
+              - HTML5
+              - CSS, SCSS
+              - JavaScript
               - C#
               - C
+        - title: Frameworks and Libraries
+          thumbnail: "/assets/img/about/programming_thumbnail.png"
+          items:
+              - Android Studio (Java)
+              - Flask (Python)
+              - jQuery (JavaScript)
+              - D3 (JavaScript)
+              - Google Apps Script (JavaScript)
+              - Bootstrap (CSS, JavaScript)
+              - Jekyll (HTML Templating)
+              - Jinja2 (HTML Templating)
+              - Unity (C#)
+        - title: Experience with Tools
+          thumbnail: "/assets/img/about/tool_thumbnail.png"
+          items:
+              - GitHub, GitHub Pages
+              - Adobe Photoshop
+              - Balsamiq Mockups
+              - InVision
+              - Fluid UI
+              - Amazon Web Services
+              - Tableau
         - title: Spoken Languages
           thumbnail: "/assets/img/about/language_thumbnail.png"
           items:
@@ -50,10 +68,13 @@ skills:
         - title: Professional Writing Experience
           thumbnail: "/assets/img/about/writing_thumbnail.png"
           items:
-              - Editing others' writing
+              - Writing documentation
               - Writing test cases
               - Writing bug reports
-              - Writing synopses
+              - Writing surveys
+              - Writing interview scripts
+              - Writing and editing synopses
+              - Writing internal newsletters
 hobbies:
     title: "Other Information"
     subtitle: "In My Spare Time"
@@ -61,4 +82,4 @@ hobbies:
     body: |
         Ever since I was a child, music has always been a large part of my life. I started learning the piano at a young age and eventually picked up the violin as well. Though I eventually switched from violin to trumpet, I continue to play both the piano and trumpet to this day.<br>
         <br>
-        Besides music, I also enjoy trying to improve my skills in art and writing. For example, my interest in writing led me to become involved with MAL Rewrite, a volunteer organization on <a target="_blank" href="https://myanimelist.net">MyAnimeList</a> that is dedicated to writing original, high quality synopses for all the entries on the site, which I now help lead as a coordinator.
+        Besides music, I also enjoy trying to improve my skills in art and writing. For example, my interest in writing led me to become involved with MAL Rewrite, a volunteer organization on <a target="_blank" href="https://myanimelist.net">MyAnimeList</a> that is dedicated to writing original, high quality synopses for all the entries on the site, which I now help lead as a coordinator. My contributions to the group can be seen <a href="https://mclee3360.github.io/rewrite-portfolio" target="_blank">here</a>.
