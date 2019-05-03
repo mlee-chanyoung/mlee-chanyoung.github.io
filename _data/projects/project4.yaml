@@ -1,10 +1,10 @@
-title: "Portfolio Website"
-subtitle: "Show the world what I've done"
+title: "Rewrite Portfolio"
+subtitle: "Showcase my writing and editing"
 thumbnail: "/assets/img/projects/portfolio/thumbnail.png"
-roles: "Sole designer and developer"
+roles: "Sole developer and designer"
 link: "https://github.com/mclee3360/mclee3360.github.io"
 overview: |
-    A website created to showcase to the public various projects that I have worked on, as well as the skills and experiences I have gained through them.
+    A website created to showcase and archive my contributions to MAL Rewrite, an online volunteer writing orgnization I help lead.
 banner: "/assets/img/projects/portfolio/header.png"
 problem:
     overview: |

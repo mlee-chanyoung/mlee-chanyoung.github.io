@@ -6,13 +6,14 @@ about_link: "More About Me"
 why:
     title: "Why Front-End?"
     quote: |
-        "What I want is to give people an experience the complete opposite of this one, one where my presence and influence brings them both excitement and ease of mind."
+        "I want my product to be a positive influence to those it comes into contact with, not a source of frustration and anger"
     body: |
-        As part of a work-study program in high school, I (unexpectedly) found myself sitting at a desk answering the phone in a call center for a certain delivery company. Unfortunately, it was a much greater struggle than I could have expected. Every time I picked up the phone, I was met with explosive anger, occassionally traded out with a desperate cry for help. However, the worst part wasn't the callers' attitudes—no, it was the fact that their time with me was always miserable, but I couldn't do anything to help them.<br>
+        After enduring the verbal beatdowns and helplessness that came with working part-time at a call center, I was determined to never let my work make anyone feel the way that the customers on the other end of the phone did ever again. I want my product to be a positive influence to those it comes into contact with, not a source of frustration and anger like the service this particular company provided.<br>
         <br>
-        I empathized with the customers' hardships, so I didn't blame them for their distraught emotions. But in the end, empathy was all I could give; all I had to offer to my customers during their time of distress were many apologies and the occasional gift card. However, with each heartbreaking phone call I answered, I started to form a clearer image of what I wanted to do with my future. What I want is to give people an experience the complete opposite of this one, one where my presence and influence brings them both excitement and ease of mind. Whatever I did, I wanted to make sure that I accomplished this goal.<br>
+        On the other hand, when deciding what field I wanted to study, I wanted something that would be able to utilize my analytical mindset and skills, while also being able to draw from my background in more creative pursuits like writing, music, and art. After giving it some thought, I felt that studying computer science and entering the programming space would help me fully utilize my skills and talents, setting me up for success.<br>
         <br>
-        With this motivation guiding my path, my proficiency in math led me to begin studying computer science in college, initially aiming to be a front-end developer, where my work could directly interact with users. However, as I gained more experience, I realized my true passion lied in the user interface and user experience (UI/UX) field instead. Rather than the actual implentation, I found I love generating ideas for how to create an intuitive design and trying to understand the user's perspective. Further, in this discipline I can make use of the technical knowledge from my computer science degree and my analytical mindset, as well as my more creative talents in areas like art, music, and writing. Equipped with these experiences, I hope to enter the UI/UX field to provide users what I couldn't over the phone: an uplifting, enjoyable experience.
+        With these two goals driving my way forward, I decided to pursue front-end development, as it combines these two motivations together. In this space, I am able to work on what the user actually interacts with, directly impacting the quality of their experience. Further, while this space of course utilizes my abilities in programming and development, my other talents can also find places to shine, such as by influencing the design or user experience. Because of these opportunities, I believe that this field is one where I am able to flourish, able to provide the best of my abilities for both the users and my employers.<br>
+        <br>
 education:
     title: "Education"
     thumbnail: "/assets/img/about/education_thumbnail.png"
@@ -38,7 +39,7 @@ skills:
               - C#
               - C
         - title: Frameworks and Libraries
-          thumbnail: "/assets/img/about/programming_thumbnail.png"
+          thumbnail: "/assets/img/about/framework_thumbnail.png"
           items:
               - Android Studio (Java)
               - Flask (Python)
@@ -53,18 +54,13 @@ skills:
           thumbnail: "/assets/img/about/tool_thumbnail.png"
           items:
               - GitHub, GitHub Pages
+              - Subversion
               - Adobe Photoshop
               - Balsamiq Mockups
               - InVision
               - Fluid UI
               - Amazon Web Services
               - Tableau
-        - title: Spoken Languages
-          thumbnail: "/assets/img/about/language_thumbnail.png"
-          items:
-              - "English: Native"
-              - "Korean: Intermediate"
-              - "Japanese: Intermediate (JLPT N3)"
         - title: Professional Writing Experience
           thumbnail: "/assets/img/about/writing_thumbnail.png"
           items:
@@ -75,6 +71,12 @@ skills:
               - Writing interview scripts
               - Writing and editing synopses
               - Writing internal newsletters
+        - title: Spoken Languages
+          thumbnail: "/assets/img/about/language_thumbnail.png"
+          items:
+              - "English: Native"
+              - "Korean: Intermediate"
+              - "Japanese: Intermediate (JLPT N3)"
 hobbies:
     title: "Other Information"
     subtitle: "In My Spare Time"
