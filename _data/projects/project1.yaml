@@ -2,7 +2,6 @@ title: "Monita"
 subtitle: "Visualizing the status of servers and applications"
 thumbnail: "/assets/img/projects/monita/thumbnail.png"
 roles: "Sole developer and designer"
-link: ""
 overview: |
     A dashboard application that visualizes the status of the various applications and servers my team is responsible for in a way that is simple to understand.
 banner: "/assets/img/projects/monita/header.png"
@@ -116,7 +115,16 @@ solution:
                       setname: dev3
               - text: |
                   I decided to name the dashboard "Monita", mostly just as a play on words to sound similar to "moniter", a word that encompassed the application's main goal. After development on Monita concluded, I presented the application in front of my team, and then later in front of the IT department to showcase what I had been working on over the summer. Afterwards, I handed off the project to my team to use and expand upon. The internals of the application were designed so that additional nodes and development environments could be added with relative ease, allowing the team to expand the scope of the application as needed.
-tools: "Flask (Python), Jinja2 (HTML), Bootstrap 4 (CSS), Amazon Web Services (AWS) Elastic Beanstalk, Subversion (SVN)"
+tools:
+    - "Flask: Python"
+    - HTML5
+    - SCSS
+    - "Bootstrap 4: CSS, JavaScript"
+    - jQuery
+    - Ajax
+    - "Jinja2: HTML Templating"
+    - Amazon Web Services Elastic Beanstalk
+    - Subversion
 final_thoughts:
     overview: |
         Do your research and keep in mind constraints. Also, work in the UI/UX space is what I enjoy the most.

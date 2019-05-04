@@ -1,22 +1,13 @@
-title: "Revenge of the Kupa"
-subtitle: "Defeat Mahrio, claim vengeance"
-thumbnail: "/assets/img/projects/kupa/thumbnail.png"
-roles: "Project manager, developer, and designer"
-link: "https://github.com/CarlosPriddy3/RevengeOfTheKupa/tree/VGDesign"
+title: "Halloween Candy Data Visualizer"
+subtitle: "What do people like to get on Halloween?"
+thumbnail: "/assets/img/projects/candy/thumbnail.png"
+roles: "Developer and designer"
+links:
+    - label: GitHub
+      link: "https://github.com/dainryoo/candy-vis"
 overview: |
     A short PC game that follows a single Kupa in its quest for revenge against Mahrio (yes, spelled like that) by destroying a cloning factory, the source of Mahrio's extra lives.
-banner: "/assets/img/projects/kupa/header.png"
-problem:
-    overview: |
-        Create a "Game Feel" game in Unity, where the player takes on the perspective of an enemy in the Mario universe.
-    sections:
-        - text: |
-            For my video game design course, we were tasked with developing a small video game in teams using Unity. The requirements of the game were pretty loose, with the freedom to develop whatever type of game we wanted (with a few genre exceptions), as long as it could be categorized as a "Game Feel" game.<br>
-            <br>
-            So what is a "Game Feel" game? Rather than some kind of evaluation of quality or a requirement to be a good game, it is simply a classification. According to Steve Swink, the one who popularized the term, "Game Feel" games have three major components: real-time control, a simulated space, and a degree of polish. In other words, these games are built on real-time control of virtual objects in a simulated space, with interactions emphasized by polish.<br>
-            <br>
-            But before we even began thinking of gameplay elements to fulfill this requirement of "Game Feel", our team focused on deciding a theme—the central idea to anchor our game around. However, brainstorming these ideas didn't take too long, as one team member really wanted to make a game about playing from the perspective as a cannon fodder enemy. In particular, they wanted to have it relate to the Mario series, meaning the player would control something like a Goomba or a Koopa. The rest of our team thought it sounded fun, and we weren't going to run into any copyright issues since it was just a course project, so we decided to develop our game around this idea.
-    images:
+banner: "/assets/img/projects/candy/header.png"
 solution:
     overview: |
         Develop a 3D platforming game where the main player takes control of a "Kupa", with the main gameplay hook being the usage of its shell.
@@ -150,13 +141,8 @@ solution:
                     - url: "/assets/img/projects/kupa/screen16.png"
                       caption: Kupa preparing to destroy the cloning machine in the final version.
                       setname: final2
-tools: "Unity (C#), Adobe Photoshop"
-final_thoughts:
-    overview: |
-        Good communication and project organization are critical for the different parts of the project—including UI/UX—to come together and deliver a quality product.
-    text: |
-        Rather than lessons specifically about UI/UX work, my takeaways from this project were more about project management and how UI/UX fits in with everything else. Some of the main problems holding back the game's development were a lack of communication and organization within the team, particularly in the game's early stages. Probably around halfway through the game's alpha development, we had a checkup with our course instructor to see where the game was at. Unfortunately, the game was not in a good shape. Everyone had been working on their individual parts, but no one really knew what anyone else was doing, so when time came to show off our game's progress, we were desperately trying to throw together our own pieces into a cohesive game. As expected, it didn't work out too well and was an exteremly stressful situation.<br>
-        <br>
-        Because of this experience however, I decided to step up and take on the role of project manager for the team. This involved organizing meetings, delegating roles, performing periodic status updates, and so on. By tackling the lack of organization within my team, development for the rest of the project was able to proceed much smoother, since everyone knew what they needed to do, and work wasn't pushed off until right before the deadline.<br>
-        <br>
-        Unfortunately, while this resolved most of the organization issues, communication was still lacking at times. For instance, one of our main developers ended up adding in several "features" to the game that the rest of the team had no idea about. Since we didn't know about these, we weren't able to account for them in our work; for me specifically, that meant I wasn't able to add them into the instructions screen. This often meant that these features felt like an afterthought, completely disjointed from the rest of the game, such as in the level design and user interface. There wasn't much the rest of the team could do about this, since we only found out about these changes at the last minute, but it helped reiterate to me just how important communication is in a team project. Even when I'm focused on the UI/UX side of things, what other people do has a direct impact on my work and vice versa, making it critical that everyone knows what the rest of the team is doing.
+tools:
+    - HTML5
+    - CSS
+    - JavaScript
+    - D3

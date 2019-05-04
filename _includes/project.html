@@ -10,7 +10,7 @@
     </div>
 </div>
 <!-- Overview section -->
-<div class="row content-row">
+<div class="row offset-row content-row">
     <div class="col content-col">
         <div class="row title-row">
             <div class="col">
@@ -21,53 +21,10 @@
             <div class="col thumb-right-col">
                 <div class="row overview-project-content-row">
                     <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.problem_title }}</h2>
+                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.description_title }}</h2>
                         <div class="left-col">
                             <p class="project-text">{{ project.problem.overview }}</p>
                         </div>
-                    </div>
-                </div>
-                <div class="row button-row">
-                    <div class="col">
-                        <a href="#problem" class="button">
-                            <span>
-                                {{ site.data.projects.general.link_title }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row overview-project-content-row">
-                    <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.solution_title }}</h2>
-                        <div class="left-col">
-                            <p class="project-text">{{ project.solution.overview }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row button-row">
-                    <div class="col">
-                        <a href="#solution" class="button">
-                            <span>
-                                {{ site.data.projects.general.link_title }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row overview-project-content-row">
-                    <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.final_overview_title }}</h2>
-                        <div class="left-col">
-                            <p class="project-text">{{ project.final_thoughts.overview }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row button-row">
-                    <div class="col">
-                        <a href="#takeaways" class="button">
-                            <span>
-                                {{ site.data.projects.general.link_title }}
-                            </span>
-                        </a>
                     </div>
                 </div>
                 <div class="row overview-project-content-row">
@@ -82,46 +39,35 @@
                     <div class="col">
                         <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.tools_title }}</h2>
                         <div class="left-col">
-                            <p class="project-text">{{ project.tools }}</p>
+                            <ul>
+                                {% for tool in project.tools %}
+                                <li><p class="project-text">{{ tool }}</p></li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
                 </div>
-                {% assign len = project.link | size %}
-                {% if len > 0 %}
                 <div class="row overview-project-content-row">
                     <div class="col">
                         <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.project_link_title }}</h2>
+                        <div class="left-col">
+                            {% if project.links | size > 0 %}
+                            <ul>
+                                {% for link in project.links %}
+                                <li><a class="project-link" href="{{ link.link }}" target="_blank">{{ link.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% else %}
+                            <p class="project-text">{{ site.data.projects.general.no_links }}</p>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
-                <div class="row button-row">
-                    <div class="col">
-                        <a href="{{ project.link }}" class="button" target="_blank">
-                            <span>
-                                {{ site.data.projects.general.project_link_link_title }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                {% endif %}
             </div>
             <div class="thumbnail-div" id="overview-thumbnail">
                 <img class="thumbnail" src="{{ project.thumbnail }}">
             </div>
         </div>
-    </div>
-</div>
-<!-- Problem section -->
-<div class="row offset-row content-row" id="problem">
-    <div class="col content-col">
-        <div class="row title-row">
-            <div class="col">
-                <h1 class="section-title">{{ site.data.projects.general.problem_title }}</h1>
-            </div>
-        </div>
-        {%
-            include project_subsection.html
-            sections=project.problem.sections
-        %}
     </div>
 </div>
 <!-- Solution section -->
@@ -145,25 +91,8 @@
         {% endfor %}
     </div>
 </div>
-<!-- Final Thoughts section -->
-<div class="row offset-row content-row" id="takeaways">
-    <div class="col content-col">
-        <div class="row title-row">
-            <div class="col">
-                <h1 class="section-title">{{ site.data.projects.general.final_title }}</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col left-col">
-                <p>
-                    {{ project.final_thoughts.text }}
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Contacts section -->
-<div class="row footer-row" id="contact">
+<div class="row offset-row footer-row" id="contact">
     <div class="col content-col">
         {% include contact.html %}
         <div class="row">

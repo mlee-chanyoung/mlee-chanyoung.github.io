@@ -1,8 +1,10 @@
 title: "Ref-U-Store"
 subtitle: "Empowering refugees to manage their personal documents"
 thumbnail: "/assets/img/projects/refustore/thumbnail.png"
-roles: "Developer and designer"
-link: "https://github.com/BranSeal/HealthPort/tree/development"
+roles: "Developer"
+links:
+    - label: GitHub
+      link: https://github.com/BranSeal/HealthPort/tree/development
 overview: |
     A mobile application aimed primarily at refugees, empowering them to better manage their personal documents and make their resettlement process a little easier.
 banner: "/assets/img/projects/refustore/header.png"
@@ -114,7 +116,11 @@ solution:
                     - url: "/assets/img/projects/refustore/screen12.png"
                       caption: Screenshot of profile information screen.
                       setname: screens
-tools: "Android Studio (Java), Fluid UI"
+tools:
+    - Android Studio
+    - Java
+    - Fluid UI
+    - GitHub
 final_thoughts:
     overview: |
         A good mockup keeps the design consistent and saves time. Also, user testing is great, but it works best alongside iteration.
