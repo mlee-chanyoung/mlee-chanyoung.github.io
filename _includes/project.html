@@ -23,7 +23,7 @@
                     <div class="col">
                         <h2 class="subsection-title overview-project-title">{{ site.data.projects.general.description_title }}</h2>
                         <div class="left-col">
-                            <p class="project-text">{{ project.problem.overview }}</p>
+                            <p class="project-text">{{ project.description }}</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                             {% if project.links | size > 0 %}
                             <ul>
                                 {% for link in project.links %}
-                                <li><a class="project-link" href="{{ link.link }}" target="_blank">{{ link.label }}</a></li>
+                                <li><a class="project-link" href="{{ link.link }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a></li>
                                 {% endfor %}
                             </ul>
                             {% else %}
@@ -78,7 +78,7 @@
                 <h1 class="section-title">{{ site.data.projects.general.solution_title }}</h1>
             </div>
         </div>
-        {% for section in project.solution.sections %}
+        {% for section in project.details %}
         <div class="row subsection-title-row">
             <div class="col">
                 <h2 class="subsection-title">{{ section.title }}</h2>

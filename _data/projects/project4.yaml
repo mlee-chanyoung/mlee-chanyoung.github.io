@@ -1,49 +1,48 @@
 title: "Rewrite Portfolio"
 subtitle: "Showcase my writing and editing"
 thumbnail: "/assets/img/projects/portfolio/thumbnail.png"
+banner: "/assets/img/projects/portfolio/header.png"
+overview: |
+    A website created to showcase and archive my contributions to MAL Rewrite, an online volunteer writing orgnization I help lead.
 roles: "Sole developer and designer"
 links:
     - label: "Site"
       link: "https://mclee3360.github.io/rewrite-portfolio"
     - label: "GitHub"
       link: "https://github.com/mclee3360/rewrite-portfolio"
-overview: |
-    A website created to showcase and archive my contributions to MAL Rewrite, an online volunteer writing orgnization I help lead.
-banner: "/assets/img/projects/portfolio/header.png"
-solution:
-    overview: |
-        Develop a website that would detail my thoughts during the design process of the displayed projects, created from scratch to showcase my technical skills.
-    sections:
-        - title: "Home Page"
-          subsections:
-              - text: |
-                  Home Page description.
-                images:
-                    - url: "/assets/img/projects/portfolio/screen1.png"
-                      caption: Portfolio home/showcase page
-                      setname: screens
-        - title: "Archive Page"
-          subsections:
-              - text: |
-                  Archive page description.
-                images:
-                    - url: "/assets/img/projects/portfolio/screen2.png"
-                      caption: Portfolio archive page, part 1
-                      setname: screens
-                    - url: "/assets/img/projects/portfolio/screen3.png"
-                      caption: Portfolio archive page, part 2
-                      setname: screens
-        - title: "About Page"
-          subsections:
-              - text: |
-                  About page description
-                images:
-                    - url: "/assets/img/projects/portfolio/screen4.png"
-                      caption: Portfolio about page
-                      setname: screens
 tools:
     - "HTML5"
     - "SCSS"
     - "Bootstrap 4: CSS, JavaScript"
     - "Jekyll / Liquid: HTML Templating"
     - "GitHub Pages"
+description: |
+    A personal project to create a website that would keep track of all the synopses I've worked on as a member of MAL Rewrite and showcase some of the highlights. MAL Rewrite is a volunteer writing organization for <a href="https://myanimelist.net/" target="_blank" rel="noopener noreferrer">MyAnimeList</a>, the largest online database for East Asian media, dedicated to writing original, high-quality synopses for all the entries on the site. It is a static website and hosted on GitHub pages.
+details:
+    - title: "Home Page"
+      subsections:
+          - text: |
+              The starting page. It showcases a handful of selected synopses directly on the website for the user to view some samples of my work.
+            images:
+                - url: "/assets/img/projects/portfolio/screen1.png"
+                  caption: Portfolio home/showcase page
+                  setname: screens
+    - title: "Archive Page"
+      subsections:
+          - text: |
+              This page contains a datatable that allows the user to browse through all the works I have contributed to, with functionality to sort and filter by various parameters. Each row contains a link to the entry on MAL for the user to directly read if the synopsis has been uploaded.
+            images:
+                - url: "/assets/img/projects/portfolio/screen2.png"
+                  caption: Portfolio archive page, part 1
+                  setname: screens
+                - url: "/assets/img/projects/portfolio/screen3.png"
+                  caption: Portfolio archive page, part 2
+                  setname: screens
+    - title: "About Page"
+      subsections:
+          - text: |
+              This page explains in detail what MAL Rewrite is, and the roles I have had within the organization.
+            images:
+                - url: "/assets/img/projects/portfolio/screen4.png"
+                  caption: Portfolio about page
+                  setname: screens
