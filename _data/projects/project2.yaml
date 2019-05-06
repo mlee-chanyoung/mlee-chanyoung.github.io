@@ -1,132 +1,67 @@
 title: "Ref-U-Store"
 subtitle: "Empowering refugees to manage their personal documents"
 thumbnail: "/assets/img/projects/refustore/thumbnail.png"
+banner: "/assets/img/projects/refustore/header.png"
+overview: |
+    A mobile application aimed primarily at refugees, empowering them to better manage their personal documents and make their resettlement process a little easier.
 roles: "Developer"
 links:
     - label: GitHub
       link: https://github.com/BranSeal/HealthPort/tree/development
-overview: |
-    A mobile application aimed primarily at refugees, empowering them to better manage their personal documents and make their resettlement process a little easier.
-banner: "/assets/img/projects/refustore/header.png"
-problem:
-    overview: |
-        When refugees arrive in America at the end of their resettlement process, they often need a variety of different forms, such as medical records, to integrate into society and receive proper care. However, these can be difficult to keep up with during their displacement, and they might not be in a state that professionals can easily accept.
-    sections:
-        - text: |
-            After persevering through many tribulations as they fled from their origin country of Syria, a refugee mother and her son finally arrive in the United States. Unfortunately, they run into another problem: her son needed to have his cochlear implants repaired, but their doctor needed to see their medical records in order to be able to proceed with any operations. However, the mother didn't have their medical records physically, and the hospital that they visited in Syria had been destroyed in the bombings. With no other options available, all the mother could do was show recorded footage of the hospital in ruins, proving that it would be impossible for her to retrieve those documents.<br>
-            <br>
-            Stories like this family's are what inspired a group of masters students at Emory University to get involved. My capstone project team and I were interested in the work they were doing, so we decided to work together with these students to develop a mobile application for our capstone project.<br>
-            <br>
-            However, this was a problem space that no one on my team had experience in. We met several times with our clients, trying to better understand what exactly the problem was that we were trying to solve. Unfortunately, we were not able to meet with any refugees personally, but we did have an opportunity to visit a resettlement agency in Atlanta that helps refugees in the resettlement process. This gave us a lot of insight into the typical refugee experience and the struggles they have to face, and it also gave us answers to many of the questions we had, such as whether the refugees would even have phones or what level of English proficiency we should expect. We also met with medical professionals to get insight on their side of the problem, identifying what approaches might work best.<br>
-            <br>
-            As we continued our research, the problem that our clients presented to us did not change very much, but it did refine how we might go about tackling the issue. Though the scope of the project eventually broadened from just medical documents to personal documents in general, the overall problem we were trying to solve remained the same. Some tool that refugees could use to centralize all their important personal documents and to share these with the people requesting them would help these refugees significantly in being able to successfully resettle into their new home.
-    images:
-solution:
-    overview: |
-        A mobile application that would aid refugees in managing their personal documents. These documents can be stored as pdfs, either uploaded directly or through the camera, and shared through a temporary link.
-    sections:
-        - title: "User Research and Findings"
-          subsections:
-              - text: |
-                  A large part of the initial design process was doing research to understand our userbase so that we could tailor the application to their needs. To this end, we consulted with various different sources to learn more about our intended users and the problem domain. We began by consulting with our clients, who had some knowledge of the medical field, as well as articles and research papers that were relevant to our topic. After collecting this information, we created a 2.5D sketch to establish a persona for our intended users, and we used this to narrow down the remaining questions that we had. With these new questions in hand, we met with volunteers at a refugee resettlement agency while attending a training session for new volunteers, and we interviewed a healthcare professional at our university.
-                images:
-                    - url: "/assets/img/projects/refustore/25d_sketch.jpg"
-                      caption: 2.5D sketch of our intended users.
-                      setname: research
-              - text: |
-                  The research we conducted had a significant impact on both the features of the application as well as its design. For instance, we found that a significant number of refugees are either families or single mothers with children, so we wanted to design the application where a single account managed several family members, implemented as account profiles. Further, the English proficiency for refugees ranges wildly, from very proficient to illiterate. With this in mind, we wanted to implement icons as a complement to text whenever possible as well as using simple words to lessen the reliance on English. However, ideas like multiple translations were not focused on, as the userbase was so varied.<br>
-                  <br>
-                  Some other considerations we had to take in mind included the platform for which to develop for. We decided to develop on Android, initially because that is what our client believed would be best, but later we found that resettlement agencies tended to give out older Android phones to refugees who did not come to the country with a phone, meaning that it was more likely for refugees to be holding an Android phone. Besides the platform, after speaking with our clients as well as healthcare professionals, it was decided that storing these documents as PDFs would be the best option, as it would be the most likely to be received. Also, though faxing is the primary method of receiving documents in the healthcare world, the healthcare professionals we spoke with said that a sharable temporary link to the document could work just as well in the short term, speeding up appointments, while faxing could just be done later to receive the document more formally.<br>
-                  <br>
-                  Finally, we needed to answer the big question on everyone's mind: what would make our application different from something like Google Drive? One of the main differentiators from the start was the ability to fax documents, as this is the primary method of document sharing in the healthcare world. This would let refugees send their medical documents directly to healthcare professionals by a method that hospital systems can easily accept when a temporary file-sharing URL would not be acceptable. The other major differentiator is the ability to add profiles to accounts, as described earlier. Beyond these major features though, the main reason our clients felt this app was important is that it was being designed directly for refugees, rather than just the general population. Though others might find the features our application holds to be useful, the app is specifically designed to help these brave, resilient people and lessen some of the burden in their lives.
-        - title: "Mockups and Prototype"
-          subsections:
-              - text: |
-                  Having determined through our research what features the application would focus on, my team began thinking about the general flow of the application. Over the course of a meeting, we discussed the general layout of the main screens in the application and created a rough wireframe on a whiteboard to visualize how the different screens in the application were connected. In general, our main philosophy for the layouts was to keep things simple but dense, making it as easy to understand for novices, but still giving experienced users a lot of control when they wanted.
-                images:
-                    - url: "/assets/img/projects/refustore/wireframe1.jpg"
-                      caption: Rough whiteboard wireframe, part 1.
-                      setname: wireframe
-                    - url: "/assets/img/projects/refustore/wireframe2.jpg"
-                      caption: Rough whiteboard wireframe, part 2.
-                      setname: wireframe
-              - text: |
-                  After creating the general flow, we began constructing a high-fidelity prototype for the purposes of user testing. Constructed in Fluid UI, the prototype generally matched the flow that we developed in the wireframes. Here, the main focus was on the layout and usability, with hopes of making the interface as intuitive as possible for new users. However, the team placed less emphasis on other areas of usability, such as readability and color scheme, which when combined with a general lack of care for the prototype's design as well as some limitations placed by the software we used, resulted in a design that was still very rough. This would have a greater impact later, as it forced us to make a lot of design decisions for the interface on the fly during development.<br>
-                  <br>
-                  The prototype can be seen in its entirety <a target="_blank" href="https://www.fluidui.com/editor/live/preview/cF9tNm9WRUxWVkllZGF0Mm1VeTk3Z3p3MDJ4bDgzdzRNVQ==">here</a>, while a few of the main screens can be seen below.
-                images:
-                    - url: "/assets/img/projects/refustore/prototype1.png"
-                      caption: Prototype login screen.
-                      setname: prototype
-                    - url: "/assets/img/projects/refustore/prototype1-1.png"
-                      caption: Prototype profile select screen.
-                      setname: prototype
-                    - url: "/assets/img/projects/refustore/prototype2.png"
-                      caption: Prototype dashboard screen.
-                      setname: prototype
-                    - url: "/assets/img/projects/refustore/prototype6.png"
-                      caption: Prototype document view screen.
-                      setname: prototype
-                    - url: "/assets/img/projects/refustore/prototype4.png"
-                      caption: Prototype file preview/edit screen.
-                      setname: prototype
-                    - url: "/assets/img/projects/refustore/prototype5.png"
-                      caption: Prototype fax inbox screen.
-                      setname: prototype
-        - title: "Testing"
-          subsections:
-              - text: |
-                  Once our prototype had been created, we began testing. Unfortunately, for the same reasons as during our initial research, we were unable to meet with any refugees personally to have testing done. As a substitute, we tested with other students in our class. The testing procedure was a simple think-aloud session, where we asked them to complete a series of tasks within the prototype application and had them talk about what they were doing and any difficulties that they had. The prototype was run on a mobile device to emulate how it would feel in a real usage scenario.<br>
-                  <br>
-                  We received a mix of both positive and critical feedback. Looking at the positives, our testers felt that the application was overall intuitive and easy to understand, which was one of our main goals when creating the prototype. On the other hand, there were several criticisms about certain design decisions. For example, the color scheme, which was all very plain and light, sometimes made it difficult to tell when changes occurred, particularly for popups. Having colors that "popped" from the rest of the application, such as red, would be useful for important notifications, such as when receiving a fax. They also mentioned that pairing some of the icons with labels, and vice versa, would help alleviate uncertainty as to the functions of certain buttons. Finally, they felt that when looking at it from the intended userbase's perspective, the application might still be too English reliant.<br>
-                  <br>
-                  The testing process was very enlightening and revealed to us plenty of room for improvements. Unfortunately, due to how the capstone course was structured, there wasn't any time to update the prototype with these changes, and we instead moved on to beginning development instead. We would just have to carry these notes with us and make the recommended changes to the design during development. This proved to be somewhat detrimental, as some of the feedback we received was heeded, but others ended up completely forgotten or ignored.
-        - title: "Development"
-          subsections:
-              - text: |
-                  Over the next few months, my team began development on the application. Though the overall layout followed the prototype we had created earlier, many changes were made in the process, sometimes out of necessity, other times at the whims of other team members. For this reason, while I mainly focused on getting the actual functionality of the application to work, I spent a significant amount of time tweaking the user interface to try and keep the design somewhat consistent.<br>
-                  <br>
-                  However, due to some misprioritizations and ineffective time management, some cuts had to be made to the application's features. There were actually two different teams working on this same project, each creating a separate version of the application, so some of the largest, most time-consuming features were split between us. My team focused on profiles and security (specifically two-factor authentication), while the other team focused on faxing. Removing faxing from our application resulted in some interface changes, but more importantly, it removed one of our key differentiating features that separated it from other similar applications.<br>
-                  <br>
-                  As expected when the deadline starts approaching, the team scrambled to get all the functionality working, neglecting the UI/UX design of the app in the process. Many of the initial screens were just thrown together without too much care, so most of my work on the design was focused on creating consistency, which ultimately improved usability. The one area the team did put some care into was the icon choices, trying to choose recognizable icons so that the functionality of certain buttons could be easily understood by a novice user.<br>
-                  <br>
-                  The application was originally named Healthport (as in, health passport) because of its focus on medical documents, but when our clients wanted to expand the scope from just medical documents to personal documents in general, the name was changed to Ref-U-Store, which generalized its functionality and clearly stated its intended userbase. Despite this change in scope however, there wasn't any impact on the actual functionality or design, besides the name. After development ended, we presented our project to the public at a school-hosted expo, providing live demonstrations to help passerbys understand what our application does. We then handed the code and application over to our clients to carry on the application's development. Below are screenshots of some of the major screens in the final version of our application.
-                images:
-                    - url: "/assets/img/projects/refustore/screen1.png"
-                      caption: Screenshot of home screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen3.png"
-                      caption: Screenshot of login screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen4.png"
-                      caption: Screenshot of profile select screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen6.png"
-                      caption: Screenshot of document dashboard screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen7.png"
-                      caption: Screenshot of document preview/edit screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen9.png"
-                      caption: Screenshot of document creation confirmation screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen10.png"
-                      caption: Screenshot of document view screen.
-                      setname: screens
-                    - url: "/assets/img/projects/refustore/screen12.png"
-                      caption: Screenshot of profile information screen.
-                      setname: screens
 tools:
     - Android Studio
     - Java
     - Fluid UI
     - GitHub
-final_thoughts:
-    overview: |
-        A good mockup keeps the design consistent and saves time. Also, user testing is great, but it works best alongside iteration.
-    text: |
-        In the end, this project wasn't exactly a design-focused project. Though I tried to get involved with design in the UI and UX where possible, most of my attention was needed on the programming side of things instead. Ultimately, this was more about being able to experience the entire software development process in a professional team setting from start to finish, rather than gaining experience as a designer.<br>
-        <br>
-        However, that is not to say that I didn't learn anything from this experience. One major takeaway I got from this project was how important a good mockup can be. Even if it's not a high-fidelity prototype, a good mockup establishes the design before development even begins, letting the developers focus on getting the functionality right and only recreating the design, rather than trying to make it up as they go along. When the major design decisions are made on the fly, it results in an fragmented design, as well as taking away precious development time that could be better used for working in additional features or administering more thorough testing. I'd always known that wireframes and prototypes were useful, but this was the first time I had seen the consequences of not having an effective mockup in action.<br>
-        <br>
-        Something else that I knew going in but saw play out for the first time was the usefulness of user testing with designs. Getting an outside perspective on the designs that my team and I had been working on resulted in valuable input and feedback on things that we didn't notice ourselves. On the flip side however, I think that this project showed me that user testing isn't nearly as useful when there isn't an opportunity to iterate upon the design with the feedback in mind. As seen in my project, a lot of this feedback ends up forgotten or ignored when trying to just apply it like a band-aid during development, rather than carefully considering how it fits in with the design. User testing and iteration go hand-in-hand, and neither is as powerful without the other.
+description: |
+    When refugees arrive in America at the end of their resettlement process, they often need a variety of different forms, such as medical records, to integrate into society and receive proper care. However, these can be difficult to keep up with during their displacement, and the documents might not be in a state that professionals can easily accept.<br>
+    <br>
+    To help tackle this problem, a group of Master's students at Emory Univerisy enlisted my capstone project team to develop an Android application that would aid refugees in managing their personal documents. These documents can be stored as PDFs—either by uploading from the phone's local storage or converting pictures taken with the camera—and shared through a temporary link. After finishing our work on the application, my team passed it off to our partners for them to continue and refine so that it will one day end up on the phones of refugees.
+details:
+    - title: "Account Information"
+      subsections:
+          - text: |
+              Users log in and register in the app using an email and password, with user data—including account information, documents, and more—stored in Google Firebase. Within each account, multiple profiles can be made that each represent a single person. One use case would be a family that uses a single account, and each family member would have their own profile within the account. The profiles are mostly for organizational purposes, as each profile stores their own set of documents.
+            images:
+                - url: "/assets/img/projects/refustore/screen1.png"
+                  caption: The home screen
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen3.png"
+                  caption: Logging in
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen4.png"
+                  caption: Selecting a profile
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen12.png"
+                  caption: An individual profile's information
+                  setname: screens
+    - title: "Document Creation and Upload"
+      subsections:
+          - text: |
+              Once a profile is selected, the user is taken to the document dashboard screen, where all the documents under the profile are displayed. Specific documents can be searched for using the search bar, and profile information can be viewed or edited through the profile icon in the top-right.<br>
+              <br>
+              New documents can be added by pressing the plus button at the bottom-right corner. This expands to reveal two options: upload through the phone's local storage and take a picture. Once an option is selected, information about the created document can be edited, which includes tags that can be searched for in the dashboard. Further, additional pages can be added using either upload method, allowing users to mix and match pictures and local files. Individual pages can also be viewed and deleted by selecting them. Finally, after confirming the document information, the file is created and shows up in the dashboard, and it now exists in the cloud database as well.
+            images:
+                - url: "/assets/img/projects/refustore/screen6.png"
+                  caption: The document dashboard
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen7.png"
+                  caption: Editing a document's details
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen8.png"
+                  caption: Viewing an individual page
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen9.png"
+                  caption: Confirmation of document creation
+                  setname: screens
+    - title: "Document Viewing and Editing"
+      subsections:
+          - text: |
+              After a document is created, it can be viewed at any time by selecting it on the dashboard. While viewing, the user may choose to edit the document's information or delete it entirely, the latter of which requires the user to re-enter their password. Further, the user is able to create a temporary link to share the document through the sharing button, and they can copy that link directly to their phone's clipboard to easily share with others.
+            images:
+                - url: "/assets/img/projects/refustore/screen10.png"
+                  caption: Viewing a document
+                  setname: screens
+                - url: "/assets/img/projects/refustore/screen11.png"
+                  caption: Generating a link to share a document
+                  setname: screens
