@@ -1,148 +1,45 @@
 title: "Halloween Candy Data Visualizer"
 subtitle: "What do people like to get on Halloween?"
 thumbnail: "/assets/img/projects/candy/thumbnail.png"
+banner: "/assets/img/projects/candy/header.png"
+overview: |
+    An interactive information visualization that indicates what people love and hate receiving on Halloween.
 roles: "Developer and designer"
 links:
     - label: GitHub
       link: "https://github.com/dainryoo/candy-vis"
-overview: |
-    A short PC game that follows a single Kupa in its quest for revenge against Mahrio (yes, spelled like that) by destroying a cloning factory, the source of Mahrio's extra lives.
-banner: "/assets/img/projects/candy/header.png"
-solution:
-    overview: |
-        Develop a 3D platforming game where the main player takes control of a "Kupa", with the main gameplay hook being the usage of its shell.
-    sections:
-        - title: "Idea Generation"
-          subsections:
-              - text: |
-                  Having decided on a theme, we met as a team several times to brainstorm and conceptualize how the game would play. A few different ideas were thrown around, such as a puzzle game where you tried to escape from a room before Mario appeared, a stealth game where you tried to flee from Mario, and so forth. Over the course of a few meetings, we eventually decided on a platforming game where you played as a Koopa, a turtle-like enemy from the Mario games, and navigate to the end of a level to reach the objective.<br>
-                  <br>
-                  The narrative driving the game is that a lone Koopa, whose comrades have all been slain by Mario, decides to take revenge by destroying the source of Mario's extra lives: a cloning machine. Koopa and Mario were also changed to Kupa and Mahrio respectively, to give it that good old knock-off feel. From a gameplay standpoint, the main hook is that Kupa can enter into its shell and launch itself forward to interact with the environment, such as by destroying walls or momentarily stunning the Mahrio clones guarding the cloning machine.<br>
-                  <br>
-                  With our game's vision in mind, the team divided up roles and tasks for development. I volunteered to work on the menus, narrative elements, in-game UI, and most of the art assets. I began sketching out what I wanted some of the icons and menus to looks like. In general, I wanted to try and style it similarly to the Mario games, since it was supposed to be a derivative work of that franchise. In particular, the menus took some inspiration from the pause menus in 2017's <i>Mario Odyssey</i>, while the fonts and titles were styled after 1996's <i>Super Mario 64</i>.
-                images:
-                    - url: "/assets/img/projects/kupa/sketch1.jpg"
-                      caption: Concept sketches for title screen.
-                      setname: sketch1
-                    - url: "/assets/img/projects/kupa/sketch2.jpg"
-                      caption: Concept sketches for some menus, UI objects.
-                      setname: sketch1
-                    - url: "/assets/img/projects/kupa/sketch3.jpg"
-                      caption: Concept sketches for the victory screen, selector icon.
-                      setname: sketch1
-              - text: |
-                  Further on into development, I began sketching out what I wanted the introductory cutscene that would introduce the game's narrative to look like. I decided to portray it essentially as a slideshow, where each "slide" consisted of a picture on top and text on bottom, fading in and out for transitions. This gave it an old-school game vibe, but it was also useful because we were running low on development time to complete the game, so we wouldn't have time to dedicate to creating fully animated cutscenes, either pre-rendered or in-engine.<br>
-                  <br>
-                  When deciding on what images to draw for the cutscene, there were a few key ideas I wanted to convey to the player. The first was sympathizing with what is normally an enemy character. Second was placing Mahrio in a more villainous light, setting him up as the antagonist. Finally, it needed to get across the objective of the game as well. With those ideas in mind, I drew up some concepts of what I wanted the cutscene images to look like.
-                images:
-                    - url: "/assets/img/projects/kupa/sketch4.jpg"
-                      caption: Concept sketches for cutscene images.
-                      setname: sketch2
-              - text: |
-                  The first image is meant to help the player sympathize with the Kupa's goals, as the Kupas lay across the ground, slain and defeated. Mahrio is already pushed into a negative light from the apparent Kupa massacre, but the second image empahsizes this even more, showing Mahrio with a sinister-looking expression on his face. Finally, the last image of the cutscene depicts a crowd Mahrio clones, showing the player what Kupa is trying to stop. However, the last image was changed slightly after consulting with my team. Instead, the picture now focuses on a drawing of the cloning machine within the game, helping the player visualize the objective that they should be looking out for and destroying. The machine is also placed against a backdrop of multiple Marhio faces, empahsizing the cloning aspect that can't really be seen from just the machine itself.
-        - title: "Alpha Development"
-          subsections:
-              - text: |
-                  For alpha development, my main focus was on constructing the basic framework for all the menus so that they would be functional, as well as the actions associated with them (i.e. game scene transitions, pausing, etc.). For the menus, I added placeholder backgrounds so that I could put off creating art assets until a little later, and default fonts were used as well. One of the main features I worked on was getting the buttons in the menu to work as I had envisioned, where it normally is just plain text, but when it is selected, the button's box shape changes color and an icon appears next to the text. This icon was chosen to be a Kupa shell, since the game revolves around the Kupa and its shell-launching ability.<br>
-                  <br>
-                  As stated earlier, the rest of my work involved developing the connective tissue between different parts of the game. I was also planning on creating the charge meter that would show how far the Kupa would launch itself when in shell form, but the main developer for the Kupa chose to do that himself. Below are some screenshots of the alpha version of our game.
-                images:
-                    - url: "/assets/img/projects/kupa/alpha1.png"
-                      caption: Alpha version of the title screen.
-                      setname: alpha
-                    - url: "/assets/img/projects/kupa/alpha5.png"
-                      caption: Alpha version of the game.
-                      setname: alpha
-                    - url: "/assets/img/projects/kupa/alpha3.png"
-                      caption: Alpha version of the Kupa charging its shell launch.
-                      setname: alpha
-                    - url: "/assets/img/projects/kupa/alpha2.png"
-                      caption: Alpha version of the pause screen.
-                      setname: alpha
-                    - url: "/assets/img/projects/kupa/alpha4.png"
-                      caption: Alpha version of the defeat screen.
-                      setname: alpha
-                    - url: "/assets/img/projects/kupa/alpha6.png"
-                      caption: Alpha version of the victory screen.
-                      setname: alpha
-        - title: "Playtesting"
-          subsections:
-              - text: |
-                  Once we got to a good stopping place for the alpha version, we conducted several playtesting sessions in order to evaluate the current state of the game and identify key problems that needed to be fixed. We conducted think-aloud sessions for each playtester, where they would try and complete the game in fifteen minutes. Afterwards, we conducted a short interview with them to get more detailed thoughts on certain topics.<br>
-                  <br>
-                  The testing process was very enlightening and gave us some major insights into areas that we needed to improve. A lot of the major complaints were centered around how it felt to control the Kupa, stating that it felt unresponsive or slow. There were also several complaints about the camera, stating that it felt "wonky", and that sometimes the Mahrio clones would catch them off guard due to the camera angles. Other comments included not understanding what happened when they attacked Mahrio with the shell attack and feeling overwhelmed by a barrage of sound effects. However, despite their complaints about the controls, the playtesters did find using the shell ability to be the most fun part of the game, whether to destroy objects or throw themselves at the Mahrio clones.<br>
-                  <br>
-                  To more quickly understand the testing results, I created a quick visualization to summarize the playtesters' responses, which was shared with the team as well as with the course instructors.
-                images:
-                    - url: "/assets/img/projects/kupa/testing_viz.png"
-                      caption: Visualization summarizing playtesting responses.
-                      setname: playtest
-              - text: |
-                  Using the responses we received from playtesting, my team planned out what exactly we needed to work on before the project's deadline. Aspects like the Kupa controls and camera were major issues that needed to be fixed to make the game easier to play. There were also major usability aspects that needed to be worked on, such as reducing the sound effect overload and helping the player to better understand their interactions with the Mahrios.<br>
-                  <br>
-                  For me specifically, my main focus for the second half of development was to help the player understand the context and controls of the game. This came in the form of features I had already been planning on working on, such as a controls screen, but it was from the playtesting results that other features came about, such as the introductory cutscene. We also changed up certain elements of the game, such as switching from losing in one hit to having a life-based system, which required the creation of in-game UI HUD (heads-up display) elements to accompany them.
-        - title: "Final Development"
-          subsections:
-              - text: |
-                  During the second phase of development, a lot of my time was spent creating art assets, such as menu backgrounds and the cutscene images. I also worked to polish up the content I had already developed, such as implementing custom titles and more relevant fonts. Unfortunately, I did not have time to create a new background for the title screen, so that still uses the temporary background from the alpha version. Besides that however, I was able to finish up what I had wanted to make. Below are screenshots from the final version of the game in areas that I had the most influence in.
-                images:
-                    - url: "/assets/img/projects/kupa/screen1.png"
-                      caption: Final version of the title screen.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen2.png"
-                      caption: Final version of the instructions screen.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen3.png"
-                      caption: Final version of the intro cutscene, part 1.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen4.png"
-                      caption: Final version of the intro cutscene, part 2.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen4-5.png"
-                      caption: Final version of the intro cutscene, part 3.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen9.png"
-                      caption: Final version of the pause menu.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen13.png"
-                      caption: Final version of the defeat screen.
-                      setname: final1
-                    - url: "/assets/img/projects/kupa/screen17.png"
-                      caption: Final version of the victory screen.
-                      setname: final1
-              - text: |
-                  The other team members did end up changing other aspects of the interface as well. For instance, a stamina meter was suddenly added to the game, which limited the number of actions that the Kupa could do consecutively. This included a visible meter indicator on the HUD display, but it was added without consulting with the rest of the team, so it didn't really fit in with the rest of the interface. In-game dialogue was also thrown in for features that Kupa's main developer added in unbeknownst to the rest of the team. Because these were not planned, they didn't show up in the instructions screen as I was unaware of those features' existences.<br>
-                  <br>
-                  There were some more thoughtful UI/UX decisions as well however. For instance, the member who focused on developing interactions between the Mahrios and the Kupa added exclamation mark indicators above both characters when the Mahrio clone spotted the Kupa, which helps the player to better understand when they are being chased. One member also focused on creating a short tutorial level to explain the controls in a safe environment, which included special timed dialogue to teach the player how to play step-by-step.<br>
-                  <br>
-                  Though there were some problems in team communication, I felt that the game's interface mostly came together well. Below are some screenshots from the final version of the game that were not covered earlier.
-                images:
-                    - url: "/assets/img/projects/kupa/screen5.png"
-                      caption: Game's tutorial in the final version.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen6.png"
-                      caption: Start of the game in the final version.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen8.png"
-                      caption: Kupa charging its shell in the final version, low charge.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen7.png"
-                      caption: Kupa charging its shell in the final version, high charge.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen10.png"
-                      caption: Mahrio chasing after Kupa in the final version.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen12.png"
-                      caption: Kupa breaking an object with its shell in the final version.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen14.png"
-                      caption: Checkpoint in the final version.
-                      setname: final2
-                    - url: "/assets/img/projects/kupa/screen16.png"
-                      caption: Kupa preparing to destroy the cloning machine in the final version.
-                      setname: final2
 tools:
     - HTML5
     - CSS
     - JavaScript
     - D3
+description: |
+    An interactive information visualization (InfoViz) created using D3 with the help of a partner as the final project for an InfoViz course. This visualization was created using a slightly modified dataset provided to us based on the data collected for a casual survey conducted by The University of British Columbia. The original dataset can be viewed <a href="http://www.scq.ubc.ca/so-much-candy-data-seriously/" target="_blank" rel="noopener noreferrer">here</a>. The main purpose of this visualization is for users to determine what type of treat they should or shouldn't give out during Halloween by identifying which treats were most loved and most despised.
+details:
+    - title: "Layout"
+      subsections:
+          - text: |
+              A double-sided bar chart serves as the main visual, depicting the percentage of people that responded with "joy" or "despair" to receiving a specific treat on Halloween. On the right are several control options as well as an additional graph to view more information about a selected treat.
+            images:
+                - url: "/assets/img/projects/candy/screen1.png"
+                  caption: Initial screen
+                  setname: screens
+    - title: "Hover and Selection"
+      subsections:
+          - text: |
+              Hovering over a bar causes the name of the treat to appear next to the cursor. This treat also appears on the bar chart to the right, showing the exact percentage for each type of response to the treat, including neutral ones, to one decimal place. A bar can be clicked to lock it into the right chart as "selected", allowing the user to easily compare with a different treat by hovering.
+            images:
+                - url: "/assets/img/projects/candy/screen2.png"
+                  caption: Hovering and selection functionality
+                  setname: screens
+    - title: "Filter, Sort, and Group"
+      subsections:
+          - text: |
+              Various filtering options exist, including by country, gender, and age. The former two can be toggled using checkboxes, while the latter can be filtered to a specific range using a double-sided slider. This data can also be sorted alphabetically by treat name, or by the percentage of joy or despair responses, both ascending and descending. Finally, treats can be grouped by type: candy, chocolate or other. Through this function, users are able to get a more higher level view of opinions towards certain categories of Halloween treats, as opposed to a single brand.
+            images:
+                - url: "/assets/img/projects/candy/screen3.png"
+                  caption: Sort and filter functionality
+                  setname: screens
+                - url: "/assets/img/projects/candy/screen4.png"
+                  caption: Grouping functionality
+                  setname: screens
