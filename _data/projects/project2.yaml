@@ -1,67 +1,60 @@
-title: "Ref-U-Store"
-subtitle: "Empowering refugees to manage their personal documents"
-thumbnail: "/assets/img/projects/refustore/thumbnail.png"
-banner: "/assets/img/projects/refustore/header.png"
+title: "Hacker News Lite"
+subtitle: "Learning to develop with React"
+thumbnail: "/assets/img/projects/hacker-lite/thumbnail.png"
+banner: "/assets/img/projects/hacker-lite/header.png"
 overview: |
-    A mobile application aimed primarily at refugees, empowering them to better manage their personal documents and make their resettlement process a little easier.
-roles: "Developer"
+    A mock Hacker News site developed to practice with and gain proficiency in React.js.
+roles: "Sole Developer"
 links:
+    - label: Site
+      link: https://brave-hermann-460983.netlify.com
     - label: GitHub
-      link: https://github.com/BranSeal/HealthPort/tree/development
+      link: https://github.com/mclee3360/hacker-news-lite
+    - label: Original Website
+      link: https://competent-tesla-bf9dde.netlify.com/
 tools:
-    - Android Studio
-    - Java
-    - Fluid UI
-    - GitHub
+    - React.js
+    - CSS
+    - npm
+    - Webpack
+    - Babel
 description: |
-    When refugees arrive in America at the end of their resettlement process, they often need a variety of different forms, such as medical records, to integrate into society and receive proper care. However, these can be difficult to keep up with during their displacement, and the documents might not be in a state that professionals can easily accept.<br>
-    <br>
-    To help tackle this problem, a group of Master's students at Emory Univerisy enlisted my capstone project team to develop an Android application that would aid refugees in managing their personal documents. These documents can be stored as PDFs—either by uploading from the phone's local storage or converting pictures taken with the camera—and shared through a temporary link. After finishing our work on the application, my team passed it off to our partners for them to continue and refine so that it will one day end up on the phones of refugees.
+    In order to keep up with modern web development trends, gaining familiarity with the major Javascript frameworks is essential. For this, I enrolled in Tyler McGinnis's <a href="https://tylermcginnis.com/courses/" target="_blank">online React course</a> to teach myself the skills needed to be proficient with React. As the final part of this course, we were instructed to make a web application to partially browse posts on Hacker News. The design of the website is based on the example website provided <a href="https://competent-tesla-bf9dde.netlify.com/">here</a>, with a few additional features added in. The project was of course developed using React, and then was bundled using Webpack and hosted on Netlify.
 details:
-    - title: "Account Information"
+    - title: "Post Feed"
       subsections:
           - text: |
-              Users log in and register in the app using an email and password, with user data—including account information, documents, and more—stored in Google Firebase. Within each account, multiple profiles can be made that each represent a single person. One use case would be a family that uses a single account, and each family member would have their own profile within the account. The profiles are mostly for organizational purposes, as each profile stores their own set of documents.
-            images:
-                - url: "/assets/img/projects/refustore/screen1.png"
-                  caption: The home screen
-                  setname: screens
-                - url: "/assets/img/projects/refustore/screen3.png"
-                  caption: Logging in
-                  setname: screens
-                - url: "/assets/img/projects/refustore/screen4.png"
-                  caption: Selecting a profile
-                  setname: screens
-                - url: "/assets/img/projects/refustore/screen12.png"
-                  caption: An individual profile's information
-                  setname: screens
-    - title: "Document Creation and Upload"
-      subsections:
-          - text: |
-              Once a profile is selected, the user is taken to the document dashboard screen, where all the documents under the profile are displayed. Specific documents can be searched for using the search bar, and profile information can be viewed or edited through the profile icon in the top-right.<br>
+              The initial page presents a list of the current top posts on Hacker News, displaying the titles and some metadata for each, which includes the username of the poster, the time it was posted, and the number of comments the post has. The subtitle also includes a link to the poster's profile, as well as a link to view the post's comments.<br>
               <br>
-              New documents can be added by pressing the plus button at the bottom-right corner. This expands to reveal two options: upload through the phone's local storage and take a picture. Once an option is selected, information about the created document can be edited, which includes tags that can be searched for in the dashboard. Further, additional pages can be added using either upload method, allowing users to mix and match pictures and local files. Individual pages can also be viewed and deleted by selecting them. Finally, after confirming the document information, the file is created and shows up in the dashboard, and it now exists in the cloud database as well.
+              An alternative feed can be viewed using the navigation bar at the top, which instead displays a list of the newest posts on Hacker News. The navigation bar also includes a button to toggle the website between a light and dark theme.
             images:
-                - url: "/assets/img/projects/refustore/screen6.png"
-                  caption: The document dashboard
+                - url: "/assets/img/projects/hacker-lite/top-light.png"
+                  caption: Top posts feed
                   setname: screens
-                - url: "/assets/img/projects/refustore/screen7.png"
-                  caption: Editing a document's details
+                - url: "/assets/img/projects/hacker-lite/top-dark.png"
+                  caption: Dark theme
                   setname: screens
-                - url: "/assets/img/projects/refustore/screen8.png"
-                  caption: Viewing an individual page
+                - url: "/assets/img/projects/hacker-lite/new.png"
+                  caption: New posts feed
                   setname: screens
-                - url: "/assets/img/projects/refustore/screen9.png"
-                  caption: Confirmation of document creation
-                  setname: screens
-    - title: "Document Viewing and Editing"
+    - title: "Posts and Comments"
       subsections:
           - text: |
-              After a document is created, it can be viewed at any time by selecting it on the dashboard. While viewing, the user may choose to edit the document's information or delete it entirely, the latter of which requires the user to re-enter their password. Further, the user is able to create a temporary link to share the document through the sharing button, and they can copy that link directly to their phone's clipboard to easily share with others.
+              When viewing a post's comments, the title and the post's metadata are displayed at the top, and if the post was a text post rather than a link, the associated text is displayed right underneath. Below that is a list of the top-level comments (if any) of the post, each within its own box. Each box contains the comment's meta information and text, which includes a link to view the comment as its own post and see any sub-comments that it might have, an additional feature not in the original design.<br>
+              <br>
+              Each comment's page is structured the same as a post's page, with only a few changes. Given that it's not a post, no title is displayed. Further, a link to return back to its parent is provided in its place, whether to a post or another comment. Another feature not in the original design is the ability to load more than the initial set of comments after scrolling to the bottom. Normally, only the top 50 comments are loaded, but if so desired, the user may choose to load in the remaining comments without having to reload the entire page.
             images:
-                - url: "/assets/img/projects/refustore/screen10.png"
-                  caption: Viewing a document
+                - url: "/assets/img/projects/hacker-lite/post-top.png"
+                  caption: Post and its comments
                   setname: screens
-                - url: "/assets/img/projects/refustore/screen11.png"
-                  caption: Generating a link to share a document
+                - url: "/assets/img/projects/hacker-lite/post-child.png"
+                  caption: A comment's page and its own sub-comments
+                  setname: screens
+    - title: "User Profiles"
+      subsections:
+          - text: |
+              In each user's profile, a list of posts that the user has submitted can be seen, similar to the feed of top or new posts. The page also contains some additional information about each user underneath their username, including the date that they joined Hacker News and how much "karma" they have, which is a measurement of the total number of times the user's posts were voted up.
+            images:
+                - url: "/assets/img/projects/hacker-lite/user.png"
+                  caption: A user's profile
                   setname: screens

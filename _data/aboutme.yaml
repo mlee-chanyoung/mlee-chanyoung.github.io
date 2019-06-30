@@ -42,12 +42,13 @@ skills:
         - title: Frameworks and Libraries
           thumbnail: "/assets/img/about/framework_thumbnail.png"
           items:
-              - Android Studio (Java)
+              - React (JavaScript)
               - Flask (Python)
               - jQuery (JavaScript)
               - D3 (JavaScript)
               - Google Apps Script (JavaScript)
               - Bootstrap (CSS, JavaScript)
+              - Android Studio (Java)
               - Jekyll (HTML Templating)
               - Jinja2 (HTML Templating)
               - Unity (C#)
@@ -60,6 +61,7 @@ skills:
               - Balsamiq Mockups
               - InVision
               - Fluid UI
+              - Webpack
               - Amazon Web Services
               - Tableau
         - title: Professional Writing Experience
