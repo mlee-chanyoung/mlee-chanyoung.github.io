@@ -1,22 +1,18 @@
 ---
 layout: base
 title: portfolio
+stylesheet: home
 ---
-<!-- Header -->
-<div id="top"></div>
-<div class="row headshot-row">
-    <div class="col content-col">
-        <div class="row headshot-row">
-            <img id="headshot" src="{{ site.data.aboutme.headshot }}"/>
-            <div class="col" id="title-div">
-                <span class="align-middle">
-                    <h1 class="section-title">Michael C. Lee</h1>
-                    <h3 id="home-subtitle">{{ site.data.aboutme.subtitle }}</h3>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+<article class="Home-intro">
+  <section class="Home-introSection">
+    <img class="Home-headshot" src="{{ site.data.aboutme.headshot }}" alt="My Headshot" />
+  </section>
+  <section class="Home-introSection">
+    <h1>Michael Chanyoung Lee</h1>
+    <p>Front-End Developer</p>
+  </section>
+</article>
+
 <!-- Why UI/UX section -->
 <div class="row content-row offset-row" id="why">
     <div class="col content-col">
