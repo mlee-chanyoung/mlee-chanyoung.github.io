@@ -1,0 +1,21 @@
+@import 'utilities/mixins';
+
+.Slice {
+  padding: 2rem 1rem;
+
+  @include for-screen-size(tablet-and-up) {
+    padding: 3rem 2.5rem;
+  }
+
+  @include for-screen-size(tablet-wide-and-up) {
+    padding: 3rem 200px;
+  }
+
+  @include for-screen-size(laptop-and-up) {
+    padding: 4rem 23%;
+  }
+
+  @include for-screen-size(full-only) {
+    padding: 4rem 30%;
+  }
+}
