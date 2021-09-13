@@ -2,8 +2,9 @@
 ---
 
 @import 'utilities/fonts';
-@import 'utilities/mixins';
 @import 'utilities/variables';
+
+@import 'slice';
 
 html {
   color: $base-color;
