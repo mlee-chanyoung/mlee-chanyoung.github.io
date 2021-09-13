@@ -1,4 +1,5 @@
 @import 'utilities/fonts';
+@import 'utilities/mixins';
 @import 'utilities/variables';
 
 p {
@@ -14,13 +15,22 @@ a {
   margin: 0 0 $spacing-1 0;
   font-family: 'Oswald';
   font-weight: 600;
+  line-height: 1.2;
 
   &--primary {
-    font-size: $spacing-6;
+    font-size: $spacing-4;
     font-weight: 700;
+
+    @include for-screen-size(tablet-and-up) {
+      font-size: $spacing-6;
+    }
   }
 
   &--secondary {
-    font-size: $spacing-4;
+    font-size: $spacing-3;
+
+    @include for-screen-size(tablet-and-up) {
+      font-size: $spacing-4;
+    }
   }
 }
