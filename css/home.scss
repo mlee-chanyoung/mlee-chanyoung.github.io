@@ -1,9 +1,17 @@
 ---
 ---
 
+@import 'utilities/typography';
 @import 'utilities/variables';
 
 .Home {
+  &-headshot {
+    width: 300px;
+    height: auto;
+    border: 5px solid $white;
+    border-radius: 50%;
+  }
+
   &-intro {
     background-color: $base-color;
     height: 100vh;

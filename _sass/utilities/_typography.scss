@@ -1,0 +1,26 @@
+@import 'utilities/fonts';
+@import 'utilities/variables';
+
+p {
+  margin: 0 0 $spacing-1 0;
+}
+
+a {
+  color: $link-color;
+
+}
+
+.Heading {
+  margin: 0 0 $spacing-1 0;
+  font-family: 'Oswald';
+  font-weight: 600;
+
+  &--primary {
+    font-size: $spacing-6;
+    font-weight: 700;
+  }
+
+  &--secondary {
+    font-size: $spacing-4;
+  }
+}
