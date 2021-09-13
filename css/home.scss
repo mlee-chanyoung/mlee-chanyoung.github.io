@@ -3,6 +3,7 @@
 
 @import 'utilities/typography';
 @import 'utilities/variables';
+@import 'icon';
 
 .Home {
   &-headshot {
@@ -16,5 +17,19 @@
     background-color: $base-color;
     height: 100vh;
     color: $white;
+  }
+
+  &-links {
+    a {
+      display: inline-block;
+    }
+
+    .Icon {
+      border: 1px solid $white;
+      border-radius: $spacing-1;
+      margin: $spacing-half;
+      padding: $spacing-half;
+      fill: $white;
+    }
   }
 }
