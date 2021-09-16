@@ -1,0 +1,37 @@
+@import 'utilities/variables';
+
+.Nav {
+  position: fixed;
+  bottom: $spacing-3;
+  right: $spacing-3;
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: $spacing-1;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-radius: 16px;
+    background-color: rgba($nav-color, 0.8);
+    padding: $spacing-half $spacing-1;
+    padding-left: $spacing-3;
+    color: $white;
+    fill: $white;
+
+    .Icon {
+      margin-left: $spacing-1;
+    }
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    list-style-type: none;
+  }
+}
