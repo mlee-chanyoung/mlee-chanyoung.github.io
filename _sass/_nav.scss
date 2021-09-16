@@ -1,14 +1,24 @@
 @import 'utilities/variables';
 
 .Nav {
-  position: fixed;
-  bottom: $spacing-3;
-  right: $spacing-3;
+  visibility: hidden;
+
+  &-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: $spacing-2;
+  }
+
+  &-container {
+    position: fixed;
+    right: $spacing-2;
+    bottom: $spacing-2;
+    text-align: right;
+  }
 
   &-item {
-    &:not(:last-child) {
-      margin-bottom: $spacing-1;
-    }
+    margin-bottom: $spacing-1;
   }
 
   &-link {
@@ -16,12 +26,8 @@
     align-items: center;
     justify-content: flex-end;
 
-    border-radius: 16px;
-    background-color: rgba($nav-color, 0.8);
     padding: $spacing-half $spacing-1;
     padding-left: $spacing-3;
-    color: $white;
-    fill: $white;
 
     .Icon {
       margin-left: $spacing-1;
@@ -33,5 +39,17 @@
     padding: 0;
     text-align: right;
     list-style-type: none;
+  }
+
+  &-object {
+    transition: background-color 0.15s ease-in-out;
+    border-radius: 16px;
+    background-color: rgba($nav-color, 0.8);
+    color: $white;
+    fill: $white;
+
+    &:hover {
+      background-color: rgba($nav-hover-color, 0.9);
+    }
   }
 }
