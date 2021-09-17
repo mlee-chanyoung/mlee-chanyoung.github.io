@@ -5,12 +5,12 @@ stylesheet: home
 ---
 <article class="Home-intro">
   <section class="Home-introSection">
-    <img class="Home-headshot" src="{{ site.data.aboutme.headshot }}" alt="My Headshot" />
+    <img class="Home-headshot" src="{{ site.data.home.headshot }}" alt="" />
   </section>
   <hr />
   <section class="Home-introSection">
-    <h1 class="Heading Heading--primary">Michael Chanyoung Lee</h1>
-    <p class="Heading Heading--secondary">Front-End Developer</p>
+    <h1 class="Heading Heading--primary">{{ site.name }}</h1>
+    <p class="Heading Heading--secondary">{{ site.data.home.role }}</p>
     <section class="Home-links">
       <a href="mailto:{{ site.email }}" target="_blank" rel="noopener">{% include icon.html icon="icon-email" %}</a>
       <a href="tel:{{ site.phone-link }}" target="_blank" rel="noopener">{% include icon.html icon="icon-phone" %}</a>
@@ -22,6 +22,6 @@ stylesheet: home
 </article>
 <!-- Why UI/UX section -->
 <article class="Slice">
-  <h2 class="Heading Heading--primary">{{ site.data.aboutme.why.title }}</h2>
-  {{ site.data.aboutme.why.body }}
+  <h2 class="Heading Heading--primary">{{ site.data.home.why.title }}</h2>
+  {{ site.data.home.why.body }}
 </article>
