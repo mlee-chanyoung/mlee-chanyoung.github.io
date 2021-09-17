@@ -1,4 +1,5 @@
 @import 'utilities/mixins';
+@import 'utilities/variables';
 
 .Slice {
   padding: 2rem 1rem;
@@ -17,5 +18,30 @@
 
   @include for-screen-size(full-only) {
     padding: 4rem 30%;
+  }
+
+  &--hero {
+    background-color: $base-color;
+    color: $white;
+
+    > * {
+      @include for-screen-size(tablet-and-up) {
+        max-width: 50%;
+      }
+    }
+
+    .Heading--primary {
+      text-transform: uppercase;;
+    }
+
+    hr {
+      margin: $spacing-3 0;
+      width: 64px;
+    }
+  }
+
+
+  &--offwhite {
+    background-color: $off-white;
   }
 }
