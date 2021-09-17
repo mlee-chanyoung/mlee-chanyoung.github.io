@@ -1,6 +1,27 @@
+title: "Who Am I?"
+description: "Some additional text here"
 
-about_title: "About Me"
-about_link: "More About Me"
+professional:
+  title: "Professional Skills and History"
+  employment:
+    title: "Employment History"
+  education:
+    title: "Education"
+  programming:
+    title: "Programming"
+  frameworks:
+    title: "Frameworks"
+  tools:
+    title: "Tools"
+
+personal:
+  title: "Personal Life"
+  hobbies:
+    title: "Hobbies"
+  languages:
+    title: "Languages"
+  rewrite:
+    title: "MAL Rewrite"
 
 education:
     title: "Education"
