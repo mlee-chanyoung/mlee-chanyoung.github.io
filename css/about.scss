@@ -32,4 +32,14 @@
       }
     }
   }
+
+  &-intro {
+    @include for-screen-size(tablet-and-up) {
+      background-image: url('/assets/img/about/full-body.png');
+      background-origin: content-box;
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 50% auto;
+    }
+  }
 }
