@@ -1,5 +1,5 @@
 title: "Who Am I?"
-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+description: "I am Michael Chanyoung Lee, a software engineer with a full-stack skill set but a passion for front-end and UX. Here’s a little bit about what I bring to the table as a developer as well as what else I do on the side."
 
 professional:
   title: "Professional Skills and History"
@@ -85,4 +85,7 @@ personal:
   rewrite:
     title: "MAL Rewrite"
     dates: "September 2015 — September 2021"
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    description: |
+      <p>MAL Rewrite is a volunteer organization that serves MyAnimeList, one of the largest online databases and communities for East Asian media. Rewrite’s goal is to create original, high-quality synopses for every entry on the site, and when I was last part of the organization, the group had already uploaded over 4000 synopses.<p>
+      <p>I initially served as a writer but quickly moved up into an editor position. After another year, I transitioned into a leadership role as a coordinator, which had me doing everything from giving final approval on synopses, managing member applications, writing scripts to automate administrative tasks, and coordinating with the site administrators to get the resources we needed.<p>
+      <p>My time as part of this group served as a great way to develop my writing and editing skills, as well as give back to a site that I used quite a bit back in my younger days. It also served me in some unexpected ways, providing opportunities to develop my programming skills as well as meet some great friends.</p>
