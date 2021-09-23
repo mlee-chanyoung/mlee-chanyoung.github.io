@@ -26,12 +26,13 @@
 
     @include for-screen-size(tablet-and-up) {
       background-origin: content-box;
-      background-position: top -10rem right;
+      background-position: top -2rem right;
       background-repeat: no-repeat;
       background-size: 50% auto;
     }
 
     @include for-screen-size(tablet-wide-and-up) {
+      background-position: top -10rem right;
       padding-top: 200px;
     }
 
