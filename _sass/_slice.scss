@@ -24,6 +24,17 @@
     background-color: $base-color;
     color: $white;
 
+    @include for-screen-size(tablet-and-up) {
+      background-origin: content-box;
+      background-position: top -10rem right;
+      background-repeat: no-repeat;
+      background-size: 50% auto;
+    }
+
+    @include for-screen-size(tablet-wide-and-up) {
+      padding-top: 200px;
+    }
+
     > * {
       @include for-screen-size(tablet-and-up) {
         max-width: 50%;
