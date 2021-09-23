@@ -1,0 +1,9 @@
+<ul>
+  {% for item in include.list %}
+    <li>
+      <span class="Heading">{{ item.title }}</span><br>
+      {% if item.dates %}<span class="Microcopy">{{ item.dates }}</span><br>{% endif %}
+      <span>{{ item.description }}</span>
+    </li>
+  {% endfor %}
+</ul>

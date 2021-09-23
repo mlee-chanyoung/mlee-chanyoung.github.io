@@ -1,99 +1,88 @@
 title: "Who Am I?"
-description: "Some additional text here"
+description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
 professional:
   title: "Professional Skills and History"
   employment:
     title: "Employment History"
+    items:
+      - title: "Developer II"
+        dates: "September 2019 — Present"
+        description: "Ramsey Solutions"
+      - title: "Information Technology Intern"
+        dates: "May 2018 — August 2018"
+        description: "Chick-fil-A"
+      - title: "Quality Assurance Intern"
+        dates: "May 2017 — August 2017"
+        description: "Elavon"
   education:
     title: "Education"
+    items:
+      - title: "Georgia Institute of Technology"
+        dates: "August 2015 — May 2019"
+        description: "Bachelor of Science in Computer Science"
   programming:
     title: "Programming"
+    items:
+      - "JavaScript"
+      - "CSS3 | SCSS"
+      - "HTML5"
+      - "Ruby"
+      - "Python"
+      - "Java"
+      - "MySQL"
   frameworks:
     title: "Frameworks"
+    items:
+      - "Ruby on Rails (Ruby)"
+      - "React (JS)"
+      - "Jest (JS)"
+      - "Stimulus (JS)"
+      - "Magnolia (CMS)"
+      - "AWS Lambda (Python / Ruby)"
+      - "Zapier (JS)"
+      - "Google Apps Script (JS)"
+      - "jQuery (JS)"
+      - "D3 (JS)"
+      - "Flask (Python)"
+      - "Unity (C#)"
+      - "Android Studio (Java)"
   tools:
     title: "Tools"
+    items:
+      - "Git | GitHub"
+      - "Loggly | NewRelic"
+      - "InVision"
+      - "Google Analytics"
+      - "GoCD Deployment Pipeline"
+      - "Webpack"
+      - "AWS Lambda"
+      - "AWS SQS Queues"
+      - "asdf Version Manager"
+      - "Jira"
+      - "Tableau"
 
 personal:
   title: "Personal Life"
   hobbies:
-    title: "Hobbies"
+    title: "What Brings Me Joy"
+    items:
+      - "Playing the piano & trumpet"
+      - "Cooking"
+      - "Trying out new restaurants"
+      - "Traveling"
+      - "Board games & video games"
+      - "Cleaning"
   languages:
     title: "Languages"
+    items:
+      - title: "English"
+        description: "Native"
+      - title: "Korean"
+        description: "Intermediate"
+      - title: "Japanese"
+        description: "Intermediate (N3 Proficiency)"
   rewrite:
     title: "MAL Rewrite"
-
-education:
-    title: "Education"
-    thumbnail: "/assets/img/about/education_thumbnail.png"
-    school: "Georgia Institute of Technology"
-    time: "August 2015 - May 2019"
-    major: |
-        Bachelor of Science in Computer Science, concentrations in People and Media
-        <ul>
-            <li>GPA: 4.0</li>
-            <li>Highest Honors</li>
-        </ul>
-skills:
-    title: "Skills and Tools"
-    skills:
-        - title: Programming Experience
-          thumbnail: "/assets/img/about/programming_thumbnail.png"
-          items:
-              - Python
-              - Java
-              - HTML5
-              - CSS, SCSS
-              - JavaScript
-              - SQL
-              - C#
-              - C
-        - title: Frameworks and Libraries
-          thumbnail: "/assets/img/about/framework_thumbnail.png"
-          items:
-              - React (JavaScript)
-              - Flask (Python)
-              - jQuery (JavaScript)
-              - D3 (JavaScript)
-              - Google Apps Script (JavaScript)
-              - Bootstrap (CSS, JavaScript)
-              - Android Studio (Java)
-              - Jekyll (HTML Templating)
-              - Jinja2 (HTML Templating)
-              - Unity (C#)
-        - title: Experience with Tools
-          thumbnail: "/assets/img/about/tool_thumbnail.png"
-          items:
-              - GitHub, GitHub Pages
-              - Subversion
-              - Adobe Photoshop
-              - Balsamiq Mockups
-              - InVision
-              - Fluid UI
-              - Webpack
-              - Amazon Web Services
-              - Tableau
-        - title: Professional Writing Experience
-          thumbnail: "/assets/img/about/writing_thumbnail.png"
-          items:
-              - Writing documentation
-              - Writing test cases
-              - Writing bug reports
-              - Writing surveys
-              - Writing interview scripts
-              - Writing and editing synopses
-              - Writing internal newsletters
-        - title: Spoken Languages
-          thumbnail: "/assets/img/about/language_thumbnail.png"
-          items:
-              - "English: Native"
-              - "Korean: Intermediate"
-              - "Japanese: Intermediate (JLPT N3)"
-hobbies:
-    title: "Other Information"
-    subtitle: "In My Spare Time"
-    thumbnail: "/assets/img/about/hobby_thumbnail.png"
-    body: |
-        Ever since I was a child, music has always been a large part of my life. I started learning the piano at a young age and eventually picked up the violin as well. Though I eventually switched from violin to trumpet, I continue to play both the piano and trumpet to this day.<br>
-        <br>
-        Besides music, I also enjoy trying to improve my skills in art and writing. For example, my interest in writing led me to become involved with MAL Rewrite, a volunteer organization on <a target="_blank" rel="noopener noreferrer" href="https://myanimelist.net">MyAnimeList</a> that is dedicated to writing original, high quality synopses for all the entries on the site, which I now help lead as a coordinator. My contributions to the group can be seen <a href="https://mclee3360.github.io/rewrite-portfolio" target="_blank" rel="noopener noreferrer">here</a>.
+    dates: "September 2015 — September 2021"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."

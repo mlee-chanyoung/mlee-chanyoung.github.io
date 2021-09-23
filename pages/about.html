@@ -16,20 +16,25 @@ title: about
   <section class="About-grid About-grid--2">
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.professional.employment.title }}</h3>
+      {% include components/detailed_list.html list=site.data.about.professional.employment.items %}
     </article>
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.professional.education.title }}</h3>
+      {% include components/detailed_list.html list=site.data.about.professional.education.items %}
     </article>
   </section>
   <section class="About-grid About-grid--3">
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.professional.programming.title }}</h3>
+      {% include components/list.html list=site.data.about.professional.programming.items %}
     </article>
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.professional.frameworks.title }}</h3>
+      {% include components/list.html list=site.data.about.professional.frameworks.items %}
     </article>
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.professional.tools.title }}</h3>
+      {% include components/list.html list=site.data.about.professional.tools.items %}
     </article>
   </section>
 </article>
@@ -38,12 +43,16 @@ title: about
   <section class="About-grid About-grid--2">
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.personal.hobbies.title }}</h3>
+      {% include components/list.html list=site.data.about.personal.hobbies.items %}
     </article>
     <article class="Card">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.personal.languages.title }}</h3>
+      {% include components/detailed_list.html list=site.data.about.personal.languages.items %}
     </article>
     <article class="Card About-grid--span">
       <h3 class="Heading Heading--tertiary">{{ site.data.about.personal.rewrite.title }}</h3>
+      <p class="Microcopy">{{ site.data.about.personal.rewrite.dates }}</p>
+      <p>{{ site.data.about.personal.rewrite.description }}
     </article>
   </section>
 </article>

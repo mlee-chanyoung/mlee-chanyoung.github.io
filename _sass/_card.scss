@@ -6,4 +6,8 @@
   background-color: $white;
   padding: $spacing-2;
   color: $base-color;
+
+  ul > li:not(:last-child) {
+    margin-bottom: $spacing-half;
+  }
 }
