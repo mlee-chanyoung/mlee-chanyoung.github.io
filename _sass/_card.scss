@@ -10,4 +10,8 @@
   ul > li:not(:last-child) {
     margin-bottom: $spacing-half;
   }
+
+  &-image {
+    max-width: 100%;
+  }
 }

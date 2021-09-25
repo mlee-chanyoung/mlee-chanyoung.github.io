@@ -6,8 +6,20 @@ title: projects
 ---
 <article class="Slice Slice--hero Projects-intro">
   <section>
-    <h1 class="Heading Heading--primary">{{ site.data.projects.overview.title }}</h1>
+    <h1 class="Heading Heading--primary">{{ site.data.projects.title }}</h1>
     <hr />
-    <p>{{ site.data.projects.overview.description }}</p>
+    <p>{{ site.data.projects.description }}</p>
+  </section>
+</article>
+<article class="Slice">
+  <section class="Grid Grid--2">
+    {% for project in site.data.projects.list %}
+      <article class="Card">
+        <img src="/assets/img/projects/{{ project.slug }}/thumbnail.png" class="Card-image" alt="" />
+        <h2 class="Heading Heading--tertiary">{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+        <a href="{{ site.url }}{{ site.data.sitemap.projects }}/{{ project.slug }}" class="Button">{{ site.data.projects.cta }}</a>
+      </article>
+    {% endfor %}
   </section>
 </article>

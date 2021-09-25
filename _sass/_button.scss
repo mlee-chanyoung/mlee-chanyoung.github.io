@@ -1,0 +1,17 @@
+@import 'utilities/variables';
+
+.Button {
+  display: inline-block;
+  transition: background-color 0.1s ease-in-out;
+  border: 2px solid $base-color;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: $spacing-1 $spacing-2;
+  color: $base-color;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($base-color, 0.1);
+  }
+}
