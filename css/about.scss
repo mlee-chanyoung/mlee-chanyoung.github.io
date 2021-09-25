@@ -2,37 +2,11 @@
 ---
 
 @import 'utilities/mixins';
-@import 'utilities/typography';
-@import 'utilities/variables';
 
 @import 'card';
+@import 'grid';
 
 .About {
-  &-grid {
-    display: grid;
-    grid-gap: $spacing-2;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-2;
-    }
-
-    &--span {
-      grid-column: 1 / -1
-    }
-
-    &--2 {
-      @include for-screen-size(tablet-and-up) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    &--3 {
-      @include for-screen-size(tablet-and-up) {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  }
-
   &-intro {
     @include for-screen-size(tablet-and-up) {
       background-image: url('/assets/img/about/full-body.png');
