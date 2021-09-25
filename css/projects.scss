@@ -1,0 +1,15 @@
+---
+---
+
+@import 'utilities/mixins';
+
+@import 'card';
+@import 'grid';
+
+.Projects {
+  &-intro {
+    @include for-screen-size(tablet-and-up) {
+      background-image: url('/assets/img/projects/laptop.png');
+    }
+  }
+}
