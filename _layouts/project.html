@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  {% include head.html page_styles="projects" lightbox=true %}
+  <body>
+    {% include icons.html %}
+    <!-- Main content -->
+    {{ content }}
+    {% include nav.html %}
+    <script src="{{ site.url }}/js/nav.js" async></script>
+    <script src="{{ site.url }}/js/lightbox-plus-jquery.min.js" async></script>
+  </body>
+</html>

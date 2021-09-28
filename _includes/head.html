@@ -1,12 +1,14 @@
 <head>
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{{ site.description }}">
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="{{ site.url }}/css/global.css">
-    {% if include.page_styles %}
-      <link rel="stylesheet" href="{{ site.url }}/css/{{ include.page_styles }}.css">
-    {% endif %}
-    <link href="{{ site.url }}/css/lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.url }}/css/global.css">
+  {% if include.page_styles %}
+    <link rel="stylesheet" href="{{ site.url }}/css/{{ include.page_styles }}.css">
+  {% endif %}
+  {% if include.lightbox %}
+    <link href="{{ site.url }}/css/lightbox.min.css" rel="stylesheet">
+  {% endif %}
 </head>
