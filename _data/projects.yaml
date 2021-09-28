@@ -2,21 +2,21 @@ title: "My Projects"
 description: "Here’s some highlights of the projects that I’ve worked on, showcasing the skills and experience I’ve gained."
 cta: "View Project"
 list:
-  - title: "Ramsey Preferred Coach"
-    slug: "ramsey-preferred-coach"
+  ramsey-preferred-coach-app:
+    title: "Ramsey Preferred Coach"
     description: ""
-  - title: "Financial Coach Master Training"
-    slug: "financial-coach-master-training"
+  financial-coach-master-training:
+    title: "Financial Coach Master Training"
     description: ""
-  - title: "Magnolia CMS"
-    slug: "magnolia"
+  magnolia:
+    title: "Magnolia CMS"
     description: ""
-  - title: "Facebook Lead Form Ads"
-    slug: "facebook-ads"
+  facebook-ads:
+    title: "Facebook Lead Form Ads"
     description: ""
-  - title: "Monita"
-    slug: "monita"
+  monita:
+    title: "Monita"
     description: "A dashboard application that visualizes the status of the various applications and servers my team is responsible for in a way that is simple to understand."
-  - title: "Connect 4"
-    slug: "connect-four"
+  connect-four:
+    title: "Connect 4"
     description: ""
