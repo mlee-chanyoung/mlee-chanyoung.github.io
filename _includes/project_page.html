@@ -1,6 +1,19 @@
-<article class="Slice Slice--hero">
-  <section>
-    <h1 class="Heading Heading--primary">{{ include.project.title }}</h1>
-    <hr />
+{% assign project = include.project %}
+
+<article class="Slice Slice--dark">
+  <h1 class="Heading Heading--primary">{{ project.title }}</h1>
+</article>
+<article class="Slice">
+  <h2 class="Heading Heading--secondary">{{ site.data.projects.about.title }}</h2>
+  {{ project.full-description }}
+  <section class="Grid Grid--2">
+    <article class="Card">
+      <h2 class="Heading Heading--tertiary">{{ site.data.projects.about.languages }}</h2>
+      {% include components/list.html list=project.languages %}
+    </article>
+    <article class="Card">
+      <h2 class="Heading Heading--tertiary">{{ site.data.projects.about.tools }}</h2>
+      {% include components/list.html list=project.tools %}
+    </article>
   </section>
 </article>

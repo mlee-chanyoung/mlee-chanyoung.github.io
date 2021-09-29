@@ -1,6 +1,15 @@
 title: "My Projects"
 description: "Here’s some highlights of the projects that I’ve worked on, showcasing the skills and experience I’ve gained."
 cta: "View Project"
+
+about:
+  title: "What Even Is This?"
+  languages: "Languages & Frameworks"
+  tools: "Relevant Tools & Services"
+
+highlights:
+  title: "Highlights"
+
 list:
   ramsey-preferred-coach-app:
     title: "Ramsey Preferred Coach"
@@ -17,6 +26,19 @@ list:
   monita:
     title: "Monita"
     description: "A dashboard application that visualizes the status of the various applications and servers my team is responsible for in a way that is simple to understand."
+    full-description: |
+      <p>The Common Platforms team at the Chick-fil-A Support Center focuses on maintaining and improving the systems and services that the other teams in the IT department rely on. A large part of their responsibilities includes keeping an eye on all of the servers and applications that they are in charge of and troubleshooting any errors that come up. As expected, this is a critical role that impacts the rest of the department, but it can be a time consuming task as well, taking away valuable time from other projects that the team would like to focus on.</p>
+      <p>As an intern on their team for the summer, I was tasked with developing an internal web application—Monita—that consolidates the status information of the many servers and applications my team monitors in a way that is easy to understand at a glance. Further, the devices are connected and displayed in a graph to visualize the dependencies and make it simple to trace any errors back to the source. The server-side was developed using the Flask micro web framework, while client-side was handled using jQuery and AJAX. This application is hosted on Amazon Web Services's Elastic Beanstalk and utilizes Okta's two-factor authentication to prevent unauthorized access.</p>
+    languages:
+      - "Flask (Python)"
+      - "Jinja2 (HTML5)"
+      - "SCSS"
+      - "Bootstrap 4"
+      - "jQuery"
+    tools:
+      - "Amazon Web Services Elastic Beanstalk"
+      - "Okta"
+      - "Subversion"
   connect-four:
     title: "Connect 4"
     description: ""

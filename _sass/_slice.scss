@@ -20,10 +20,12 @@
     padding: 4rem 30%;
   }
 
-  &--hero {
+  &--dark {
     background-color: $base-color;
     color: $white;
+  }
 
+  &--hero {
     @include for-screen-size(tablet-and-up) {
       background-origin: content-box;
       background-position: top -2rem right;
@@ -51,7 +53,6 @@
       width: 64px;
     }
   }
-
 
   &--offwhite {
     background-color: $off-white;
