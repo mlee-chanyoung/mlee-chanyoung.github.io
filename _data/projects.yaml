@@ -22,7 +22,35 @@ list:
     description: ""
   facebook-ads:
     title: "Facebook Lead Form Ads"
-    description: ""
+    description: "AWS cloud computing systems that enable the usage of Facebook lead form ads to connect with our lead funnel."
+    full-description: |
+      <p>An essential part of the Coaching team’s lead funnel at Ramsey Solutions involves getting potential customers to sign up for an informational webinar. Users are directed to a landing page to register for the webinar, and much of the traffic is driven there via Facebook ads. Though the formula had a lot of success, the marketing team wanted to test out simplifying this process with a relatively new feature on Facebook: lead form ads. This new type of ad would allow those who viewed the ad to fill out a form directly on Facebook, rather than having to be redirected to a different page to fill it out.</p>
+      <p>In order to replicate the functions of the lead form on the landing page, however, additional work was required. Another team had also tried a similar experiment, so they had already laid the ground work to retrieve the form submission data and pass it to us in a state we could use; all we had to do was create something to handle it.</p>
+      <p>To that end, I was tasked with creating an Amazon Web Services (AWS) Lambda to handle the lead submissions, which needed to register a user for a webinar on Zoom, add them to a CRM for our sales reps to see, and add them to our email marketing system so that they could receive further communications.
+    languages:
+      - "Python"
+      - "Pytest"
+    tools:
+      - "Amazon Web Services (AWS) Lambda"
+      - "AWS Parameter Store"
+      - "Zoom"
+      - "Salesforce Sales & Marketing Cloud"
+      - "Klaviyo"
+      - "Apophenia"
+      - "Loggly"
+    highlights:
+      - title: "Connecting the Services"
+        image: "/assets/img/projects/facebook-ads/main.png"
+        image-description: "The lead form ad’s form"
+        description: |
+          <p>The most essential piece of this lambda is connecting together the different services that are used in the lead funnel. Multiple API calls were set up in order to register users for the webinar, add them into our lead funnel, etc.</p>
+          <p>As it’s a business critical process, logs recording any issues with the API calls were set up using Apophenia, and alerts were created on Loggly to monitor that the process was running smoothly.</p>
+      - title: "Reuse"
+        image: "/assets/img/projects/facebook-ads/reuse.png"
+        image-description: "The landing page’s webinar form"
+        description: |
+          <p>Though the marketing team ultimately decided to move away from using lead form ads, the work was not done in vain. Using AWS API Gateway, the webinar registration landing page was modified to point to this lambda, greatly simplyfing the process on the CMS side.</p>
+          <p>Further, this first foray into lambdas enabled our team to create more lambdas down the line, which helped us automate other parts of the sales process as well.
   monita:
     title: "Monita"
     description: "A dashboard application that visualizes the status of the various applications and servers my team is responsible for in a way that is simple to understand."
