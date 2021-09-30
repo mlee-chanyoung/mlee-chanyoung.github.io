@@ -39,6 +39,14 @@ list:
       - "Amazon Web Services Elastic Beanstalk"
       - "Okta"
       - "Subversion"
+    highlights:
+      - title: "The Status Graph"
+        image: "/assets/img/projects/monita/thumbnail.png"
+        image-description: "Graph to monitor system statuses."
+        description: |
+          <p>On Monita's main screen, a graph of servers and applications can be seen. Each node on the graph depicts a single device, and its icon represents the device's status, with green representing no errors, yellow for small errors, orange for significant errors, and red for critical errors. These nodes connect with other nodes that the device directly interacts with; for example, an application would be connected to the database that it uses.</p>
+          <p>The nodes also only represent these applications and servers at the highest level. They may actually be made up of multiple smaller servers or applications, and information for these lower-level devices can be found in more in-depth views. One of these methods is through the quick navigation menu on the left side, where each node is listed. These listings can be expanded to reveal the next level of the node's family tree. Selecting anything on the quick navigation menu performs an equivalent action to selecting a node on the graph.</p>
+          <p>Finally, the list of devices being used can be changed through the options on the top-right, which currently includes options for devices from the production environment and the non-production environment. As the device lists are stored in a JSON file, additional lists can easily be added to provide a more customizable experience.</p>
   connect-four:
     title: "Connect 4"
     description: ""

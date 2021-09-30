@@ -17,3 +17,17 @@
     </article>
   </section>
 </article>
+<article class="Slice Slice--offwhite">
+  <h2 class="Heading Heading--secondary">{{ site.data.projects.highlights.title }}</h2>
+  <section class="Grid Grid--2">
+    {% for highlight in project.highlights %}
+      <article class="Card">
+        <a href="{{ highlight.image }}" data-lightbox="images" data-title="{{ highlight.image-description }}">
+          <img src="{{ highlight.image }}" class="Card-image" />
+        </a>
+        <h3 class="Heading Heading--tertiary">{{ highlight.title }}</h3>
+        {{ highlight.description }}
+      </article>
+    {% endfor %}
+  </section>
+</article>
