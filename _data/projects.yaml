@@ -82,4 +82,26 @@ list:
           <p>Some nodes are made up of several sub-elements as well, and that family tree can be navigated here as well, allowing the user to identify the specific source of an alert.</p>
   connect-four:
     title: "Connect 4"
-    description: ""
+    image: "/assets/img/projects/connect-four/thumbnail.png"
+    description: "The classic board game recreated on web in order to brush up on my React skills and put them into practice."
+    full-description: |
+      <p>Though React is one of the most common Single Page Application (SPA) frameworks in the industry, I didn’t have opportunities to use it in my position at the time. React had also moved towards a more functional programming paradigm with React Hooks, which I wasn’t exposed to when I had first learned React. As a result, I decided to dive into a small side project in order to brush up on my skills in the React world.</p>
+      <p>I started off following a basic React Hooks tutorial that created a Tic-Tac-Toe game, but I decided to step it up a notch to get some more practice in. What started off as a simple game of Tic-Tac-Toe evolved into a much more polished game of Connect 4. Though the project was never deployed, it served its job in helping me gain a better understanding of how to use React Hooks and effects, as well as practice unit testing in a React environment.</p>
+    languages:
+      - "React (JavaScript)"
+      - "React Hooks"
+      - "Jest"
+      - "SCSS"
+    tools:
+      - "Create React App"
+    highlights:
+      - title: "Interactions and Feedback"
+        image: "/assets/img/projects/connect-four/victory.png"
+        image-description: "The win state, complete with falling confetti"
+        description: |
+          <p>Using React Hooks and some styling, I was able to make the game feel much more real, with token animations, sound effects, falling confetti, and more.</p>
+      - title: "Unit Testing"
+        image: "/assets/img/projects/connect-four/main.png"
+        image-description: "In the middle of a game"
+        description: |
+          <p>To make sure the game logic was valid, unit testing through Jest was invaluable. More than just testing calculating the board state, unit testing validated that the components were behaving as intended.</p>
