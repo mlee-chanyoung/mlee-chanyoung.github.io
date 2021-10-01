@@ -105,3 +105,7 @@ list:
         image-description: "In the middle of a game"
         description: |
           <p>To make sure the game logic was valid, unit testing through Jest was invaluable. More than just testing calculating the board state, unit testing validated that the components were behaving as intended.</p>
+    links:
+      - type: "github"
+        path: "https://github.com/mclee3360/connect-four-mclee"
+        label: "Github"

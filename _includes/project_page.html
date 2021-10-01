@@ -2,6 +2,14 @@
 
 <article class="Slice Slice--dark">
   <h1 class="Heading Heading--primary">{{ project.title }}</h1>
+  {% if project.links %}
+    <section class="Projects-links">
+      {% for link in project.links %}
+        {% capture link_icon %}icon-{{ link.type }}{% endcapture %}
+        <a href="{{ link.path }}" aria-label="{{ link.label }}" target="_blank" rel="noopener">{% include icon.html icon=link_icon %}</a>
+      {% endfor %}
+    </section>
+  {% endif %}
 </article>
 <article class="Slice">
   <h2 class="Heading Heading--secondary">{{ site.data.projects.about.title }}</h2>

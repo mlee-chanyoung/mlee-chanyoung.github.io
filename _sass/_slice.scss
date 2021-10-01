@@ -23,6 +23,10 @@
   &--dark {
     background-color: $base-color;
     color: $white;
+
+    .Icon {
+      fill: $white;
+    }
   }
 
   &--hero {

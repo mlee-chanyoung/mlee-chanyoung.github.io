@@ -23,4 +23,11 @@
       background-image: url('/assets/img/projects/laptop.png');
     }
   }
+
+  &-links {
+    a {
+      display: inline-block;
+      margin-right: $spacing-1;
+    }
+  }
 }

@@ -23,10 +23,8 @@
     justify-content: center;
 
     box-sizing: border-box;
-    background-color: $base-color;
     height: 100vh;
     padding: 0 $spacing-2;
-    color: $white;
     text-align: center;
 
     @include for-screen-size(tablet-wide-and-up) {
@@ -50,11 +48,7 @@
   &-links {
     a {
       display: inline-block;
-    }
-
-    .Icon {
       margin-right: $spacing-2;
-      fill: $white;
     }
   }
 }
