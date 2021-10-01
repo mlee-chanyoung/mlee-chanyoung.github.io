@@ -14,10 +14,12 @@ title: projects
 <article class="Slice">
   <section class="Grid Grid--2">
     {% for project in site.data.projects.list %}
-      <article class="Card">
-        <img src="/assets/img/projects/{{ project[0] }}/thumbnail.png" class="Card-image" alt="" />
-        <h2 class="Heading Heading--tertiary">{{ project[1].title }}</h2>
-        <p>{{ project[1].description }}</p>
+      <article class="Card Projects-card">
+        <div>
+          <img src="/assets/img/projects/{{ project[0] }}/thumbnail.png" class="Card-image" alt="" />
+          <h2 class="Heading Heading--tertiary">{{ project[1].title }}</h2>
+          <p>{{ project[1].description }}</p>
+        </div>
         <a href="{{ site.url }}{{ site.data.sitemap.projects }}/{{ project[0] }}" class="Button">{{ site.data.projects.cta }}</a>
       </article>
     {% endfor %}
