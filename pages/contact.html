@@ -1,0 +1,30 @@
+---
+layout: "base"
+permalink: "/contact"
+stylesheet: "contact"
+title: "Where to Find Me"
+---
+<article class="Slice--full Slice--dark">
+  <ul class="Contact-list">
+    <li class="Contact-listItem">
+      {% include icon.html icon="icon-email" %}
+      <a href="mailto:{{ site.email }}" aria-label="Email" target="_blank" rel="noopener">{{ site.email }}</a>
+    </li>
+    <li class="Contact-listItem">
+      {% include icon.html icon="icon-phone" %}
+      <a href="tel:{{ site.phone-link }}" aria-label="Phone" target="_blank" rel="noopener">{{ site.phone }}</a>
+    </li>
+    <li class="Contact-listItem">
+      {% include icon.html icon="icon-linkedin" %}
+      <a href="https://linkedin.com/in/{{ site.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener">{{ site.linkedin }}</a>
+    </li>
+    <li class="Contact-listItem">
+      {% include icon.html icon="icon-github" %}
+      <a href="https://github.com/{{ site.github }}" aria-label="Github" target="_blank" rel="noopener">{{ site.github }}</a>
+    </li>
+    <li class="Contact-listItem">
+      {% include icon.html icon="icon-instagram" %}
+      <a href="https://instagram.com/{{ site.instagram }}" aria-label="Instagram" target="_blank" rel="noopener">{{ site.instagram }}</a>
+    </li>
+  </ul>
+</article>
