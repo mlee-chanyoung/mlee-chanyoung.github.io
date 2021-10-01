@@ -29,6 +29,16 @@
     }
   }
 
+  &--full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0 $spacing-2;
+  }
+
   &--hero {
     @include for-screen-size(tablet-and-up) {
       background-origin: content-box;

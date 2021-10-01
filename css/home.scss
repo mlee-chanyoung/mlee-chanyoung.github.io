@@ -17,14 +17,7 @@
   }
 
   &-intro {
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-
-    box-sizing: border-box;
-    height: 100vh;
-    padding: 0 $spacing-2;
     text-align: center;
 
     @include for-screen-size(tablet-wide-and-up) {
