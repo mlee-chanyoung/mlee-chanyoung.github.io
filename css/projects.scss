@@ -18,6 +18,10 @@
     }
   }
 
+  &-footer {
+    text-align: center;
+  }
+
   &-intro {
     @include for-screen-size(tablet-and-up) {
       background-image: url('/assets/img/projects/laptop.png');
