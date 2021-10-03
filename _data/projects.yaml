@@ -19,7 +19,40 @@ list:
     description: ""
   magnolia:
     title: "Magnolia CMS"
-    description: ""
+    description: "Development for our Content Management System (CMS) to enable marketers to quickly build landing pages and engage users."
+    full-description: |
+      <p>When it came to working with the marketing squad on the Coaching team at Ramsey Solutions, much of my time was spent developing for the company’s content management system (CMS) of choice: Magnolia. Most of the work involved creating components for the marketers to use in building landing pages, particuarly for functionality not available globally or that was specific to our business unit.</p>
+      <p>Components were created using the Freemarker templating language, with some JavaScript occassionally to enable more interactive functionality. Considerations also needed to be taken for the CMS editor side of the components, particularly to provide boundaries for marketers to stay within the guidelines of the company’s design system without restricting them too much from their creative vision.</p>
+    languages:
+      - "JavaScript"
+      - "SCSS"
+      - "Freemarker"
+    tools:
+      - "Magnolia CMS"
+      - "Apophenia"
+      - "Loggly"
+    highlights:
+      - title: "Countdown Timer Component"
+        image: "/assets/img/projects/magnolia/countdown.png"
+        image-description: "Countdown timer component"
+        description: |
+          <p>To promote urgency and scarcity in our marketing, I developed a countdown timer component that the marketers could use in our landing pages. This ticks down every second towards a set date and time, with an option to redirect all traffic away from the page it was on once the countdown ended.</p>
+      - title: "Carousel Component"
+        image: "/assets/img/projects/magnolia/carousel.png"
+        image-description: "Carousel component"
+        description: |
+          <p>For our team’s landing pages, we needed some way to showcase a list of items in a short way, like a group of testimonials or a list of features. After evaluating some possible solutions, we decided to work on creating a carousel component for the marketer’s to use in the CMS. Users can scroll through “slides” that wrap back around the edge of the screen, keeping space minimized to a single horizontal slice.</p>
+      - title: "Lead Forms"
+        image: "/assets/img/projects/magnolia/form.png"
+        image-description: "Lead form component"
+        description: |
+          <p>Whether to create a sales lead or connect someone with a coach, our team needed many different forms across our landing pages. For each form, the payload format needed to be configured, as well as the call out to the endpoint it would pass data to.</p>
+          <p>To ensure these forms worked properly, particularly for business critical functions, we monitored the status of the forms using Loggly, setting up alerts and dashboards to make sure potential issues weren’t missed.</p>
+      - title: "Domain Migration"
+        image: "/assets/img/projects/magnolia/main.png"
+        image-description: "Home page"
+        description: |
+          <p>In order to unify the different brands across the company, there was an organization-wide project to consolidate all of our websites under a single domain. I was the one driving this effort on our team, which involved lots of communication with stakeholders and ensuring our pages were up to the new standards. As a company-wide project, there was a lot of cross-team collaboration involved, and it was up to me to make sure our team was in sync with the others.</p>
   facebook-ads:
     title: "Facebook Lead Form Ads"
     description: "AWS cloud computing systems that enable the usage of Facebook lead form ads to connect with our lead funnel."
