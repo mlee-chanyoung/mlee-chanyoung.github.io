@@ -16,7 +16,43 @@ list:
     description: ""
   financial-coach-master-training:
     title: "Financial Coach Master Training"
-    description: ""
+    description: "Our flagship product: an online training course to teach people how to become a financial coach."
+    full-description: |
+      <p>The Coaching team’s goal at Ramsey Solutions is to train, support, and develop world class financial coaches. To train people as financial coaches, we developed our main product: Financial Coach Master Training (FCMT). FCMT is an online training course that takes users through a curriculum of video lessons and quizzes to teach the fundamentals of being a financial coach.</p>
+      <p>Besides the actual lessons, there are live group development calls that students are required to book with our in-house coaches to receive more teaching and practice. Further, there are a plethora of resources—whether video, audio, or print—that are accessible for more topical information or to have on hand as tools.</p>
+    languages:
+      - "Ruby on Rails"
+      - "JavaScript"
+      - "SCSS"
+      - "ERB (HTML)"
+    tools:
+      - "JW Player"
+      - "ScheduleOnce"
+      - "Stripe"
+      - "Klaviyo"
+      - "Google Analytics"
+    highlights:
+      - title: "Design Updates"
+        image: "/assets/img/projects/financial-coach-master-training/home.png"
+        image-description: "Home page"
+        description: |
+          <p>As the front-end developer for the Coaching team, a lot of my time on this project was spent implementing design updates that would modernize the product as well as make the user experience more intuitive.</p>
+      - title: "Video Library"
+        image: "/assets/img/projects/financial-coach-master-training/videos.png"
+        image-description: "Bonus content video library"
+        description: |
+          <p>Separate from the video lessons, we needed to create some kind of video library to house bonus lessons that we wanted to share with the users. Unlike the rest of this app, the video library was able to simulate more of a single page app experience, with each of the videos reloading without a page refresh.</p>
+      - title: "Rewards"
+        image: "/assets/img/projects/financial-coach-master-training/rewards.png"
+        image-description: "Completion rewards"
+        description: |
+          <p>When a user progresses to certain checkpoints in the course, they unlock special gifts as rewards for their progress. While most of the rewards involve some kind of downloadable, one reward gives access to another one of our company’s products.</p>
+          <p>In order to make this reward work, it required collaboration with the team that owned the other product, using a voucher system to bypass any necessary payments.</p>
+      - title: "User Access"
+        image: "/assets/img/projects/financial-coach-master-training/access.png"
+        image-description: "Account information page"
+        description: |
+          <p>When the back-end developer for our team left, I took on more of a full-stack role. In particular for this product, I worked a lot on updating the user access and experience based on what they purchased. With several different types of users and multiple different states a user could be in, the user permissions quickly became a lot to manage.</p>
   magnolia:
     title: "Magnolia CMS"
     description: "Development for our Content Management System (CMS) to enable marketers to quickly build landing pages and engage users."
