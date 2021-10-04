@@ -11,9 +11,54 @@ highlights:
   title: "Highlights"
 
 list:
-  ramsey-preferred-coach-app:
-    title: "Ramsey Preferred Coach"
-    description: ""
+  coach-accelerator:
+    title: "Coach Accelerator"
+    description: "A suite of tools to help financial coaches kick off their coaching practice."
+    full-description: |
+      <p>The Coach Accelerator app is a suite of tools that we provide to financial coaches who have gone through our training to help them kickstart their business. This includes features like a lite customer relationship manager (CRM), access to group coaching calls with our in-house coaches, a customizable landing page, and more.</p>
+      <p>This app was previously known as the Ramsey Preferred Coach (RPC) dashboard, which was then exclusive to our RPCs, who are select coaches that our company has endorsed. For these coaches, we also sent them leads from people who had reached out for financial advice on our website, giving them more opportunities to create clients.</p>
+      <p>As the app was still in its infancy when I joined the Coaching team at Ramsey Solutions, I had a big hand in shaping this app’s experiences and features. Notably, we were able to use tools like Stimulus JS and Rails Unobtrusive JavaScript in order to mimic more of a single page app experience. The app also connects to various different services like Zapier, Stripe, and Twilio in order to expand its capabilities, and it even contains its own API endpoints that are used to connect people in need to our financial coaches.</p>
+    languages:
+      - "Ruby on Rails"
+      - "Stimulus JS"
+      - "Rails Unobtrusive JavaScript"
+      - "Rails View Components"
+      - "SCSS"
+      - "ERB (HTML)"
+    tools:
+      - "ScheduleOnce"
+      - "Zapier"
+      - "DocuSign"
+      - "Twilio"
+      - "JW Player"
+      - "Google Analytics"
+      - "Stripe"
+    highlights:
+      - title: "Lead and Client Manager"
+        image: "/assets/img/projects/coach-accelerator/crm.png"
+        image-description: "Lead and client manager"
+        description: |
+          <p>One of the main perks of the coach accelerator is access to their own lite CRM. Coaches are able to categorize their customers as leads or clients, record different interactions with them, set follow up dates, and more. The list is fully searchable by the customer’s name or email, and it’s all collapsed down into expandable items to minimize clutter on the screen.</p>
+          <p>This tool was also one of the first to implement more sophisticated Google Analytics tracking, which helped us to better understand how users were interacting with it, enabling us to make more data-driven decisions.</p>
+      - title: "Landing Page Builder"
+        image: "/assets/img/projects/coach-accelerator/page-builder.png"
+        image-description: "Landing page buider"
+        description: |
+          <p>For many coaches, having a website is a priority for starting their business. To meet that need, we developed the ability for our coaches to create a custom landing page on our domain, complete with their own copy and headshot. Plus, for the RPCs, it also doubled as a place to edit the listing their leads are presented with when they get connected.</p>
+          <p>Through this page, RPCs are also able to purchase additional zip codes to get leads from outside their complimentary two. To do so, the app uses the Stripe API in order to handle payments and be the source of truth.</p>
+      - title: "Group Coaching Calls"
+        image: "/assets/img/projects/coach-accelerator/coaching-calls.png"
+        image-description: "Scheduling page for group coaching"
+        description: |
+          <p>“A coach without a coach is like a doctor without a doctor.” As such, our team offers group coaching calls for the coaches to particpate in to further their game, both as a coach and as a small business.</p>
+          <p>Using Zapier integrations with ScheduleOnce, the app tracks what sessions a coach books and attends. With this data, the app gamifies the system, encouraging each coach to attend a minimum number of coaching calls every month.</p>
+      - title: "Goal Calculator"
+        image: "/assets/img/projects/coach-accelerator/goal-calculator.png"
+        image-description: "Goal calculator"
+        description: |
+          <p>Based directly off feedback and conversations from user interviews, we developed a goal calculator for coaches to easily identify how many clients it would take for them to get to their ideal salary. Many coaches wish to go full-time but don’t have a clear vision to get there, but with this calculator, it becomes much more clear.</p>
+          <p>The calculator project was highly iterative, starting off with something simple that we created in a single day, and we then gradually made improvements to it based on user feedback.</p>
+
   financial-coach-master-training:
     title: "Financial Coach Master Training"
     description: "Our flagship product: an online training course to teach people how to become a financial coach."
