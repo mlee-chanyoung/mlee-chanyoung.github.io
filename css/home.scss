@@ -1,0 +1,47 @@
+---
+---
+
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
+.Home {
+  &-headshot {
+    border: $spacing-half solid $white;
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+
+    @include for-screen-size(tablet-and-up) {
+      width: 300px;
+    }
+  }
+
+  &-intro {
+    flex-direction: column;
+    text-align: center;
+
+    @include for-screen-size(tablet-wide-and-up) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    hr {
+      margin: $spacing-3 0;
+      width: 50%;
+      border: 2px solid $white;
+
+      @include for-screen-size(tablet-wide-and-up) {
+        margin: 0 $spacing-6;
+        height: 200px;
+        width: 0;
+      }
+    }
+  }
+
+  &-links {
+    a {
+      display: inline-block;
+      margin-right: $spacing-2;
+    }
+  }
+}

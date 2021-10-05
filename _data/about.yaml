@@ -1,0 +1,91 @@
+title: "Who Am I?"
+description: "I am Michael Chanyoung Lee, a software engineer with a full-stack skill set but a passion for front-end and UX. Here’s a little bit about what I bring to the table as a developer as well as what else I do on the side."
+
+professional:
+  title: "Professional Skills and History"
+  employment:
+    title: "Employment History"
+    items:
+      - title: "Developer II"
+        dates: "September 2019 — Present"
+        description: "Ramsey Solutions"
+      - title: "Information Technology Intern"
+        dates: "May 2018 — August 2018"
+        description: "Chick-fil-A"
+      - title: "Quality Assurance Intern"
+        dates: "May 2017 — August 2017"
+        description: "Elavon"
+  education:
+    title: "Education"
+    items:
+      - title: "Georgia Institute of Technology"
+        dates: "August 2015 — May 2019"
+        description: "Bachelor of Science in Computer Science"
+  programming:
+    title: "Programming"
+    items:
+      - "JavaScript"
+      - "CSS3 | SCSS"
+      - "HTML5"
+      - "Ruby"
+      - "Python"
+      - "Java"
+      - "MySQL"
+  frameworks:
+    title: "Frameworks"
+    items:
+      - "Ruby on Rails (Ruby)"
+      - "React (JS)"
+      - "Jest (JS)"
+      - "Stimulus (JS)"
+      - "Magnolia (CMS)"
+      - "AWS Lambda (Python / Ruby)"
+      - "Zapier (JS)"
+      - "Google Apps Script (JS)"
+      - "jQuery (JS)"
+      - "D3 (JS)"
+      - "Flask (Python)"
+      - "Unity (C#)"
+      - "Android Studio (Java)"
+  tools:
+    title: "Tools"
+    items:
+      - "Git | GitHub"
+      - "Loggly | NewRelic"
+      - "InVision"
+      - "Google Analytics"
+      - "GoCD Deployment Pipeline"
+      - "Webpack"
+      - "AWS Lambda"
+      - "AWS SQS Queues"
+      - "asdf Version Manager"
+      - "Jira"
+      - "Tableau"
+
+personal:
+  title: "Personal Life"
+  hobbies:
+    title: "What Brings Me Joy"
+    items:
+      - "Playing the piano & trumpet"
+      - "Cooking"
+      - "Trying out new restaurants"
+      - "Traveling"
+      - "Board games & video games"
+      - "Cleaning"
+  languages:
+    title: "Languages"
+    items:
+      - title: "English"
+        description: "Native"
+      - title: "Korean"
+        description: "Intermediate"
+      - title: "Japanese"
+        description: "Intermediate (N3 Proficiency)"
+  rewrite:
+    title: "MAL Rewrite"
+    dates: "September 2015 — September 2021"
+    description: |
+      <p>MAL Rewrite is a volunteer organization that serves MyAnimeList, one of the largest online databases and communities for East Asian media. Rewrite’s goal is to create original, high-quality synopses for every entry on the site, and when I was last part of the organization, the group had already uploaded over 4000 synopses.<p>
+      <p>I initially served as a writer but quickly moved up to an editor position. After another year, I transitioned into a leadership role as a coordinator, which had me doing everything from giving final approval on synopses, managing member applications, writing scripts to automate administrative tasks, and coordinating with the site administrators to get the resources we needed.<p>
+      <p>My time as part of this group served as a great way to develop my writing and editing skills, as well as give back to a site that I used quite a bit back in my younger days. It also served me in some unexpected ways, providing opportunities to develop my programming skills as well as meet some great friends.</p>

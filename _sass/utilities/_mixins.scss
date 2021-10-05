@@ -1,0 +1,17 @@
+@mixin for-screen-size($screen-size) {
+  $screen-sizes: (
+    'mobile-only': '(max-width: 599px)',
+    'tablet-and-up': '(min-width: 600px)',
+    'tablet-wide-and-up': '(min-width: 900px)',
+    'laptop-and-up': '(min-width: 1200px)',
+    'full-only': '(min-width: 1800px)'
+  );
+
+  @if map-has-key($screen-sizes, $screen-size) == false {
+    @error '"#{$screen-size}" is not a valid screen size.';
+  }
+
+  @media #{map-get($screen-sizes, $screen-size)} {
+    @content;
+  }
+}

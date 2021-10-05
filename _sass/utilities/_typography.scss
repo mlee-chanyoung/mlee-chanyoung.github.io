@@ -1,0 +1,54 @@
+@import 'utilities/fonts';
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
+p {
+  margin: 0 0 $spacing-2 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a, button {
+  color: $link-color;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.Heading {
+  margin: 0 0 $spacing-2 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  &--primary {
+    font-size: $spacing-4;
+    font-weight: 700;
+
+    @include for-screen-size(tablet-and-up) {
+      font-size: $spacing-6;
+    }
+  }
+
+  &--secondary {
+    font-size: $spacing-3;
+
+    @include for-screen-size(tablet-and-up) {
+      font-size: $spacing-4;
+    }
+  }
+
+  &--tertiary {
+    font-size: 18px;
+
+    @include for-screen-size(tablet-and-up) {
+      font-size: $spacing-3;
+    }
+  }
+}
+
+.Microcopy {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1;
+}

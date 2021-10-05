@@ -1,0 +1,27 @@
+---
+layout: base
+permalink: "/projects"
+stylesheet: projects
+title: projects
+---
+<article class="Slice Slice--hero Slice--dark Projects-intro">
+  <section>
+    <h1 class="Heading Heading--primary">{{ site.data.projects.title }}</h1>
+    <hr />
+    <p>{{ site.data.projects.description }}</p>
+  </section>
+</article>
+<article class="Slice">
+  <section class="Grid Grid--2">
+    {% for project in site.data.projects.list %}
+      <article class="Card Projects-card">
+        <div>
+          <img src="/assets/img/projects/{{ project[0] }}/thumbnail.png" class="Card-image" alt="" />
+          <h2 class="Heading Heading--tertiary">{{ project[1].title }}</h2>
+          <p>{{ project[1].description }}</p>
+        </div>
+        <a href="{{ site.url }}{{ site.data.sitemap.projects }}/{{ project[0] }}" class="Button">{{ site.data.projects.cta }}</a>
+      </article>
+    {% endfor %}
+  </section>
+</article>

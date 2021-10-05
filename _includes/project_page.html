@@ -1,0 +1,44 @@
+{% assign project = include.project %}
+
+<article class="Slice Slice--dark">
+  <h1 class="Heading Heading--primary">{{ project.title }}</h1>
+  {% if project.links %}
+    <section class="Projects-links">
+      {% for link in project.links %}
+        {% capture link_icon %}icon-{{ link.type }}{% endcapture %}
+        <a href="{{ link.path }}" aria-label="{{ link.label }}" target="_blank" rel="noopener">{% include icon.html icon=link_icon %}</a>
+      {% endfor %}
+    </section>
+  {% endif %}
+</article>
+<article class="Slice">
+  <h2 class="Heading Heading--secondary">{{ site.data.projects.about.title }}</h2>
+  {{ project.full-description }}
+  <section class="Grid Grid--2">
+    <article class="Card">
+      <h2 class="Heading Heading--tertiary">{{ site.data.projects.about.languages }}</h2>
+      {% include components/list.html list=project.languages %}
+    </article>
+    <article class="Card">
+      <h2 class="Heading Heading--tertiary">{{ site.data.projects.about.tools }}</h2>
+      {% include components/list.html list=project.tools %}
+    </article>
+  </section>
+</article>
+<article class="Slice Slice--offwhite">
+  <h2 class="Heading Heading--secondary">{{ site.data.projects.highlights.title }}</h2>
+  <section class="Grid Grid--2">
+    {% for highlight in project.highlights %}
+      <article class="Card">
+        <a href="{{ highlight.image }}" data-lightbox="images" data-title="{{ highlight.image-description }}">
+          <img src="{{ highlight.image }}" class="Card-image" />
+        </a>
+        <h3 class="Heading Heading--tertiary">{{ highlight.title }}</h3>
+        {{ highlight.description }}
+      </article>
+    {% endfor %}
+  </section>
+</article>
+<article class="Slice Projects-footer">
+  <a href="{{ site.data.sitemap.projects }}" class="Button">Return to All Projects</a>
+</article>

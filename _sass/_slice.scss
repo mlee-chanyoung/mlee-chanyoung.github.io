@@ -1,0 +1,74 @@
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
+.Slice {
+  padding: 2rem 1rem;
+
+  @include for-screen-size(tablet-and-up) {
+    padding: 3rem 2.5rem;
+  }
+
+  @include for-screen-size(tablet-wide-and-up) {
+    padding: 3rem 175px;
+  }
+
+  @include for-screen-size(laptop-and-up) {
+    padding: 4rem 23%;
+  }
+
+  @include for-screen-size(full-only) {
+    padding: 4rem 30%;
+  }
+
+  &--dark {
+    background-color: $base-color;
+    color: $white;
+
+    .Icon {
+      fill: $white;
+    }
+  }
+
+  &--full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0 $spacing-2;
+  }
+
+  &--hero {
+    @include for-screen-size(tablet-and-up) {
+      background-origin: content-box;
+      background-position: top -2rem right;
+      background-repeat: no-repeat;
+      background-size: 50% auto;
+    }
+
+    @include for-screen-size(tablet-wide-and-up) {
+      background-position: top -10rem right;
+      padding-top: 200px;
+    }
+
+    > * {
+      @include for-screen-size(tablet-and-up) {
+        max-width: 50%;
+      }
+    }
+
+    .Heading--primary {
+      text-transform: uppercase;;
+    }
+
+    hr {
+      margin: $spacing-3 0;
+      width: 64px;
+    }
+  }
+
+  &--offwhite {
+    background-color: $off-white;
+  }
+}

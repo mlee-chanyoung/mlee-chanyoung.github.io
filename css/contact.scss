@@ -1,0 +1,30 @@
+---
+---
+
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
+.Contact {
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-listItem {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $white;
+    }
+
+    .Icon {
+      margin-right: $spacing-2;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-2;
+    }
+  }
+}

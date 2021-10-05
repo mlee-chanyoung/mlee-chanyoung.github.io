@@ -1,0 +1,31 @@
+<article class="Nav-container">
+  <nav class="Nav Nav--hidden">
+    <ul class="Nav-list">
+      <li class="Nav-item">
+        <a href="{{ site.url }}{{ site.data.sitemap.home }}" class="Nav-link Nav-object">
+          Home
+          {% include icon.html icon="icon-home" %}
+        </a>
+      </li>
+      <li class="Nav-item">
+        <a href="{{ site.url }}{{ site.data.sitemap.about }}" class="Nav-link Nav-object">
+          More About Me
+          {% include icon.html icon="icon-avatar" %}
+        </a>
+      </li>
+      <li class="Nav-item">
+        <a href="{{ site.url }}{{ site.data.sitemap.projects }}" class="Nav-link Nav-object">
+          Projects
+          {% include icon.html icon="icon-list" %}
+        </a>
+      </li>
+      <li class="Nav-item">
+        <a href="{{ site.url }}{{ site.data.sitemap.contact }}" class="Nav-link Nav-object">
+          Contact
+          {% include icon.html icon="icon-info" %}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button aria-label="Navigation menu button" class="Nav-button Nav-object">{% include icon.html icon="icon-menu" %}</button>
+</article>

@@ -1,0 +1,37 @@
+---
+---
+
+@import 'utilities/mixins';
+
+@import 'button';
+@import 'card';
+@import 'grid';
+
+.Projects {
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .Button {
+      text-align: center;
+    }
+  }
+
+  &-footer {
+    text-align: center;
+  }
+
+  &-intro {
+    @include for-screen-size(tablet-and-up) {
+      background-image: url('/assets/img/projects/laptop.png');
+    }
+  }
+
+  &-links {
+    a {
+      display: inline-block;
+      margin-right: $spacing-1;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
+$translation: 150%;
+$scale: 0.25;
+
+.Nav {
+  position: relative;
+  animation-duration: 0.33s;
+  animation-timing-function: ease-in-out;
+  transform-origin: bottom right;
+  z-index: -1;
+
+  &-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: $spacing-2;
+  }
+
+  &-container {
+    position: fixed;
+    right: $spacing-2;
+    bottom: $spacing-2;
+    text-align: right;
+
+    @include for-screen-size(laptop-and-up) {
+      right: $spacing-4;
+      bottom: $spacing-4;
+    }
+  }
+
+  &-item {
+    margin-bottom: $spacing-1;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: $spacing-half $spacing-1;
+    padding-left: $spacing-3;
+
+    .Icon {
+      margin-left: $spacing-1;
+    }
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    list-style-type: none;
+  }
+
+  &-object {
+    transition: background-color 0.15s ease-in-out;
+    border-radius: 16px;
+    background-color: $nav-color;
+    color: $white;
+    fill: $white;
+
+    &:hover {
+      background-color: $nav-hover-color;
+    }
+  }
+
+  &--visible {
+    transform: scale(1) translateY(0);
+
+    &.Nav--animating {
+      animation-name: show;
+    }
+  }
+
+  &--hidden {
+    transform: scale($scale) translateY($translation);
+
+    &.Nav--animating {
+      animation-name: hide;
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale($scale) translateY($translation);
+    opacity: 0;
+  }
+  50% { opacity: 0; }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  67% { opacity: 0; }
+  100% {
+    transform: scale($scale) translateY($translation);
+    opacity: 0;
+  }
+}

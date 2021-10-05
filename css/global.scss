@@ -1,0 +1,20 @@
+---
+---
+
+@import 'utilities/fonts';
+@import 'utilities/typography';
+@import 'utilities/variables';
+
+@import 'icon';
+@import 'nav';
+@import 'slice';
+
+html {
+  color: $base-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}

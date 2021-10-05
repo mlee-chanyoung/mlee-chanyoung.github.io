@@ -1,0 +1,225 @@
+title: "My Projects"
+description: "Here’s some highlights of the projects that I’ve worked on, showcasing the skills and experience I’ve gained."
+cta: "View Project"
+
+about:
+  title: "What Even Is This?"
+  languages: "Languages & Frameworks"
+  tools: "Relevant Tools & Services"
+
+highlights:
+  title: "Highlights"
+
+list:
+  coach-accelerator:
+    title: "Coach Accelerator"
+    description: "A suite of tools to help financial coaches kick off their coaching practice."
+    full-description: |
+      <p>The Coach Accelerator app is a suite of tools that we provide to financial coaches who have gone through our training to help them kickstart their business. This includes features like a lite customer relationship manager (CRM), access to group coaching calls with our in-house coaches, a customizable landing page, and more.</p>
+      <p>This app was previously known as the Ramsey Preferred Coach (RPC) dashboard, which was then exclusive to our RPCs, who are select coaches that our company has endorsed. For these coaches, we also sent them leads from people who had reached out for financial advice on our website, giving them more opportunities to create clients.</p>
+      <p>As the app was still in its infancy when I joined the Coaching team at Ramsey Solutions, I had a big hand in shaping this app’s experiences and features. Notably, we were able to use tools like Stimulus JS and Rails Unobtrusive JavaScript in order to mimic more of a single page app experience. The app also connects to various different services like Zapier, Stripe, and Twilio in order to expand its capabilities, and it even contains its own API endpoints that are used to connect people in need to our financial coaches.</p>
+    languages:
+      - "Ruby on Rails"
+      - "Stimulus JS"
+      - "Rails Unobtrusive JavaScript"
+      - "Rails View Components"
+      - "SCSS"
+      - "ERB (HTML)"
+    tools:
+      - "ScheduleOnce"
+      - "Zapier"
+      - "DocuSign"
+      - "Twilio"
+      - "JW Player"
+      - "Google Analytics"
+      - "Stripe"
+    highlights:
+      - title: "Lead and Client Manager"
+        image: "/assets/img/projects/coach-accelerator/crm.png"
+        image-description: "Lead and client manager"
+        description: |
+          <p>One of the main perks of the coach accelerator is access to their own lite CRM. Coaches are able to categorize their customers as leads or clients, record different interactions with them, set follow up dates, and more. The list is fully searchable by the customer’s name or email, and it’s all collapsed down into expandable items to minimize clutter on the screen.</p>
+          <p>This tool was also one of the first to implement more sophisticated Google Analytics tracking, which helped us to better understand how users were interacting with it, enabling us to make more data-driven decisions.</p>
+      - title: "Landing Page Builder"
+        image: "/assets/img/projects/coach-accelerator/page-builder.png"
+        image-description: "Landing page buider"
+        description: |
+          <p>For many coaches, having a website is a priority for starting their business. To meet that need, we developed the ability for our coaches to create a custom landing page on our domain, complete with their own copy and headshot. Plus, for the RPCs, it also doubled as a place to edit the listing their leads are presented with when they get connected.</p>
+          <p>Through this page, RPCs are also able to purchase additional zip codes to get leads from outside their complimentary two. To do so, the app uses the Stripe API in order to handle payments and be the source of truth.</p>
+      - title: "Group Coaching Calls"
+        image: "/assets/img/projects/coach-accelerator/coaching-calls.png"
+        image-description: "Scheduling page for group coaching"
+        description: |
+          <p>“A coach without a coach is like a doctor without a doctor.” As such, our team offers group coaching calls for the coaches to particpate in to further their game, both as a coach and as a small business.</p>
+          <p>Using Zapier integrations with ScheduleOnce, the app tracks what sessions a coach books and attends. With this data, the app gamifies the system, encouraging each coach to attend a minimum number of coaching calls every month.</p>
+      - title: "Goal Calculator"
+        image: "/assets/img/projects/coach-accelerator/goal-calculator.png"
+        image-description: "Goal calculator"
+        description: |
+          <p>Based directly off feedback and conversations from user interviews, we developed a goal calculator for coaches to easily identify how many clients it would take for them to get to their ideal salary. Many coaches wish to go full-time but don’t have a clear vision to get there, but with this calculator, it becomes much more clear.</p>
+          <p>The calculator project was highly iterative, starting off with something simple that we created in a single day, and we then gradually made improvements to it based on user feedback.</p>
+
+  financial-coach-master-training:
+    title: "Financial Coach Master Training"
+    description: "Our flagship product: an online training course to teach people how to become a financial coach."
+    full-description: |
+      <p>The Coaching team’s goal at Ramsey Solutions is to train, support, and develop world class financial coaches. To train people as financial coaches, we developed our main product: Financial Coach Master Training (FCMT). FCMT is an online training course that takes users through a curriculum of video lessons and quizzes to teach the fundamentals of being a financial coach.</p>
+      <p>Besides the actual lessons, there are live group development calls that students are required to book with our in-house coaches to receive more teaching and practice. Further, there are a plethora of resources—whether video, audio, or print—that are accessible for more topical information or to have on hand as tools.</p>
+    languages:
+      - "Ruby on Rails"
+      - "JavaScript"
+      - "SCSS"
+      - "ERB (HTML)"
+    tools:
+      - "JW Player"
+      - "ScheduleOnce"
+      - "Stripe"
+      - "Klaviyo"
+      - "Google Analytics"
+    highlights:
+      - title: "Design Updates"
+        image: "/assets/img/projects/financial-coach-master-training/home.png"
+        image-description: "Home page"
+        description: |
+          <p>As the front-end developer for the Coaching team, a lot of my time on this project was spent implementing design updates that would modernize the product as well as make the user experience more intuitive.</p>
+      - title: "Video Library"
+        image: "/assets/img/projects/financial-coach-master-training/videos.png"
+        image-description: "Bonus content video library"
+        description: |
+          <p>Separate from the video lessons, we needed to create some kind of video library to house bonus lessons that we wanted to share with the users. Unlike the rest of this app, the video library was able to simulate more of a single page app experience, with each of the videos reloading without a page refresh.</p>
+      - title: "Rewards"
+        image: "/assets/img/projects/financial-coach-master-training/rewards.png"
+        image-description: "Completion rewards"
+        description: |
+          <p>When a user progresses to certain checkpoints in the course, they unlock special gifts as rewards for their progress. While most of the rewards involve some kind of downloadable, one reward gives access to another one of our company’s products.</p>
+          <p>In order to make this reward work, it required collaboration with the team that owned the other product, using a voucher system to bypass any necessary payments.</p>
+      - title: "User Access"
+        image: "/assets/img/projects/financial-coach-master-training/access.png"
+        image-description: "Account information page"
+        description: |
+          <p>When the back-end developer for our team left, I took on more of a full-stack role. In particular for this product, I worked a lot on updating the user access and experience based on what they purchased. With several different types of users and multiple different states a user could be in, the user permissions quickly became a lot to manage.</p>
+  magnolia:
+    title: "Magnolia CMS"
+    description: "Development for our Content Management System (CMS) to enable marketers to quickly build landing pages and engage users."
+    full-description: |
+      <p>When it came to working with the marketing squad on the Coaching team at Ramsey Solutions, much of my time was spent developing for the company’s content management system (CMS) of choice: Magnolia. Most of the work involved creating components for the marketers to use in building landing pages, particuarly for functionality not available globally or that was specific to our business unit.</p>
+      <p>Components were created using the Freemarker templating language, with some JavaScript occassionally to enable more interactive functionality. Considerations also needed to be taken for the CMS editor side of the components, particularly to provide boundaries for marketers to stay within the guidelines of the company’s design system without restricting them too much from their creative vision.</p>
+    languages:
+      - "JavaScript"
+      - "SCSS"
+      - "Freemarker"
+    tools:
+      - "Magnolia CMS"
+      - "Apophenia"
+      - "Loggly"
+    highlights:
+      - title: "Countdown Timer Component"
+        image: "/assets/img/projects/magnolia/countdown.png"
+        image-description: "Countdown timer component"
+        description: |
+          <p>To promote urgency and scarcity in our marketing, I developed a countdown timer component that the marketers could use in our landing pages. This ticks down every second towards a set date and time, with an option to redirect all traffic away from the page it was on once the countdown ended.</p>
+      - title: "Carousel Component"
+        image: "/assets/img/projects/magnolia/carousel.png"
+        image-description: "Carousel component"
+        description: |
+          <p>For our team’s landing pages, we needed some way to showcase a list of items in a short way, like a group of testimonials or a list of features. After evaluating some possible solutions, we decided to work on creating a carousel component for the marketer’s to use in the CMS. Users can scroll through “slides” that wrap back around the edge of the screen, keeping space minimized to a single horizontal slice.</p>
+      - title: "Lead Forms"
+        image: "/assets/img/projects/magnolia/form.png"
+        image-description: "Lead form component"
+        description: |
+          <p>Whether to create a sales lead or connect someone with a coach, our team needed many different forms across our landing pages. For each form, the payload format needed to be configured, as well as the call out to the endpoint it would pass data to.</p>
+          <p>To ensure these forms worked properly, particularly for business critical functions, we monitored the status of the forms using Loggly, setting up alerts and dashboards to make sure potential issues weren’t missed.</p>
+      - title: "Domain Migration"
+        image: "/assets/img/projects/magnolia/main.png"
+        image-description: "Home page"
+        description: |
+          <p>In order to unify the different brands across the company, there was an organization-wide project to consolidate all of our websites under a single domain. I was the one driving this effort on our team, which involved lots of communication with stakeholders and ensuring our pages were up to the new standards. As a company-wide project, there was a lot of cross-team collaboration involved, and it was up to me to make sure our team was in sync with the others.</p>
+  facebook-ads:
+    title: "Facebook Lead Form Ads"
+    description: "AWS cloud computing systems that enable the usage of Facebook lead form ads to connect with our lead funnel."
+    full-description: |
+      <p>An essential part of the Coaching team’s lead funnel at Ramsey Solutions involves getting potential customers to sign up for an informational webinar. Users are directed to a landing page to register for the webinar, and much of the traffic is driven there via Facebook ads. Though the formula had a lot of success, the marketing team wanted to test out simplifying this process with a relatively new feature on Facebook: lead form ads. This new type of ad would allow those who viewed the ad to fill out a form directly on Facebook, rather than having to be redirected to a different page to fill it out.</p>
+      <p>In order to replicate the functions of the lead form on the landing page, however, additional work was required. Another team had also tried a similar experiment, so they had already laid the ground work to retrieve the form submission data and pass it to us in a state we could use; all we had to do was create something to handle it.</p>
+      <p>To that end, I was tasked with creating an Amazon Web Services (AWS) Lambda to handle the lead submissions, which needed to register a user for a webinar on Zoom, add them to a CRM for our sales reps to see, and add them to our email marketing system so that they could receive further communications.
+    languages:
+      - "Python"
+      - "Pytest"
+    tools:
+      - "Amazon Web Services (AWS) Lambda"
+      - "AWS Parameter Store"
+      - "Zoom"
+      - "Salesforce Sales & Marketing Cloud"
+      - "Klaviyo"
+      - "Apophenia"
+      - "Loggly"
+    highlights:
+      - title: "Connecting the Services"
+        image: "/assets/img/projects/facebook-ads/main.png"
+        image-description: "The lead form ad’s form"
+        description: |
+          <p>The most essential piece of this lambda is connecting together the different services that are used in the lead funnel. Multiple API calls were set up in order to register users for the webinar, add them into our lead funnel, etc.</p>
+          <p>As it’s a business critical process, logs recording any issues with the API calls were set up using Apophenia, and alerts were created on Loggly to monitor that the process was running smoothly.</p>
+      - title: "Reuse"
+        image: "/assets/img/projects/facebook-ads/reuse.png"
+        image-description: "The landing page’s webinar form"
+        description: |
+          <p>Though the marketing team ultimately decided to move away from using lead form ads, the work was not done in vain. Using AWS API Gateway, the webinar registration landing page was modified to point to this lambda, greatly simplyfing the process on the CMS side.</p>
+          <p>Further, this first foray into lambdas enabled our team to create more lambdas down the line, which helped us automate other parts of the sales process as well.
+  monita:
+    title: "Monita"
+    description: "A dashboard application that visualizes the status of the various applications and servers my team is responsible for in a way that is simple to understand."
+    full-description: |
+      <p>The Common Platforms team at the Chick-fil-A Support Center focuses on maintaining and improving the systems and services that the other teams in the IT department rely on. A large part of their responsibilities includes keeping an eye on all of the servers and applications that they are in charge of and troubleshooting any errors that come up. As expected, this is a critical role that impacts the rest of the department, but it can be a time consuming task as well, taking away valuable time from other projects that the team would like to focus on.</p>
+      <p>As an intern on their team for the summer, I was tasked with developing an internal web application—Monita—that consolidates the status information of the many servers and applications my team monitors in a way that is easy to understand at a glance. Further, the devices are connected and displayed in a graph to visualize the dependencies and make it simple to trace any errors back to the source.</p>
+      <p>The server-side was developed using the Flask micro web framework, while client-side was handled using jQuery and Bootstrap. This application is hosted on Amazon Web Services’s Elastic Beanstalk and utilizes Okta’s two-factor authentication to prevent unauthorized access.</p>
+    languages:
+      - "Flask (Python)"
+      - "jQuery"
+      - "SCSS"
+      - "Bootstrap 4"
+      - "Jinja2 (HTML5)"
+    tools:
+      - "Amazon Web Services (AWS) Elastic Beanstalk"
+      - "Okta"
+      - "Subversion"
+    highlights:
+      - title: "The Status Graph"
+        image: "/assets/img/projects/monita/main.png"
+        image-description: "Graph to monitor system statuses."
+        description: |
+          <p>Monita’s main feature is a graph of servers and applications. Each node on the graph depicts some system, and its icon represents the system’s status, color-coded for severity. The edges represent direct interactions between systems, such as between an application and its database. Nodes on the graph can also be interacted with to re-arrange the layout.</p>
+      - title: "Viewing Individual Nodes"
+        image: "/assets/img/projects/monita/node.png"
+        image-description: "Modal with an individual node’s detailed information."
+        description: |
+          <p>Once an individual node on the graph is selected, it brings up a modal window that displays more detailed information about that node. All active alerts are listed, and a list of all historical alerts can be retrieved as well.</p>
+          <p>Some nodes are made up of several sub-elements as well, and that family tree can be navigated here as well, allowing the user to identify the specific source of an alert.</p>
+  connect-four:
+    title: "Connect 4"
+    image: "/assets/img/projects/connect-four/thumbnail.png"
+    description: "The classic board game recreated on web in order to brush up on my React skills and put them into practice."
+    full-description: |
+      <p>Though React is one of the most common Single Page Application (SPA) frameworks in the industry, I didn’t have opportunities to use it in my position at the time. React had also moved towards a more functional programming paradigm with React Hooks, which I wasn’t exposed to when I had first learned React. As a result, I decided to dive into a small side project in order to brush up on my skills in the React world.</p>
+      <p>I started off following a basic React Hooks tutorial that created a Tic-Tac-Toe game, but I decided to step it up a notch to get some more practice in. What started off as a simple game of Tic-Tac-Toe evolved into a much more polished game of Connect 4. Though the project was never deployed, it served its job in helping me gain a better understanding of how to use React Hooks and effects, as well as practice unit testing in a React environment.</p>
+    languages:
+      - "React (JavaScript)"
+      - "React Hooks"
+      - "Jest"
+      - "SCSS"
+    tools:
+      - "Create React App"
+    highlights:
+      - title: "Interactions and Feedback"
+        image: "/assets/img/projects/connect-four/victory.png"
+        image-description: "The win state, complete with falling confetti"
+        description: |
+          <p>Using React Hooks and some styling, I was able to make the game feel much more real, with token animations, sound effects, falling confetti, and more.</p>
+      - title: "Unit Testing"
+        image: "/assets/img/projects/connect-four/main.png"
+        image-description: "In the middle of a game"
+        description: |
+          <p>To make sure the game logic was valid, unit testing through Jest was invaluable. More than just testing calculating the board state, unit testing validated that the components were behaving as intended.</p>
+    links:
+      - type: "github"
+        path: "https://github.com/mclee3360/connect-four-mclee"
+        label: "Github"

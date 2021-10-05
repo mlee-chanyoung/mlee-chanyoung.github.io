@@ -1,173 +1,27 @@
 ---
 layout: base
 title: portfolio
+stylesheet: home
 ---
-<!-- Header -->
-<div id="top"></div>
-<div class="row headshot-row">
-    <div class="col content-col">
-        <div class="row headshot-row">
-            <img id="headshot" src="{{ site.data.aboutme.headshot }}"/>
-            <div class="col" id="title-div">
-                <span class="align-middle">
-                    <h1 class="section-title">Michael C. Lee</h1>
-                    <h3 id="home-subtitle">{{ site.data.aboutme.subtitle }}</h3>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+<article class="Home-intro Slice--full Slice--dark">
+  <section class="Home-introSection">
+    <img class="Home-headshot" src="{{ site.data.home.headshot }}" alt="" />
+  </section>
+  <hr />
+  <section class="Home-introSection">
+    <h1 class="Heading Heading--primary">{{ site.name }}</h1>
+    <p class="Heading Heading--secondary">{{ site.data.home.role }}</p>
+    <section class="Home-links">
+      <a href="mailto:{{ site.email }}" aria-label="Email" target="_blank" rel="noopener">{% include icon.html icon="icon-email" %}</a>
+      <a href="tel:{{ site.phone-link }}" aria-label="Phone" target="_blank" rel="noopener">{% include icon.html icon="icon-phone" %}</a>
+      <a href="https://linkedin.com/in/{{ site.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener">{% include icon.html icon="icon-linkedin" %}</a>
+      <a href="https://github.com/{{ site.github }}" aria-label="Github" target="_blank" rel="noopener">{% include icon.html icon="icon-github" %}</a>
+      <a href="https://instagram.com/{{ site.instagram }}" aria-label="Instagram" target="_blank" rel="noopener">{% include icon.html icon="icon-instagram" %}</a>
+    </section>
+  </section>
+</article>
 <!-- Why UI/UX section -->
-<div class="row content-row offset-row" id="why">
-    <div class="col content-col">
-        <div class="row subsection-row">
-            <div class="col">
-                <p id="why-quote">
-                    {{ site.data.aboutme.why.quote }}
-                </p>
-            </div>
-        </div>
-        <div class="row title-row">
-            <div class="col">
-                <h1 class="section-title">{{ site.data.aboutme.why.title }}</h1>
-            </div>
-        </div>
-        <div class="row subsection-row">
-            <div class="col left-col">
-                <p>
-                    {{ site.data.aboutme.why.body }}
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col centered-col">
-                <a href="{{site.url}}{{site.data.aboutme.url}}" class="button">
-                    <span>
-                        {{ site.data.aboutme.about_link }}
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Links to Projects Section -->
-<div class="row content-row">
-    <div class="col content-col">
-        <div class="row subsection-row title-row">
-            <div class="col">
-                <h1 class="section-title">{{ site.data.projects.overview.title }}</h1>
-            </div>
-        </div>
-        <div class="row subsection-row justify-content-center home-project-overview-row">
-            <div class="thumbnail-div">
-                <img class="thumbnail" src="{{ site.data.projects.project1.thumbnail }}">
-            </div>
-            <div class="col thumb-left-col">
-                <div class="row overview-project-content-row">
-                    <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.project1.title }}</h2>
-                        <h4 class="overview-project-subtitle">{{ site.data.projects.project1.roles }}</h4>
-                        <div class="left-col">
-                            <p>{{ site.data.projects.project1.overview }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="{{site.url}}{{site.data.projects.general.url1}}" class="button">
-                            <span>
-                                {{ site.data.projects.overview.link }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row subsection-row justify-content-center home-project-overview-row">
-            <div class="thumbnail-div">
-                <img class="thumbnail" src="{{ site.data.projects.project2.thumbnail }}">
-            </div>
-            <div class="col thumb-left-col">
-                <div class="row overview-project-content-row">
-                    <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.project2.title }}</h2>
-                        <h4 class="overview-project-subtitle">{{ site.data.projects.project2.roles }}</h4>
-                        <div class="left-col">
-                            <p>{{ site.data.projects.project2.overview }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="{{site.url}}{{site.data.projects.general.url2}}" class="button">
-                            <span>
-                                {{ site.data.projects.overview.link }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row subsection-row justify-content-center home-project-overview-row">
-            <div class="thumbnail-div">
-                <img class="thumbnail" src="{{ site.data.projects.project3.thumbnail }}">
-            </div>
-            <div class="col thumb-left-col">
-                <div class="row overview-project-content-row">
-                    <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.project3.title }}</h2>
-                        <h4 class="overview-project-subtitle">{{ site.data.projects.project3.roles }}</h4>
-                        <div class="left-col">
-                            <p>{{ site.data.projects.project3.overview }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="{{site.url}}{{site.data.projects.general.url3}}" class="button">
-                            <span>
-                                {{ site.data.projects.overview.link }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row subsection-row justify-content-center">
-            <div class="thumbnail-div">
-                <img class="thumbnail" src="{{ site.data.projects.project4.thumbnail }}">
-            </div>
-            <div class="col thumb-left-col">
-                <div class="row overview-project-content-row">
-                    <div class="col">
-                        <h2 class="subsection-title overview-project-title">{{ site.data.projects.project4.title }}</h2>
-                        <h4 class="overview-project-subtitle">{{ site.data.projects.project4.roles }}</h4>
-                        <div class="left-col">
-                            <p>{{ site.data.projects.project4.overview }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="{{site.url}}{{site.data.projects.general.url4}}" class="button">
-                            <span>
-                                {{ site.data.projects.overview.link }}
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Contacts section -->
-<div class="row footer-row offset-row" id="contact">
-    <div class="col content-col">
-        {% include contact.html %}
-        <div class="row">
-            <div class="col centered-col">
-                <a class="link" href="#top">{{ site.data.footer.top_link }}</a>
-            </div>
-        </div>
-    </div>
-</div>
+<article class="Slice">
+  <h2 class="Heading Heading--primary">{{ site.data.home.why.title }}</h2>
+  {{ site.data.home.why.body }}
+</article>
