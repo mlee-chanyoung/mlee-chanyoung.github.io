@@ -24,7 +24,7 @@ list:
       - "Rails Unobtrusive JavaScript"
       - "Rails View Components"
       - "SCSS"
-      - "ERB (HTML)"
+      - "ERB"
     tools:
       - "ScheduleOnce"
       - "Zapier"
@@ -56,7 +56,7 @@ list:
         image: "/assets/img/projects/coach-accelerator/goal-calculator.png"
         image-description: "Goal calculator"
         description: |
-          <p>Based directly off feedback and conversations from user interviews, we developed a goal calculator for coaches to easily identify how many clients it would take for them to get to their ideal salary. Many coaches wish to go full-time but don’t have a clear vision to get there, but with this calculator, it becomes much more clear.</p>
+          <p>Based directly off feedback and conversations from user interviews, we developed a goal calculator for coaches to easily identify how many clients it would take for them to get to their ideal salary. Many coaches wish to go full-time but don’t have a clear vision to get there. With this calculator, however, it becomes much more clear.</p>
           <p>The calculator project was highly iterative, starting off with something simple that we created in a single day, and we then gradually made improvements to it based on user feedback.</p>
 
   financial-coach-master-training:
@@ -69,7 +69,7 @@ list:
       - "Ruby on Rails"
       - "JavaScript"
       - "SCSS"
-      - "ERB (HTML)"
+      - "ERB"
     tools:
       - "JW Player"
       - "ScheduleOnce"
@@ -86,13 +86,13 @@ list:
         image: "/assets/img/projects/financial-coach-master-training/videos.png"
         image-description: "Bonus content video library"
         description: |
-          <p>Separate from the video lessons, we needed to create some kind of video library to house bonus lessons that we wanted to share with the users. Unlike the rest of this app, the video library was able to simulate more of a single page app experience, with each of the videos reloading without a page refresh.</p>
+          <p>Separate from the video lessons, we needed to create some kind of video library to house bonus lessons that we wanted to share with the users. Unlike the rest of this app, the video library simulates more of a single page app experience, with each of the videos reloading without a page refresh.</p>
       - title: "Rewards"
         image: "/assets/img/projects/financial-coach-master-training/rewards.png"
         image-description: "Completion rewards"
         description: |
           <p>When a user progresses to certain checkpoints in the course, they unlock special gifts as rewards for their progress. While most of the rewards involve some kind of downloadable, one reward gives access to another one of our company’s products.</p>
-          <p>In order to make this reward work, it required collaboration with the team that owned the other product, using a voucher system to bypass any necessary payments.</p>
+          <p>In order to make this reward work, it required collaboration with the team that owns the other product, using a voucher system to bypass any necessary payments.</p>
       - title: "User Access"
         image: "/assets/img/projects/financial-coach-master-training/access.png"
         image-description: "Account information page"
@@ -122,7 +122,7 @@ list:
         image: "/assets/img/projects/magnolia/carousel.png"
         image-description: "Carousel component"
         description: |
-          <p>For our team’s landing pages, we needed some way to showcase a list of items in a short way, like a group of testimonials or a list of features. After evaluating some possible solutions, we decided to work on creating a carousel component for the marketer’s to use in the CMS. Users can scroll through “slides” that wrap back around the edge of the screen, keeping space minimized to a single horizontal slice.</p>
+          <p>For our team’s landing pages, we needed some way to showcase a list of items succinctly, like a group of testimonials or a list of features. After evaluating some possible solutions, we decided to work on creating a carousel component for the marketers to use in the CMS. Users can scroll through “slides” that wrap back around the edge of the screen, keeping space minimized to a single horizontal slice.</p>
       - title: "Lead Forms"
         image: "/assets/img/projects/magnolia/form.png"
         image-description: "Lead form component"
@@ -173,11 +173,12 @@ list:
       <p>As an intern on their team for the summer, I was tasked with developing an internal web application—Monita—that consolidates the status information of the many servers and applications my team monitors in a way that is easy to understand at a glance. Further, the devices are connected and displayed in a graph to visualize the dependencies and make it simple to trace any errors back to the source.</p>
       <p>The server-side was developed using the Flask micro web framework, while client-side was handled using jQuery and Bootstrap. This application is hosted on Amazon Web Services’s Elastic Beanstalk and utilizes Okta’s two-factor authentication to prevent unauthorized access.</p>
     languages:
-      - "Flask (Python)"
+      - "Python"
+      - "Flask"
       - "jQuery"
       - "SCSS"
       - "Bootstrap 4"
-      - "Jinja2 (HTML5)"
+      - "Jinja2"
     tools:
       - "Amazon Web Services (AWS) Elastic Beanstalk"
       - "Okta"
@@ -193,16 +194,17 @@ list:
         image-description: "Modal with an individual node’s detailed information."
         description: |
           <p>Once an individual node on the graph is selected, it brings up a modal window that displays more detailed information about that node. All active alerts are listed, and a list of all historical alerts can be retrieved as well.</p>
-          <p>Some nodes are made up of several sub-elements as well, and that family tree can be navigated here as well, allowing the user to identify the specific source of an alert.</p>
+          <p>Some nodes are made up of several sub-elements, and that family tree can be navigated here also, allowing the user to identify the specific source of an alert.</p>
   connect-four:
     title: "Connect 4"
     image: "/assets/img/projects/connect-four/thumbnail.png"
     description: "The classic board game recreated on web in order to brush up on my React skills and put them into practice."
     full-description: |
-      <p>Though React is one of the most common Single Page Application (SPA) frameworks in the industry, I didn’t have opportunities to use it in my position at the time. React had also moved towards a more functional programming paradigm with React Hooks, which I wasn’t exposed to when I had first learned React. As a result, I decided to dive into a small side project in order to brush up on my skills in the React world.</p>
+      <p>Though React is one of the most common single page application (SPA) frameworks in the industry, I didn’t have opportunities to use it in my position at the time. React had also moved towards a more functional programming paradigm with React Hooks, which I wasn’t exposed to when I had first learned React. As a result, I decided to dive into a small side project in order to brush up on my skills in the React world.</p>
       <p>I started off following a basic React Hooks tutorial that created a Tic-Tac-Toe game, but I decided to step it up a notch to get some more practice in. What started off as a simple game of Tic-Tac-Toe evolved into a much more polished game of Connect 4. Though the project was never deployed, it served its job in helping me gain a better understanding of how to use React Hooks and effects, as well as practice unit testing in a React environment.</p>
     languages:
-      - "React (JavaScript)"
+      - "JavaScript"
+      - "React"
       - "React Hooks"
       - "Jest"
       - "SCSS"
@@ -218,4 +220,4 @@ list:
         image: "/assets/img/projects/connect-four/main.png"
         image-description: "In the middle of a game"
         description: |
-          <p>To make sure the game logic was valid, unit testing through Jest was invaluable. More than just testing calculating the board state, unit testing validated that the components were behaving as intended.</p>
+          <p>To make sure the game logic was valid, unit testing through Jest was invaluable. More than just testing calculating the board state, unit testing also validated that the components were behaving as intended.</p>
