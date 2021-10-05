@@ -10,6 +10,7 @@ $scale: 0.25;
   animation-timing-function: ease-in-out;
   transform-origin: bottom right;
   z-index: -1;
+  margin-right: $spacing-half;
 
   &-button {
     cursor: pointer;
