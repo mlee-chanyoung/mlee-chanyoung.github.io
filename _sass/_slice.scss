@@ -13,11 +13,11 @@
   }
 
   @include for-screen-size(laptop-and-up) {
-    padding: 4rem 23%;
+    padding: 4rem 20%;
   }
 
   @include for-screen-size(full-only) {
-    padding: 4rem 30%;
+    padding: 4rem 25%;
   }
 
   &--dark {
